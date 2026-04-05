@@ -1,0 +1,2 @@
+Translation Performance Test
+How much is the translation performance ?

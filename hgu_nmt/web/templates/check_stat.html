@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>HGU Translator</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link rel=”stylesheet” href=”http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css“>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <!-- <link href="resources/vendor/fontawesome-free/css/all.min.css" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800|Nanum+Myeongjo:400,700,800&display=swap&subset=korean" rel="stylesheet">
+
+  <style>
+  .dict_area {
+    font-size:2rem;
+    /* position: relative; */
+    width: 50rem;
+    height: 25rem;
+  }
+  font {
+    font-family: "Nanum Gothic";
+  }
+  textarea::placeholder {
+    color: rgb(170,170,170);
+  }
+  textarea {
+    padding:1rem;
+  }
+  </style>
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar" data-offset="50">
+  <!-- <nav class="navbar navbar-default navbar-fixed-top" style="background-color: rgb(20, 92, 204); height: 8rem"> -->
+  <nav class="navbar navbar-default navbar-fixed-top" style="height: 9rem; border:solid 0.5px rgb(DDDDDD);">
+    <div class="container-fluid text-center">
+      <h1 class="text-center" style="color:rgb(20, 92, 204)">Kor-Eng NMT: Statistics </h1>
+      <a href=https://milab.handong.edu/>https://milab.handong.edu/</a>
+    </div>
+  </nav>
+  <br>
+    <div class="row text-center" style="margin-top: 10rem">
+      <br>
+        <div class="row text-center">
+        <font style="color:rgb(100,100,100); font-size: 2rem; "> Statistics of Your Eng Words In Source Sentence and Target Sentence (managed by IP)<br> 
+        Stop words and Frequent words are not presented (though counted in 'Total Count')</font>
+        <p>
+        <textarea class="src_words" name="word_list" id="word_list" cols="25" rows="20" style="margin-top:1rem" placeholder="Src::Freq">{{src_words}}</textarea>    
+        <textarea class="trg_words" name="word_list" id="word_list" cols="25" rows="20" style="margin-top:1rem" placeholder="Trg::Freq">{{trg_words}}</textarea>
+        </p>
+      <form action="/check_stat" method="POST">
+          <button style="margin-top: 0.1rem; background:rgb(DDDDDD); color:rgb(20,92,204); width:10%; height:4rem; font-size: 1.7rem" type="submit" value="reset">Reset</button>
+      </form>
+
+      <form action="/k2e_trans" method="GET">
+          <button style="margin-top: 5rem; background:rgb(DDDDDD); color:rgb(20,92,204); width:30%; height:4rem; font-size: 1.7rem" type="submit" value="Translation Page">Back to Translation (Kor to Eng)</button>
+      </form>
+      <form action="/e2k_trans" method="GET">
+          <button style="margin-top: 0.1rem; background:rgb(DDDDDD); color:rgb(20,92,204); width:30%; height:4rem; font-size: 1.7rem" type="submit" value="Translation Page">Back to Translation (Eng to Kor)</button>
+      </form>
+      </div>
+  </div>
+
+  <text id="mode" display:None style="font-size:0">0</text>
+
+
+  <script src="//code.jquery.com/jquery.min.js"></script>
+  <script>
+    // function addDict() {
+    //   var str = prompt('추가할 단어를 입력하세요.');
+    //
+    //   while(1) {
+    //     if(str == null) alert("문자를 다시 입력해주세요.")
+    //     else {
+    //       alert("추가되었습니다.")
+    //       break;
+    //     }
+    //   }
+    //
+    //
+    //
+    //
+    // }
+
+    // alert(inputString);
+
+    // $('#switch').click(function() {
+    //       if($('#mode').text() == 0) {
+    //         alert("k2e");
+    //
+    //       }
+    //       else {
+    //         $('#trg_name').text('영 어');
+    //         $('#src_name').text('한국어');
+    //         $('#mode').text(1);
+    //       }
+    //   });
+  </script>
+
+</body>
+</html>

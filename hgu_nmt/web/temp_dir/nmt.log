@@ -1,0 +1,1042 @@
+IP & Date: 45.67.97.24: 2023-02-17-14:53:46[e2k]
+Input: In experiments, researchers found that ticks avoid the tar of beech trees, which bears seem to have an affinity toward.
+Symbolized: In experiments , researchers found that ticks avoid the tar of beech trees , which bears seem to have an affinity toward .
+Translated: 연구@@ 자들은 실험@@ 에서 진@@ 드@@ 기가 곰@@ 이 친화@@ 력을 가진 것으로 보이는 벌@@ 의 타@@ 르@@ 를 피@@ 한다는 사실을 발견@@ 했다 .
+Output: 연구자들은 실험에서 진드기가 곰이 친화력을 가진 것으로 보이는 벌의 타르를 피한다는 사실을 발견했다.
+IP & Date: 45.67.97.24: 2023-02-17-14:54:21[k2e]
+Input: 연구자들은 실험에서 진드기가 곰이 친화력을 가진 것으로 보이는 벌의 타르를 피한다는 사실을 발견했다.
+Symbolized: 연구자들은 실험에서 진드기가 곰이 친화력을 가진 것으로 보이는 벌의 타르를 피한다는 사실을 발견했다 .
+Translated: Res@@ ear@@ chers found in the experi@@ ment that m@@ ites avoid t@@ ar from be@@ es that appear to be friendly to b@@ ears .
+Output: Researchers found in the experiment that mites avoid tar from bees that appear to be friendly to bears.
+IP & Date: 45.67.97.24: 2023-02-17-14:56:23[e2k]
+Input: In experiments, researchers found that ticks avoid the tar of beech trees, which bears seem to have an affinity toward.
+Symbolized: In experiments , researchers found that ticks avoid the tar of beech trees , which bears seem to have an affinity toward .
+Translated: 연구@@ 자들은 실험@@ 에서 진@@ 드@@ 기가 곰@@ 이 친화@@ 력을 가진 것으로 보이는 벌@@ 의 타@@ 르@@ 를 피@@ 한다는 사실을 발견@@ 했다 .
+Output: 연구자들은 실험에서 진드기가 곰이 친화력을 가진 것으로 보이는 벌의 타르를 피한다는 사실을 발견했다.
+IP & Date: 45.67.97.24: 2023-02-17-14:57:44[e2k]
+Input: In experiments, researchers found that ticks avoid the tar of beech trees, which bears seem to have an affinity toward.
+Symbolized: In experiments , researchers found that ticks avoid the tar of beech trees , which bears seem to have an affinity toward .
+Translated: 연구@@ 자들은 실험@@ 에서 진@@ 드@@ 기가 곰@@ 이 친화@@ 력을 가진 것으로 보이는 벌@@ 의 타@@ 르@@ 를 피@@ 한다는 사실을 발견@@ 했다 .
+Output: 연구자들은 실험에서 진드기가 곰이 친화력을 가진 것으로 보이는 벌의 타르를 피한다는 사실을 발견했다.
+IP & Date: 45.67.97.24: 2023-02-17-15:00:55[k2e]
+Input: 오늘 드디어 삼국지를 다시 읽다.
+Symbolized: 오늘 드디어 삼국지를 다시 읽다 .
+Translated: I finally read the Three K@@ ing@@ dom@@ s again today .
+Output: I finally read the Three Kingdoms again today.
+IP & Date: 45.67.97.24: 2023-02-17-15:01:25[k2e]
+Input: 오늘 드디어 소설 삼국지를 다시 읽었는데, 황석영의 삼국지다.
+Symbolized: 오늘 드디어 소설 삼국지를 다시 읽었는데 , 황석영의 삼국지다 .
+Translated: Today , I finally read the novel , The Three K@@ ing@@ dom@@ s , and it is Hwang Seok-@@ young &apos;s third k@@ ing@@ dom .
+Output: Today, I finally read the novel, The Three Kingdoms, and it is Hwang Seok-young's third kingdom.
+IP & Date: 45.67.97.24: 2023-02-17-15:01:35[k2e]
+Input: 오늘 드디어 소설 삼국지를 다시 읽었는데, 황석영의 삼국지이다.
+Symbolized: 오늘 드디어 소설 삼국지를 다시 읽었는데 , 황석영의 삼국지이다 .
+Translated: Today , I finally read the novel , The Three K@@ ing@@ dom@@ s , which is the Three K@@ ing@@ dom@@ s of Hwang Seok-@@ yeong .
+Output: Today, I finally read the novel, The Three Kingdoms, which is the Three Kingdoms of Hwang Seok-yeong.
+IP & Date: 45.67.97.24: 2023-02-17-15:01:56[e2k]
+Input: Today, I finally read the novel, The Three Kingdoms, which is the Three Kingdoms of Hwang Seok-yeong.
+Symbolized: Today , I finally read the novel , The Three Kingdoms , which is the Three Kingdoms of Hwang Seok-yeong .
+Translated: 오늘 황@@ 석@@ 영의 삼@@ 국@@ 이라는 소@@ 설 삼@@ 국을 드디@@ 어 읽@@ 었습니다 .
+Output: 오늘 황석영의 삼국이라는 소설 삼국을 드디어 읽었습니다.
+IP & Date: 45.67.97.24: 2023-02-17-15:02:05[e2k]
+Input: Today, I finally read the novel, The Three Kingdoms, which is the Three Kingdoms of Hwang Seok-yeong.
+Symbolized: Today , I finally read the novel , The Three Kingdoms , which is the Three Kingdoms of Hwang Seok-yeong .
+Translated: 오늘 황@@ 석@@ 영의 삼@@ 국@@ 이라는 소@@ 설 삼@@ 국을 드디@@ 어 읽@@ 었습니다 .
+Output: 오늘 황석영의 삼국이라는 소설 삼국을 드디어 읽었습니다.
+IP & Date: 45.67.97.63: 2023-02-18-05:14:10[e2k]
+Input: let's wrap this shit up
+Symbolized: let &apos;s wrap this shit up
+Translated: 이 쓰레기 좀 포장@@ 하자
+Output: 이 쓰레기 좀 포장하자
+IP & Date: 45.67.97.63: 2023-02-18-05:14:15[e2k]
+Input: let's wrap this shit up.
+Symbolized: let &apos;s wrap this shit up .
+Translated: 이 쓰레기 좀 포장@@ 해 가@@ 자 .
+Output: 이 쓰레기 좀 포장해 가자.
+IP & Date: 45.67.97.63: 2023-02-18-05:14:24[e2k]
+Input: Let's wrap this shit up.
+Symbolized: Let &apos;s wrap this shit up .
+Translated: 이 쓰레기 좀 포장@@ 해 가@@ 자 .
+Output: 이 쓰레기 좀 포장해 가자.
+IP & Date: 45.67.97.63: 2023-02-18-05:14:29[e2k]
+Input: Let's wrap this shit up!
+Symbolized: Let &apos;s wrap this shit up !
+Translated: 이 쓰레기 좀 포장@@ 해 가@@ 자 !
+Output: 이 쓰레기 좀 포장해 가자!
+IP & Date: 45.67.97.63: 2023-02-18-05:14:34[e2k]
+Input: Let's wrap this shit up
+Symbolized: Let &apos;s wrap this shit up
+Translated: 이 쓰레기 좀 포장@@ 해 가@@ 자
+Output: 이 쓰레기 좀 포장해 가자
+IP & Date: 45.67.97.63: 2023-02-18-05:14:44[e2k]
+Input: wrap this shit up
+Symbolized: wrap this shit up
+Translated: 이 쓰레@@ 기를 포장@@ 하다
+Output: 이 쓰레기를 포장하다
+IP & Date: 45.67.97.63: 2023-02-18-05:14:49[e2k]
+Input: Wrap this shit up
+Symbolized: Wrap this shit up
+Translated: 이 쓰레기 좀 포장@@ 해
+Output: 이 쓰레기 좀 포장해
+IP & Date: 45.67.97.63: 2023-02-18-05:14:55[e2k]
+Input: Wrap this shit up.
+Symbolized: Wrap this shit up .
+Translated: 이 쓰레기 좀 포장@@ 해 주세요 .
+Output: 이 쓰레기 좀 포장해 주세요.
+IP & Date: 45.67.97.62: 2023-02-18-05:17:28[e2k]
+Input: U.S. and China Vie in Hazy Zone Where Balloons, U.F.O.s and Missiles Fly
+Symbolized: U.S. and __P0 Vie in Hazy Zone Where Balloons , U.F.O.s and Missiles Fly
+Translated: 기@@ 구가 있는 아@@ 지@@ 존@@ 에서 미국과 __P0 비@@ 에는 U@@ F@@ .@@ O@@ .@@ 미@@ 실@@ 리@@ 스 플라@@ 이 등이 있다
+Output: 기구가 있는 아지존에서 미국과 중국 비에는 UF.O.미실리스 플라이 등이 있다
+IP & Date: 45.67.97.62: 2023-02-18-05:19:33[e2k]
+Input: U.S. and China vie in hazy zone where balloons, U.F.O.s and missiles fly
+Symbolized: U.S. and __P0 vie in hazy zone where balloons , U.F.O.s and missiles fly
+Translated: 미국과 __P0은 풍@@ 선과 U@@ F@@ O@@ 와 미사@@ 일이 날아@@ 다니는 흐@@ 린 지역에서 싸@@ 우고 있다
+Output: 미국과 중국은 풍선과 UFO와 미사일이 날아다니는 흐린 지역에서 싸우고 있다
+IP & Date: 45.67.97.62: 2023-02-18-05:19:41[e2k]
+Input: U.S. and China vie in hazy zone where balloons, U.F.O.s and missiles fly.
+Symbolized: U.S. and __P0 vie in hazy zone where balloons , U.F.O.s and missiles fly .
+Translated: 미국과 __P0은 풍@@ 선과 U@@ A@@ E , 미사@@ 일이 날아@@ 다니는 안@@ 개@@ 구@@ 대에서 경쟁@@ 한다 .
+Output: 미국과 중국은 풍선과 UAE, 미사일이 날아다니는 안개구대에서 경쟁한다.
+IP & Date: 45.67.97.62: 2023-02-18-05:21:43[e2k]
+Input: American officials are worried China is far along in developing military technology that operates in the unregulated high-altitude zone of “near space.”
+Symbolized: American officials are worried __P0 is far along in developing military technology that operates in the unregulated high-altitude zone of “ near space . ”
+Translated: 미국 관리@@ 들은 __P0이 규제 없는 고@@ 고도 지역에서 작동@@ 하는 군사@@ 기술 개발에 한@@ 참 뒤@@ 져 있다고 우려@@ 하고 있다 .
+Output: 미국 관리들은 중국이 규제 없는 고고도 지역에서 작동하는 군사기술 개발에 한참 뒤져 있다고 우려하고 있다.
+IP & Date: 45.67.97.62: 2023-02-18-05:22:23[e2k]
+Input: China is far along in developing military technology
+Symbolized: __P0 is far along in developing military technology
+Translated: __P0은 군사@@ 기술을 개발@@ 하는 데 있어서 한@@ 참 뒤@@ 떨어져 있다
+Output: 중국은 군사기술을 개발하는 데 있어서 한참 뒤떨어져 있다
+IP & Date: 45.67.97.62: 2023-02-18-05:33:41[e2k]
+Input: China is far behind in developing military technology
+Symbolized: __P0 is far behind in developing military technology
+Translated: __P0은 군@@ 사 기술 개발에 있어서 한@@ 참 뒤@@ 쳐@@ 져 있다
+Output: 중국은 군사 기술 개발에 있어서 한참 뒤쳐져 있다
+IP & Date: 45.67.97.63: 2023-02-18-14:13:08[e2k]
+Input: China is far advanced in developing military technology
+Symbolized: __P0 is far advanced in developing military technology
+Translated: __P0은 군사@@ 기술 개발에 있어서 훨씬 진보@@ 하고 있다
+Output: 중국은 군사기술 개발에 있어서 훨씬 진보하고 있다
+IP & Date: 45.67.97.63: 2023-02-18-14:13:18[e2k]
+Input: China is far advanced in developing military technology.
+Symbolized: __P0 is far advanced in developing military technology .
+Translated: __P0은 군사@@ 기술 개발에 있어 발전@@ 이 매우 높다 .
+Output: 중국은 군사기술 개발에 있어 발전이 매우 높다.
+IP & Date: 45.67.97.63: 2023-02-18-14:14:54[e2k]
+Input: China is far advanced in developing military technology
+Symbolized: __P0 is far advanced in developing military technology
+Translated: __P0은 군사@@ 기술 개발에 있어서 훨씬 진보@@ 하고 있다
+Output: 중국은 군사기술 개발에 있어서 훨씬 진보하고 있다
+IP & Date: 45.67.97.63: 2023-02-18-14:15:00[e2k]
+Input: China is far advanced in developing military technology.
+Symbolized: __P0 is far advanced in developing military technology .
+Translated: __P0은 군사@@ 기술 개발에 있어 발전@@ 이 매우 높다 .
+Output: 중국은 군사기술 개발에 있어 발전이 매우 높다.
+IP & Date: 45.67.97.63: 2023-02-18-14:15:11[e2k]
+Input: China is far advanced in developing military technology!
+Symbolized: __P0 is far advanced in developing military technology !
+Translated: __P0는 군@@ 사 기술 개발@@ 에서 훨씬 발전@@ 하고 있습니다 !
+Output: 중국은 군사 기술 개발에서 훨씬 발전하고 있습니다!
+IP & Date: 45.67.97.63: 2023-02-18-14:20:41[e2k]
+Input: American officials are worried China is far along in developing military technology.
+Symbolized: American officials are worried __P0 is far along in developing military technology .
+Translated: 미국 관리@@ 들은 __P0이 군사@@ 기술 개발에 동@@ 떨어져 있다고 우려@@ 하고 있다 .
+Output: 미국 관리들은 중국이 군사기술 개발에 동떨어져 있다고 우려하고 있다.
+IP & Date: 45.67.97.63: 2023-02-18-14:20:51[e2k]
+Input: American officials are worried China is far along in developing military technology!
+Symbolized: American officials are worried __P0 is far along in developing military technology !
+Translated: 미국 관리@@ 들은 __P0이 군사@@ 기술 개발에 한@@ 참 뒤@@ 떨어져 있다고 걱정@@ 하고 있습니다 !
+Output: 미국 관리들은 중국이 군사기술 개발에 한참 뒤떨어져 있다고 걱정하고 있습니다!
+IP & Date: 45.67.97.63: 2023-02-18-14:20:56[e2k]
+Input: American officials are worried China is far along in developing military technology
+Symbolized: American officials are worried __P0 is far along in developing military technology
+Translated: 미국 관리@@ 들은 __P0이 군@@ 사 기술을 개발@@ 하는 데 있어서 한@@ 참 뒤@@ 쳐@@ 져 있다고 우려@@ 하고 있다
+Output: 미국 관리들은 중국이 군사 기술을 개발하는 데 있어서 한참 뒤쳐져 있다고 우려하고 있다
+IP & Date: 45.67.97.63: 2023-02-18-14:21:06[e2k]
+Input: American officials are worried China is far along in developing military technology.
+Symbolized: American officials are worried __P0 is far along in developing military technology .
+Translated: 미국 관리@@ 들은 __P0이 군사@@ 기술 개발에 동@@ 떨어져 있다고 우려@@ 하고 있다 .
+Output: 미국 관리들은 중국이 군사기술 개발에 동떨어져 있다고 우려하고 있다.
+IP & Date: 45.67.97.63: 2023-02-18-14:21:12[e2k]
+Input: American officials are worried China is far along in developing military technology
+Symbolized: American officials are worried __P0 is far along in developing military technology
+Translated: 미국 관리@@ 들은 __P0이 군@@ 사 기술을 개발@@ 하는 데 있어서 한@@ 참 뒤@@ 쳐@@ 져 있다고 우려@@ 하고 있다
+Output: 미국 관리들은 중국이 군사 기술을 개발하는 데 있어서 한참 뒤쳐져 있다고 우려하고 있다
+IP & Date: 219.254.222.194: 2023-02-21-22:04:13[k2e]
+Input: 답이 명확하지 않은 문제
+Symbolized: 답이 명확하지 않은 문제
+Translated: a question of unclear answer
+Output: a question of unclear answer
+IP & Date: 219.254.222.194: 2023-02-21-22:04:25[k2e]
+Input: AI가 다루는 문제들
+Symbolized: __P0가 다루는 문제들
+Translated: the problems __P0 add@@ resses
+Output: the problems AI addresses
+IP & Date: 211.230.89.64: 2023-03-01-11:57:06[k2e]
+Input: 가나다라
+Symbolized: 가나다라
+Translated: G@@ an@@ ad@@ a
+Output: Ganada
+IP & Date: 211.230.89.64: 2023-03-01-11:57:26[k2e]
+Input: 한국에 오신 여러분들을 환영합니다.
+Symbolized: __P0에 오신 여러분들을 환영합니다 .
+Translated: W@@ el@@ come to __P0 .
+Output: Welcome to South Korea.
+IP & Date: 211.230.89.64: 2023-03-01-11:57:33[k2e]
+Input: 대한민국에 오신 여러분들을 환영합니다.
+Symbolized: __P0에 오신 여러분들을 환영합니다 .
+Translated: W@@ el@@ come to __P0 .
+Output: Welcome to South Korea.
+IP & Date: 112.220.74.214: 2023-03-21-13:15:30[k2e]
+Input: 즐거운 하루 되세요
+Symbolized: 즐거운 하루 되세요
+Translated: Have a nice day
+Output: Have a nice day
+IP & Date: 223.39.202.119: 2023-03-22-11:59:42[k2e]
+Input: 안녕
+Symbolized: 안녕
+Translated: Hello
+Output: Hello
+IP & Date: 223.39.202.119: 2023-03-22-11:59:57[k2e]
+Input: 나는 한동대학교 학생이야 넌 무엇이니?
+Symbolized: 나는 한동대학교 학생이야 넌 무엇이니 ?
+Translated: I am a student at H@@ and@@ ong University and what are you ?
+Output: I am a student at Handong University and what are you?
+IP & Date: 116.125.93.87: 2023-04-18-22:38:21[k2e]
+Input: 안녕하세요
+Symbolized: 안녕하세요
+Translated: Good morning
+Output: Good morning
+IP & Date: 45.67.97.14: 2023-05-20-04:29:25[k2e]
+Input: 어느정도 되는가?
+Symbolized: 어느정도 되는가 ?
+Translated: How much is it ?
+Output: How much is it?
+IP & Date: 172.18.151.202: 2023-05-20-14:30:42[k2e]
+Input: 안녕하세요?
+Symbolized: 안녕하세요 ?
+Translated: Hello ?
+Output: Hello?
+IP & Date: 172.18.151.202: 2023-05-20-14:36:04[k2e]
+Input: 안녕하세요? 김예준 바보
+Symbolized: 안녕하세요 ? 김예준 바보
+Translated: Hello ?
+Translated: Kim Ye-@@ jun F@@ ool
+Output: Hello? Kim Ye-jun Fool
+IP & Date: 172.18.151.202: 2023-05-20-14:36:14[k2e]
+Input: 전산거북이들 화이팅!
+Symbolized: 전산거북이들 화이팅 !
+Translated: C@@ ut@@ ting the computer tur@@ tles !
+Output: Cutting the computer turtles!
+IP & Date: 172.18.151.202: 2023-05-20-14:36:27[e2k]
+Input: Cutting the computer turtles!
+Symbolized: Cutting the computer turtles !
+Translated: 컴퓨터 거@@ 북@@ 이를 자@@ 르@@ 세요 !
+Output: 컴퓨터 거북이를 자르세요!
+IP & Date: 172.18.151.202: 2023-05-20-14:53:07[e2k]
+Input: Please get your laptop
+Symbolized: Please get your laptop
+Translated: 노트@@ 북@@ 을 가져@@ 오@@ 세요
+Output: 노트북을 가져오세요
+IP & Date: 172.18.151.202: 2023-05-20-19:54:00[k2e]
+Input: 테스트 중입니다
+Symbolized: 테스트 중입니다
+Translated: We &apos;re on a test
+Output: We're on a test
+IP & Date: 172.18.151.202: 2023-05-20-19:54:02[k2e]
+Input: 테스트 중입니다?
+Symbolized: 테스트 중입니다 ?
+Translated: Are you testing it ?
+Output: Are you testing it?
+IP & Date: 172.18.151.202: 2023-05-20-19:54:09[k2e]
+Input: 테스트 중입니까
+Symbolized: 테스트 중입니까
+Translated: Are you testing it
+Output: Are you testing it
+IP & Date: 172.18.151.202: 2023-05-20-19:54:12[k2e]
+Input: 테스트 중입니까?
+Symbolized: 테스트 중입니까 ?
+Translated: Are you testing ?
+Output: Are you testing?
+IP & Date: 172.18.151.202: 2023-05-20-19:55:50[e2k]
+Input: Hello there! Mighty fine morning, if you ask me! I'm Waldo.
+Symbolized: Hello there ! Mighty fine morning , if you ask me ! I &apos;m Waldo .
+Translated: 안녕하세요 !
+Translated: 아침 80@@ 시@@ 쯤@@ 에 괜찮@@ 으@@ 시@@ 네요 , 저@@ 한테 물어@@ 보@@ 시면 !
+Translated: 저는 월@@ 도@@ 예요 .
+Output: 안녕하세요! 아침 80시쯤에 괜찮으시네요, 저한테 물어보시면! 저는 월도예요.
+IP & Date: 172.18.151.202: 2023-05-20-19:55:57[e2k]
+Input: Hello there! Mighty fine morning, if you ask me! I'm Waldo.
+Symbolized: Hello there ! Mighty fine morning , if you ask me ! I &apos;m Waldo .
+Translated: 안녕하세요 !
+Translated: 아침 80@@ 시@@ 쯤@@ 에 괜찮@@ 으@@ 시@@ 네요 , 저@@ 한테 물어@@ 보@@ 시면 !
+Translated: 저는 월@@ 도@@ 예요 .
+Output: 안녕하세요! 아침 80시쯤에 괜찮으시네요, 저한테 물어보시면! 저는 월도예요.
+IP & Date: 172.18.151.202: 2023-05-20-19:56:11[e2k]
+Input: Hello there! mighty fine morning, if you ask me! I'm Waldo.
+Symbolized: Hello there ! mighty fine morning , if you ask me ! I &apos;m Waldo .
+Translated: 안녕하세요 !
+Translated: 아주 좋은 아침@@ 이@@ 네요 , 저@@ 한테 물어@@ 보@@ 시면 !
+Translated: 저는 월@@ 도@@ 예요 .
+Output: 안녕하세요! 아주 좋은 아침이네요, 저한테 물어보시면! 저는 월도예요.
+IP & Date: 172.18.151.202: 2023-05-20-19:56:11[e2k]
+Input: Hello there! mighty fine morning, if you ask me! I'm Waldo.
+Symbolized: Hello there ! mighty fine morning , if you ask me ! I &apos;m Waldo .
+Translated: 안녕하세요 !
+Translated: 아주 좋은 아침@@ 이@@ 네요 , 저@@ 한테 물어@@ 보@@ 시면 !
+Translated: 저는 월@@ 도@@ 예요 .
+Output: 안녕하세요! 아주 좋은 아침이네요, 저한테 물어보시면! 저는 월도예요.
+IP & Date: 172.18.151.202: 2023-05-20-19:56:11[e2k]
+Input: Hello there! mighty fine morning, if you ask me! I'm Waldo.
+Symbolized: Hello there ! mighty fine morning , if you ask me ! I &apos;m Waldo .
+Translated: 안녕하세요 !
+Translated: 아주 좋은 아침@@ 이@@ 네요 , 저@@ 한테 물어@@ 보@@ 시면 !
+Translated: 저는 월@@ 도@@ 예요 .
+Output: 안녕하세요! 아주 좋은 아침이네요, 저한테 물어보시면! 저는 월도예요.
+IP & Date: 172.18.151.202: 2023-05-20-19:56:15[e2k]
+Input: Hello there! eighty fine morning, if you ask me! I'm Waldo.
+Symbolized: Hello there ! eighty fine morning , if you ask me ! I &apos;m Waldo .
+Translated: 안녕하세요 !
+Translated: 80@@ 도 괜찮@@ 은 아침@@ 인데 , 물어@@ 봐 주면 !
+Translated: 저는 월@@ 도@@ 예요 .
+Output: 안녕하세요! 80도 괜찮은 아침인데, 물어봐 주면! 저는 월도예요.
+IP & Date: 172.18.151.202: 2023-05-20-19:56:16[e2k]
+Input: Hello there! eighty fine morning, if you ask me! I'm Waldo.
+Symbolized: Hello there ! eighty fine morning , if you ask me ! I &apos;m Waldo .
+Translated: 안녕하세요 !
+Translated: 80@@ 도 괜찮@@ 은 아침@@ 인데 , 물어@@ 봐 주면 !
+Translated: 저는 월@@ 도@@ 예요 .
+Output: 안녕하세요! 80도 괜찮은 아침인데, 물어봐 주면! 저는 월도예요.
+IP & Date: 172.18.151.202: 2023-05-20-19:56:16[e2k]
+Input: Hello there! eighty fine morning, if you ask me! I'm Waldo.
+Symbolized: Hello there ! eighty fine morning , if you ask me ! I &apos;m Waldo .
+Translated: 안녕하세요 !
+Translated: 80@@ 도 괜찮@@ 은 아침@@ 인데 , 물어@@ 봐 주면 !
+Translated: 저는 월@@ 도@@ 예요 .
+Output: 안녕하세요! 80도 괜찮은 아침인데, 물어봐 주면! 저는 월도예요.
+IP & Date: 172.18.151.202: 2023-05-20-19:56:19[e2k]
+Input: Hello there! eighty fine morning, if you ask me! I'm Waldo.
+Symbolized: Hello there ! eighty fine morning , if you ask me ! I &apos;m Waldo .
+Translated: 안녕하세요 !
+Translated: 80@@ 도 괜찮@@ 은 아침@@ 인데 , 물어@@ 봐 주면 !
+Translated: 저는 월@@ 도@@ 예요 .
+Output: 안녕하세요! 80도 괜찮은 아침인데, 물어봐 주면! 저는 월도예요.
+IP & Date: 172.18.151.202: 2023-05-20-19:56:23[e2k]
+Input: Hello there! Mighty fine morning, if you ask me! I'm Waldo.
+Symbolized: Hello there ! Mighty fine morning , if you ask me ! I &apos;m Waldo .
+Translated: 안녕하세요 !
+Translated: 아침 80@@ 시@@ 쯤@@ 에 괜찮@@ 으@@ 시@@ 네요 , 저@@ 한테 물어@@ 보@@ 시면 !
+Translated: 저는 월@@ 도@@ 예요 .
+Output: 안녕하세요! 아침 80시쯤에 괜찮으시네요, 저한테 물어보시면! 저는 월도예요.
+IP & Date: 172.18.151.202: 2023-05-20-19:56:25[e2k]
+Input: Hello there! Mighty fine morning, if you ask me! I'm Waldo.
+Symbolized: Hello there ! Mighty fine morning , if you ask me ! I &apos;m Waldo .
+Translated: 안녕하세요 !
+Translated: 아침 80@@ 시@@ 쯤@@ 에 괜찮@@ 으@@ 시@@ 네요 , 저@@ 한테 물어@@ 보@@ 시면 !
+Translated: 저는 월@@ 도@@ 예요 .
+Output: 안녕하세요! 아침 80시쯤에 괜찮으시네요, 저한테 물어보시면! 저는 월도예요.
+IP & Date: 172.18.151.202: 2023-05-23-16:25:39[k2e]
+Input: 연구활동을 지도, 관리한다.
+Symbolized: 연구활동을 지도 , 관리한다 .
+Translated: The research activities shall be gu@@ ided and managed .
+Output: The research activities shall be guided and managed.
+IP & Date: 211.229.16.58: 2023-07-05-13:05:06[k2e]
+Input: 번역 성능 테스트
+Symbolized: 번역 성능 테스트
+Translated: Tran@@ sl@@ ation Per@@ forman@@ ce Test
+Output: Translation Performance Test
+IP & Date: 121.180.227.45: 2023-07-07-10:50:55[k2e]
+Input: 번역 성능 테스트
+Symbolized: 번역 성능 테스트
+Translated: Tran@@ sl@@ ation Per@@ forman@@ ce Test
+Output: Translation Performance Test
+IP & Date: 121.180.227.45: 2023-07-07-10:50:58[e2k]
+Input: Translation Performance Test
+Symbolized: Translation Performance Test
+Translated: 번역@@ 성능@@ 시험
+Output: 번역성능시험
+IP & Date: 220.122.221.51: 2023-07-12-14:55:58[e2k]
+Input: how am i doing?
+Symbolized: how am i doing ?
+Translated: 내가 어떻게 지@@ 내고 있나요 ?
+Output: 내가 어떻게 지내고 있나요?
+IP & Date: 220.122.221.51: 2023-07-12-14:56:06[e2k]
+Input: how m i doing?
+Symbolized: how m i doing ?
+Translated: 저는 어떻게 지@@ 내고 있나요 ?
+Output: 저는 어떻게 지내고 있나요?
+IP & Date: 220.122.221.51: 2023-07-12-14:56:15[e2k]
+Input: how m doing?
+Symbolized: how m doing ?
+Translated: 어@@ 때@@ 요 ?
+Output: 어때요?
+IP & Date: 220.122.221.51: 2023-07-12-14:56:20[e2k]
+Input: how doing?
+Symbolized: how doing ?
+Translated: 어떻게 지내@@ 세요 ?
+Output: 어떻게 지내세요?
+IP & Date: 220.122.221.51: 2023-07-12-14:56:29[e2k]
+Input: how'u doing?
+Symbolized: how &apos;u doing ?
+Translated: 당신은 어떻게 지내@@ 세요 ?
+Output: 당신은 어떻게 지내세요?
+IP & Date: 121.180.227.45: 2023-07-16-11:25:55[k2e]
+Input: 바이든이 젤렌스키를 만나 우크라이나 전쟁에 대해 이야기했다.
+Symbolized: 바이든이 젤렌스키를 만나 __P0 전쟁에 대해 이야기했다 .
+Translated: B@@ id@@ en met Z@@ el@@ en@@ sky and talked about the war in __P0 .
+Output: Biden met Zelensky and talked about the war in Ukraine.
+IP & Date: 121.180.227.45: 2023-07-16-11:26:45[k2e]
+Input: 바이든이 볼로드미르 젤렌스키를 만나 우크라이나 전쟁에 대해 이야기했다.
+Symbolized: 바이든이 볼로드미르 젤렌스키를 만나 __P0 전쟁에 대해 이야기했다 .
+Translated: B@@ id@@ en met Vol@@ ro@@ m@@ ir Z@@ el@@ en@@ sky and talked about the war in __P0 .
+Output: Biden met Volromir Zelensky and talked about the war in Ukraine.
+IP & Date: 121.180.227.45: 2023-07-16-11:27:09[k2e]
+Input: 바이든이 볼로디미르 젤렌스키를 만나 우크라이나 전쟁에 대해 이야기했다.
+Symbolized: 바이든이 볼로디미르 젤렌스키를 만나 __P0 전쟁에 대해 이야기했다 .
+Translated: B@@ id@@ en met Vol@@ o@@ di@@ m@@ ir Z@@ el@@ en@@ sky and talked about the war in __P0 .
+Output: Biden met Volodimir Zelensky and talked about the war in Ukraine.
+IP & Date: 121.180.227.45: 2023-07-16-11:27:17[k2e]
+Input: 조 바이든이 볼로디미르 젤렌스키를 만나 우크라이나 전쟁에 대해 이야기했다.
+Symbolized: __P1이 볼로디미르 젤렌스키를 만나 __P0 전쟁에 대해 이야기했다 .
+Translated: __P1 met Vol@@ ro@@ di@@ m@@ ir Z@@ el@@ en@@ sky and talked about the war in __P0 .
+Output: Joe Biden met Volrodimir Zelensky and talked about the war in Ukraine.
+IP & Date: 121.180.227.45: 2023-07-16-11:27:23[k2e]
+Input: 조셉 바이든이 볼로디미르 젤렌스키를 만나 우크라이나 전쟁에 대해 이야기했다.
+Symbolized: 조셉 바이든이 볼로디미르 젤렌스키를 만나 __P0 전쟁에 대해 이야기했다 .
+Translated: Jo@@ se@@ p@@ h B@@ id@@ en met Vol@@ o@@ di@@ m@@ ir Z@@ el@@ en@@ sky and talked about the war in __P0 .
+Output: Joseph Biden met Volodimir Zelensky and talked about the war in Ukraine.
+IP & Date: 203.252.119.118: 2023-07-17-13:33:24[k2e]
+Input: 댕댕이
+Symbolized: 댕댕이
+Translated: a d@@ ung do@@ t
+Output: a dung dot
+IP & Date: 203.252.119.118: 2023-07-17-13:33:39[k2e]
+Input: 집가고싶어
+Symbolized: 집가고싶어
+Translated: I want to go home
+Output: I want to go home
+IP & Date: 203.252.99.249: 2023-07-20-19:29:36[k2e]
+Input: 나는 밥을 먹었다.
+Symbolized: 나는 밥을 먹었다 .
+Translated: I ate .
+Output: I ate.
+IP & Date: 203.252.99.249: 2023-07-20-19:29:45[k2e]
+Input: 나는 점심을 먹었다.
+Symbolized: 나는 점심을 먹었다 .
+Translated: I had lunch .
+Output: I had lunch.
+IP & Date: 121.180.227.45: 2023-08-05-17:20:29[k2e]
+Input: 번역 성능은 어느정도 되나요?
+Symbolized: 번역 성능은 어느정도 되나요 ?
+Translated: How much is the translation performance ?
+Output: How much is the translation performance?
+IP & Date: 121.180.227.45: 2023-08-05-17:20:39[e2k]
+Input: How much is the translation performance?
+Symbolized: How much is the translation performance ?
+Translated: 번@@ 역 성능@@ 은 얼마@@ 인가요 ?
+Output: 번역 성능은 얼마인가요?
+IP & Date: 121.180.227.45: 2023-08-05-17:27:09[k2e]
+Input: 번역
+Symbolized: 번역
+Translated: translation
+Output: translation
+IP & Date: 121.180.227.45: 2023-08-05-17:43:48[k2e]
+Input: 번역
+Symbolized: 번역
+Translated: translation
+Output: translation
+IP & Date: 121.180.227.45: 2023-08-05-17:43:51[k2e]
+Input: 번역aa
+Symbolized: 번역aa
+Translated: Tran@@ sl@@ ation
+Output: Translation
+IP & Date: 220.120.79.231: 2023-08-09-19:34:25[k2e]
+Input: 안녕
+Symbolized: 안녕
+Translated: Hello
+Output: Hello
+IP & Date: 221.142.100.114: 2023-08-27-11:04:24[k2e]
+Input: 전도사님이 말씀을 전하실때 성령충만하여 저희를 잘 가르칠 수 있도록 도와주세요
+Symbolized: 전도사님이 말씀을 전하실때 성령충만하여 저희를 잘 가르칠 수 있도록 도와주세요
+Translated: Please help us teach our@@ selves well by the Ho@@ ly Sp@@ ir@@ it when you pre@@ ach
+Output: Please help us teach ourselves well by the Holy Spirit when you preach
+IP & Date: 221.142.100.114: 2023-08-27-11:05:17[k2e]
+Input: 그가 말씀을 전하실때 성령충만하여 저희를 잘 가르칠 수 있도록 도와주세요
+Symbolized: 그가 말씀을 전하실때 성령충만하여 저희를 잘 가르칠 수 있도록 도와주세요
+Translated: When he deliver@@ s the Wor@@ d please help us teach our@@ selves well with the ho@@ ly spirit
+Output: When he delivers the Word please help us teach ourselves well with the holy spirit
+IP & Date: 221.142.100.114: 2023-08-27-11:05:29[k2e]
+Input: 그가 말씀을 전하실때 성령충만하여, 저희를 잘 가르칠 수 있도록 도와주세요
+Symbolized: 그가 말씀을 전하실때 성령충만하여 , 저희를 잘 가르칠 수 있도록 도와주세요
+Translated: Please help us teach us well by filling with the Ho@@ ly Sp@@ ir@@ it when he deliver@@ s the Wor@@ d .
+Output: Please help us teach us well by filling with the Holy Spirit when he delivers the Word.
+IP & Date: 221.142.100.114: 2023-08-27-11:05:37[k2e]
+Input: 그가 말씀을 전하실때 성령충만하여, 그가 저희를 잘 가르칠 수 있도록 도와주세요
+Symbolized: 그가 말씀을 전하실때 성령충만하여 , 그가 저희를 잘 가르칠 수 있도록 도와주세요
+Translated: Please fill the Ho@@ ly Sp@@ ir@@ it when he deliver@@ s the Wor@@ d , and help him teach us well .
+Output: Please fill the Holy Spirit when he delivers the Word, and help him teach us well.
+IP & Date: 221.142.100.114: 2023-08-27-11:05:58[k2e]
+Input: 그가 말씀을 전하실때 성령충만하게 하셔서 저희를 잘 가르칠 수 있도록 도와주세요
+Symbolized: 그가 말씀을 전하실때 성령충만하게 하셔서 저희를 잘 가르칠 수 있도록 도와주세요
+Translated: Please make him full of the Ho@@ ly Sp@@ ir@@ it when he deliver@@ s the Wor@@ d and help us teach our@@ selves well
+Output: Please make him full of the Holy Spirit when he delivers the Word and help us teach ourselves well
+IP & Date: 221.142.100.114: 2023-08-27-11:06:09[k2e]
+Input: 그가 말씀을 전하실때 성령충만하게 하셔서 그가 저희를 잘 가르칠 수 있도록 도와주세요
+Symbolized: 그가 말씀을 전하실때 성령충만하게 하셔서 그가 저희를 잘 가르칠 수 있도록 도와주세요
+Translated: Please make him full of the Ho@@ ly Sp@@ ir@@ it when he deliver@@ s the Wor@@ d and help him teach us well
+Output: Please make him full of the Holy Spirit when he delivers the Word and help him teach us well
+IP & Date: 172.18.154.151: 2023-09-01-17:41:17[e2k]
+Input: do you like chinese food?
+Symbolized: do you like chinese food ?
+Translated: 당신은 중국 음식을 좋아@@ 하세요 ?
+Output: 당신은 중국 음식을 좋아하세요?
+IP & Date: 172.18.129.159: 2023-09-05-14:06:23[k2e]
+Input: 졸려
+Symbolized: 졸려
+Translated: I &apos;m sle@@ ep@@ y
+Output: I'm sleepy
+IP & Date: 172.18.129.159: 2023-09-05-14:06:38[k2e]
+Input: 집 가고싶어
+Symbolized: 집 가고싶어
+Translated: I want to go home
+Output: I want to go home
+IP & Date: 172.18.129.159: 2023-09-05-14:06:54[k2e]
+Input: 자퇴하고싶다
+Symbolized: 자퇴하고싶다
+Translated: I want to drop out
+Output: I want to drop out
+IP & Date: 172.18.129.159: 2023-09-05-14:07:13[k2e]
+Input: ['opening_price', 'high_price', 'low_price', 'trade_price',
+       'prev_closing_price', 'change_price', 'signed_change_price',
+       'change_rate', 'signed_change_rate', 'trade_volume', 'acc_trade_volume',
+       'acc_trade_volume_24h', 'acc_trade_price', 'acc_trade_price_24h',
+       'acc_ask_volume', 'acc_bid_volume', 'is_trading_suspended',
+       'ask_bid_ASK', 'ask_bid_BID', 'change_binary', 'market_state_binary',
+       'market_warning_binary', 'total_ask_size', 'total_bid_size', 'returns',
+       '10_min_volatility', 'average_ask_price', 'average_bid_price',
+       'price_range_ask', 'price_range_bid', 'max_ask_size', 'min_ask_size',
+       'mean_ask_size', 'std_ask_size', 'skew_ask_size', 'kurt_ask_size',
+       'max_bid_size', 'min_bid_size', 'mean_bid_size', 'std_bid_size',
+       'skew_bid_size', 'kurt_bid_size', 'imbalance', 'spread',
+       'cumulative_ask_size_5', 'cumulative_bid_size_5', 'price_diff_ask_1',
+       'price_diff_bid_1', 'depth_5_ask_price', 'depth_5_bid_price',
+       'depth_5_ask_size', 'depth_5_bid_size', 'wall_detected_ask',
+       'wall_detected_bid', 'mid_price', 'price_volatility_ask',
+       'price_volatility_bid', 'lagged_return_5min', 'lagged_return_10min',
+       'lagged_return_30min', 'distance_from_high_24h',
+       'distance_from_low_24h', 'RSI', 'Middle_Band', 'STD', 'Upper_Band',
+       'Lower_Band'],
+      dtype='object')
+Symbolized: &#91; &apos; opening _ price &apos; , &apos; high _ price &apos; , &apos; low _ price &apos; , &apos; trade _ price &apos; ,
+&apos;prev _ closing _ price &apos; , &apos; change _ price &apos; , &apos; signed _ change _ price &apos; ,
+&apos;change _ rate &apos; , &apos; signed _ change _ rate &apos; , &apos; trade _ volume &apos; , &apos; acc _ trade _ volume &apos; ,
+&apos;acc _ trade _ volume _ 24h &apos; , &apos; acc _ trade _ price &apos; , &apos; acc _ trade _ price _ 24h &apos; ,
+&apos;acc _ ask _ volume &apos; , &apos; acc _ bid _ volume &apos; , &apos; is _ trading _ suspended &apos; ,
+&apos;ask _ bid _ ASK &apos; , &apos; ask _ bid _ BID &apos; , &apos; change _ binary &apos; , &apos; market _ state _ binary &apos; ,
+&apos;market _ warning _ binary &apos; , &apos; total _ ask _ size &apos; , &apos; total _ bid _ size &apos; , &apos; returns &apos; ,
+&apos;10 _ min _ volatility &apos; , &apos; average _ ask _ price &apos; , &apos; average _ bid _ price &apos; ,
+&apos;price _ range _ ask &apos; , &apos; price _ range _ bid &apos; , &apos; max _ ask _ size &apos; , &apos; min _ ask _ size &apos; ,
+&apos;mean _ ask _ size &apos; , &apos; std _ ask _ size &apos; , &apos; skew _ ask _ size &apos; , &apos; kurt _ ask _ size &apos; ,
+&apos;max _ bid _ size &apos; , &apos; min _ bid _ size &apos; , &apos; mean _ bid _ size &apos; , &apos; std _ bid _ size &apos; ,
+&apos;skew _ bid _ size &apos; , &apos; kurt _ bid _ size &apos; , &apos; imbalance &apos; , &apos; spread &apos; ,
+&apos;cumulative _ ask _ size _ 5 &apos; , &apos; cumulative _ bid _ size _ 5 &apos; , &apos; price _ diff _ ask _ 1 &apos; ,
+&apos;price _ diff _ bid _ 1 &apos; , &apos; depth _ 5 _ ask _ price &apos; , &apos; depth _ 5 _ bid _ price &apos; ,
+&apos;depth _ 5 _ ask _ size &apos; , &apos; depth _ 5 _ bid _ size &apos; , &apos; wall _ detected _ ask &apos; ,
+&apos;wall _ detected _ bid &apos; , &apos; mid _ price &apos; , &apos; price _ volatility _ ask &apos; ,
+&apos;price _ volatility _ bid &apos; , &apos; lagged _ return _ 5min &apos; , &apos; lagged _ return _ 10min &apos; ,
+&apos;lagged _ return _ 30min &apos; , &apos; distance _ from _ high _ 24h &apos; ,
+&apos;distance _ from _ low _ 24h &apos; , &apos; RSI &apos; , &apos; Middle _ Band &apos; , &apos; STD &apos; , &apos; Upper _ Band &apos; ,
+&apos;Lower _ Band &apos; &#93; ,
+dtype = &apos; object &apos; )
+Translated: &quot; op@@ ening _ pr@@ ice , &quot; &quot; high _ pr@@ ice , &quot; low _ pr@@ ice , &quot; tr@@ ad@@ e-@@ _ pr@@ ice , &quot; and &quot; tr@@ ad@@ e-@@ _ pr@@ ice . &quot;
+Translated: Pro@@ v _ going _ pr@@ ice &apos; , &apos; hang _ pr@@ ice &apos; , &apos; si@@ g@@ ne@@ ed _ ch@@ ang _ pr@@ ic@@ e@@ &apos;
+Translated: &apos; cho@@ ke _ race &apos; , &apos; si@@ g@@ ne@@ d-@@ _ ch@@ an@@ ge _ r@@ ated &apos; tr@@ ad@@ e-@@ up &apos; , &apos; ac@@ c@@ -@@ _ tr@@ ad@@ e-@@ own &apos; , &apos; arch@@ -@@ _ _ _ _ _ ful@@ l@@ &apos;
+Translated: Ac@@ c _ tr@@ ade _ volume _ 24@@ h &apos; , &apos; ac@@ c _ tr@@ ad@@ e-@@ _ pr@@ ice &apos; , &apos; ac@@ c _ _ _ _ _ 24 &apos; , &apos; <unk> _ _ _ _ _ _ _ _ _ _ _ _ 24@@ h &apos; .
+Translated: Ac@@ c _ as@@ k _ ball@@ room , &apos; ac@@ c _ b@@ id _ ball@@ room &apos; , &apos; is _ tr@@ ad@@ ing _ su@@ sc@@ end@@ &apos; and &apos; is _ su@@ sc@@ end@@ &apos;
+Translated: As@@ k _ by _ AS@@ K , As@@ k _ by _ B@@ ID B@@ ID &apos; , &apos; Chang@@ e _ B@@ in@@ ary &apos; , &apos; Mar@@ k@@ et _ State _ b@@ in@@ ary &apos; , and &apos; b@@ in@@ ary &apos; .
+Translated: Mar@@ k@@ et _ war@@ ning _ b@@ in@@ ary , &apos; to@@ at _ side &apos; , &apos; to@@ tal@@ e _ _ side &apos; , &apos; to@@ tal@@ _ _ _ _ side &apos; , &apos; ret@@ ur@@ ns &apos; , &apos; ret@@ our@@ ns &apos; .
+Translated: 10 _ min _ tol@@ at@@ ity &apos; , &apos; a@@ ver@@ age _ as@@ k _ pr@@ ice &apos; , &apos; a@@ ver@@ age _ by _ _ pr@@ ic@@ e@@ &apos;
+Translated: Pr@@ ice _ r@@ ange _ ask , &apos; pr@@ ice _ _ b@@ id &apos; ma@@ x _ as@@ k _ si@@ ze &apos; , &apos; min _ _ _ _ _ si@@ ze &apos; , &apos; man _ _ _ _ _ _ si@@ ze &apos; .
+Translated: Me@@ an _ as@@ k _ si@@ ze &apos; , &apos; st@@ ad _ _ si@@ ze &apos; , &apos; sk@@ e@@ w _ as@@ k _ si@@ ze &apos; , &apos; k@@ ur@@ t _ _ _ _ si@@ ze &apos; , &apos; k@@ ur@@ t _ _ side &apos; .
+Translated: Ma@@ x _ by _ si@@ ze &apos; in _ _ si@@ ze &apos; , &apos; man _ _ _ si@@ ze &apos; , &apos; man _ by _ si@@ ze &apos; , &apos; st@@ _ _ _ _ _ side &apos; , &apos; st@@ _ _ _ _ _ _ side &apos; .
+Translated: S@@ k@@ ee@@ w _ by _ si@@ ze , k@@ ur@@ t _ by _ si@@ ze , im@@ balance , sp@@ read@@ ed
+Translated: Compl@@ et@@ t@@ ative _ as@@ k _ si@@ ze _ 5 &apos; , &apos; compl@@ exp@@ ice _ si@@ ze _ 5 &apos; , &apos; pr@@ ice _ di@@ f _ as@@ k@@ w _ 1 &apos; , and &apos; k@@ noc@@ k _ 1 &apos; .
+Translated: Pr@@ ice _ di@@ ff _ by _ _ 1 &apos; , &apos; done _ _ _ pr@@ ice &apos; , &apos; done _ _ _ _ pr@@ ic@@ e@@ &apos; _ _ _ _ _ &apos; , &apos; done _ _ _ _ _ _ _ _ _ pr@@ ic@@ e@@ &apos;
+Translated: De@@ ep _ 5 _ ask _ si@@ ze &apos; , &apos; <unk> _ _ _ _ _ si@@ ze &apos; , &apos; all _ det@@ ected _ _ _ as@@ k &apos; and &apos; all _ det@@ ected _ as@@ k@@ &apos;
+Translated: &apos;@@ all _ det@@ ected _ by &apos; , &apos; m@@ id _ pr@@ ic@@ e@@ &apos; and &apos; pr@@ ice _ accep@@ table _ _ as@@ k &apos; .
+Translated: Pr@@ ice _ tol@@ at@@ y _ by &apos; l@@ ag@@ ed _ re@@ tur@@ n _ 5@@ min &apos; , &apos; l@@ ag@@ led _ ret@@ ur@@ n _ 10@@ min &apos; and &apos; l@@ ag@@ ed@@ &apos;
+Translated: &apos;@@ l@@ ag@@ ed _ re@@ tur@@ n _ 30@@ min &apos; , &apos; Di@@ st@@ ance _ from _ high _ 24 &apos; .
+Translated: Di@@ st@@ ance _ _ _ low _ 24@@ h R@@ S@@ I , &apos; Mid@@ dle _ B@@ and &apos; S@@ T@@ D &apos; , &apos; U@@ per _ B@@ and &apos;
+Translated: L@@ ow@@ er _ B@@ and .
+Translated: D@@ Typ@@ e = O@@ b@@ ject
+Output: "opening _ price," "high _ price," low _ price, "trade-_ price," and "trade-_ price." Prov _ going _ price ',' hang _ price ',' signeed _ chang _ price' 'choke _ race', 'signed-_ change _ rated' trade-up ',' acc-_ trade-own ',' arch-_ _ _ _ _ full' Acc _ trade _ volume _ 24h ',' acc _ trade-_ price ',' acc _ _ _ _ _ 24 ',' _ _ _ _ _ _ _ _ _ _ _ _ 24h '. Acc _ ask _ ballroom, 'acc _ bid _ ballroom', 'is _ trading _ suscend' and' is _ suscend' Ask _ by _ ASK, Ask _ by _ BID BID ',' Change _ Binary ',' Market _ State _ binary ', and' binary '. Market _ warning _ binary, 'toat _ side', 'totale _ _ side', 'total_ _ _ _ side', 'returns', 'retourns'. 10 _ min _ tolatity ',' average _ ask _ price ',' average _ by _ _ price' Price _ range _ ask, 'price _ _ bid' max _ ask _ size ',' min _ _ _ _ _ size ',' man _ _ _ _ _ _ size '. Mean _ ask _ size ',' stad _ _ size ',' skew _ ask _ size ',' kurt _ _ _ _ size ',' kurt _ _ side '. Max _ by _ size 'in _ _ size', 'man _ _ _ size', 'man _ by _ size', 'st_ _ _ _ _ side', 'st_ _ _ _ _ _ side'. Skeew _ by _ size, kurt _ by _ size, imbalance, spreaded Complettative _ ask _ size _ 5 ',' complexpice _ size _ 5 ',' price _ dif _ askw _ 1 ', and' knock _ 1 '. Price _ diff _ by _ _ 1 ',' done _ _ _ price ',' done _ _ _ _ price' _ _ _ _ _ ',' done _ _ _ _ _ _ _ _ _ price' Deep _ 5 _ ask _ size ',' _ _ _ _ _ size ',' all _ detected _ _ _ ask 'and' all _ detected _ ask' 'all _ detected _ by ',' mid _ price' and 'price _ acceptable _ _ ask'. Price _ tolaty _ by 'laged _ return _ 5min', 'lagled _ return _ 10min' and 'laged' 'laged _ return _ 30min ',' Distance _ from _ high _ 24 '. Distance _ _ _ low _ 24h RSI, 'Middle _ Band' STD ',' Uper _ Band ' Lower _ Band. DType = Object
+IP & Date: 172.18.129.159: 2023-09-05-14:07:25[e2k]
+Input: "opening _ price," "high _ price," low _ price, "trade-_ price," and "trade-_ price." Prov _ going _ price ',' hang _ price ',' signeed _ chang _ price' 'choke _ race', 'signed-_ change _ rated' trade-up ',' acc-_ trade-own ',' arch-_ _ _ _ _ full' Acc _ trade _ volume _ 24h ',' acc _ trade-_ price ',' acc _ _ _ _ _ 24 ',' _ _ _ _ _ _ _ _ _ _ _ _ 24h '. Acc _ ask _ ballroom, 'acc _ bid _ ballroom', 'is _ trading _ suscend' and' is _ suscend' Ask _ by _ ASK, Ask _ by _ BID BID ',' Change _ Binary ',' Market _ State _ binary ', and' binary '. Market _ warning _ binary, 'toat _ side', 'totale _ _ side', 'total_ _ _ _ side', 'returns', 'retourns'. 10 _ min _ tolatity ',' average _ ask _ price ',' average _ by _ _ price' Price _ range _ ask, 'price _ _ bid' max _ ask _ size ',' min _ _ _ _ _ size ',' man _ _ _ _ _ _ size '. Mean _ ask _ size ',' stad _ _ size ',' skew _ ask _ size ',' kurt _ _ _ _ size ',' kurt _ _ side '. Max _ by _ size 'in _ _ size', 'man _ _ _ size', 'man _ by _ size', 'st_ _ _ _ _ side', 'st_ _ _ _ _ _ side'. Skeew _ by _ size, kurt _ by _ size, imbalance, spreaded Complettative _ ask _ size _ 5 ',' complexpice _ size _ 5 ',' price _ dif _ askw _ 1 ', and' knock _ 1 '. Price _ diff _ by _ _ 1 ',' done _ _ _ price ',' done _ _ _ _ price' _ _ _ _ _ ',' done _ _ _ _ _ _ _ _ _ price' Deep _ 5 _ ask _ size ',' _ _ _ _ _ size ',' all _ detected _ _ _ ask 'and' all _ detected _ ask' 'all _ detected _ by ',' mid _ price' and 'price _ acceptable _ _ ask'. Price _ tolaty _ by 'laged _ return _ 5min', 'lagled _ return _ 10min' and 'laged' 'laged _ return _ 30min ',' Distance _ from _ high _ 24 '. Distance _ _ _ low _ 24h RSI, 'Middle _ Band' STD ',' Uper _ Band ' Lower _ Band. DType = Object
+Symbolized: &quot; opening _ price , &quot; &quot; high _ price , &quot; low _ price , &quot; trade- _ price , &quot; and &quot; trade- _ price . &quot; Prov _ going _ price &apos; , &apos; hang _ price &apos; , &apos; signeed _ chang _ price &apos; &apos; choke _ race &apos; , &apos; signed- _ change _ rated &apos; trade-up &apos; , &apos; acc- _ trade-own &apos; , &apos; arch- _ _ _ _ _ full &apos; Acc _ trade _ volume _ 24h &apos; , &apos; acc _ trade- _ price &apos; , &apos; acc _ _ _ _ _ 24 &apos; , &apos; _ _ _ _ _ _ _ _ _ _ _ _ 24h &apos; . Acc _ ask _ ballroom , &apos; acc _ bid _ ballroom &apos; , &apos; is _ trading _ suscend &apos; and &apos; is _ suscend &apos; Ask _ by _ ASK , Ask _ by _ BID BID &apos; , &apos; Change _ Binary &apos; , &apos; Market _ State _ binary &apos; , and &apos; binary &apos; . Market _ warning _ binary , &apos; toat _ side &apos; , &apos; totale _ _ side &apos; , &apos; total _ _ _ _ side &apos; , &apos; returns &apos; , &apos; retourns &apos; . 10 _ min _ tolatity &apos; , &apos; average _ ask _ price &apos; , &apos; average _ by _ _ price &apos; Price _ range _ ask , &apos; price _ _ bid &apos; max _ ask _ size &apos; , &apos; min _ _ _ _ _ size &apos; , &apos; man _ _ _ _ _ _ size &apos; . Mean _ ask _ size &apos; , &apos; stad _ _ size &apos; , &apos; skew _ ask _ size &apos; , &apos; kurt _ _ _ _ size &apos; , &apos; kurt _ _ side &apos; . Max _ by _ size &apos; in _ _ size &apos; , &apos; man _ _ _ size &apos; , &apos; man _ by _ size &apos; , &apos; st _ _ _ _ _ side &apos; , &apos; st _ _ _ _ _ _ side &apos; . Skeew _ by _ size , kurt _ by _ size , imbalance , spreaded Complettative _ ask _ size _ 5 &apos; , &apos; complexpice _ size _ 5 &apos; , &apos; price _ dif _ askw _ 1 &apos; , and &apos; knock _ 1 &apos; . Price _ diff _ by _ _ 1 &apos; , &apos; done _ _ _ price &apos; , &apos; done _ _ _ _ price &apos; _ _ _ _ _ &apos; , &apos; done _ _ _ _ _ _ _ _ _ price &apos; Deep _ 5 _ ask _ size &apos; , &apos; _ _ _ _ _ size &apos; , &apos; all _ detected _ _ _ ask &apos; and &apos; all _ detected _ ask &apos; &apos; all _ detected _ by &apos; , &apos; mid _ price &apos; and &apos; price _ acceptable _ _ ask &apos; . Price _ tolaty _ by &apos; laged _ return _ 5min &apos; , &apos; lagled _ return _ 10min &apos; and &apos; laged &apos; &apos; laged _ return _ 30min &apos; , &apos; Distance _ from _ high _ 24 &apos; . Distance _ _ _ low _ 24h RSI , &apos; Middle _ Band &apos; STD &apos; , &apos; Uper _ Band &apos; Lower _ Band . DType = Object
+Translated: ‘ 오@@ 펜@@ 싱 _ 프리@@ <unk> ’ , ‘ 히@@ 그 _ 프리@@ <unk> ’ , ‘ 로@@ 우 _ 프리@@ <unk> ’ , ‘ 상@@ 거래 _ 프리@@ <unk> ’ , ‘ 상@@ 거래 _ 프리@@ <unk> ’ 등이 있다 .
+Translated: ‘ 행@@ 크@@ 로 ’ ‘ 행@@ 크@@ 로 ’ ‘ 시@@ 그@@ 니@@ 스 _ 프리@@ 치 ’ ‘ 초@@ 크 ’ ‘ 코@@ 크 ’ ‘ 사이@@ 그@@ 니@@ 스 _ <unk> ’ ‘ 트레이@@ 드 업 ’ ‘ 액@@ 세@@ 스 _ 트@@ 래@@ 드@@ 다운 ’ ‘ 아@@ 크@@ 로 _ 풀@@ 이 ’ ‘ 액@@ 트@@ 라@@ 드 _ _ 풀@@ 이 ’ ‘ 액@@ 트@@ 라@@ 드 _ 보@@ 루@@ 드 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 페@@ 르@@ 크 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 트@@ 래@@ 드 _ _ _ _ _ ’ ‘ 24 ) ’ ‘ <unk> ’ ‘ <unk> ’ ‘ <unk> ’ ‘ <unk> ’ ‘ <unk> ’ ‘ <unk> ’ ‘ 24 ) ’ ‘ <unk> ’ ‘ <unk> ’ ‘ <unk> 커@@ 치 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ ’ ‘ 24 ) ’ ‘ 24 )
+Translated: 악@@ 크 _ a@@ s@@ k _ b@@ i@@ d _ b@@ a@@ s@@ s@@ c@@ en@@ d , i@@ s _ t@@ ra@@ d@@ ing _ s@@ s@@ s@@ c@@ h@@ en@@ d ) , A@@ c@@ k _ AS@@ K , A@@ D B@@ I@@ D ( AS@@ K ) 의 &apos; S@@ u@@ s@@ c@@ k _ a@@ s@@ c@@ en@@ d &apos; , ‘ C@@ h@@ an@@ g _ B@@ I@@ D B@@ I@@ D ’ , ‘ C@@ h@@ an@@ e _ B@@ in@@ n@@ i@@ v@@ in@@ e ’ , ‘ M@@ ar@@ i@@ t _ S@@ t@@ en@@ t _ S@@ t@@ e _ S@@ t@@ en@@ t@@ e _ b@@ ar@@ y ’ , ‘ B@@ in@@ ar@@ y ’ 등이 있다 .
+Translated: 시장@@ 으로는 ‘ 바@@ 네@@ 닝 ’ , ‘ 토@@ 트 ’ , ‘ 토@@ al@@ e _ 사이@@ 드 ’ , ‘ 토@@ 털 _ _ _ 사이@@ 드 ’ , ‘ 토@@ 털 _ _ _ _ 사이@@ 드 ’ , ‘ 레@@ 터@@ 틀@@ 즈 ’ , ‘ 리@@ 턴@@ 즈 ’ 등이 있다 .
+Translated: 10 m@@ in _ t@@ o@@ w@@ at@@ t@@ y , ‘ a@@ v@@ er@@ a@@ g@@ e _ a@@ s@@ k _ p@@ r@@ ic@@ e ’ , ‘ p@@ r@@ ic@@ e _ r@@ an@@ g@@ e _ a@@ s@@ k _ a@@ s@@ k ’ , ‘ p@@ r@@ ic@@ e _ b@@ i@@ d _ a@@ s@@ k _ s@@ i@@ z@@ e ’ , ‘ m@@ in _ _ _ _ a@@ s@@ i@@ z@@ e ’ , ‘ m@@ in _ _ _ _ _ _ m@@ an _ c@@ i@@ z@@ e ’ , ‘ m@@ an _ c@@ i@@ z@@ e _ s@@ i@@ z@@ e ’ 등이 있다 .
+Translated: 밋@@ 밋@@ 하@@ 크 _ a@@ s@@ k _ s@@ i@@ z@@ e , st@@ a@@ d _ s@@ i@@ z@@ e , s@@ k@@ e@@ w _ a@@ s@@ k _ s@@ c@@ i@@ z@@ e , c@@ u@@ r@@ t _ _ _ _ s@@ i@@ z@@ e , c@@ i@@ z@@ e , c@@ u@@ r@@ t _ _ s@@ i@@ z@@ e , ‘ k@@ u@@ r@@ t _ _ _ s@@ i@@ z@@ e ’ .
+Translated: ‘ m@@ a@@ x b@@ y _ s@@ i@@ z@@ e ’ , ‘ m@@ an _ _ s@@ i@@ z@@ e ’ , ‘ m@@ an _ m@@ an _ s@@ i@@ z@@ e ’ , ‘ s@@ t _ _ _ _ _ s@@ i@@ d@@ e ’ , ‘ s@@ t _ _ _ _ s@@ i@@ d@@ e ’ , ‘ s@@ t _ _ _ _ _ s@@ i@@ z@@ e@@ e ’ 등이 그@@ 것이다 .
+Translated: 스@@ <unk> , 시@@ 즈 , 옴@@ 발@@ 란@@ 체 , 이@@ 완@@ 성 a@@ s@@ k _ s@@ i@@ z@@ e _ 5 , ‘ 콤@@ 피@@ 스@@ 스 _ 시@@ 저 _ 5 ’ , ‘ 프리@@ 쉬 _ 디@@ 프 _ a@@ s@@ k@@ w _ 1 ’ , ‘ 노@@ 크 _ 1 ’ 이 그@@ 것이다 .
+Translated: ‘ 물@@ 건 ’ , ‘ 도@@ 운 ’ , ‘ 잘@@ 됐다 _ _ ‘ _ 브@@ 로@@ 잉 _ _ _ _ _ ’ , ‘ <unk> _ _ _ _ _ _ _ _ _ _ _ _ _ ’ , <unk> 5 _ a@@ s@@ k _ a@@ z@@ e ’ , ‘ <unk> _ _ _ _ a@@ s@@ k _ _ c@@ i@@ z@@ e ’ , ‘ <unk> _ _ _ _ _ _ c@@ e@@ d _ c@@ e@@ d _ c@@ e@@ d _ _ c@@ e@@ t _ c@@ e@@ c@@ e@@ d _ c@@ e@@ c@@ h@@ e@@ t _ c@@ e@@ d _ c@@ e@@ d _ c@@ t@@ e@@ d _ c@@ e@@ d _ c@@ h@@ e@@ d _ c@@ e@@ d _ c@@ h@@ e@@ d _ c@@ e@@ d _ c@@ e@@ c@@ e@@ c@@ e@@ c@@ e@@ t ) , <unk> <unk> , <unk> <unk> <unk> , <unk> , <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> , <unk> <unk> <unk> <unk> , <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> , <unk> , <unk> , <unk> <unk> <unk> <unk> <unk> , <unk> <unk> <unk> , <unk> , <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> , <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> , <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+Translated: ‘ 라@@ 이어@@ 드 _ 레@@ 터@@ 링 ’ ‘ 레@@ 터@@ 링 _ 10@@ m@@ in ’ ‘ 라@@ 이어@@ 드 ’ ‘ 레@@ 터@@ 링 _ 레@@ 터@@ 링 _ 30@@ m@@ in ’ ‘ 키@@ 즈 _ 프@@ 롬 _ 히@@ 그 24 ’ 의 가격
+Translated: 디@@ 텐@@ 스 _ _ 로@@ 우 _ 24@@ h R@@ S@@ I , 미@@ 들@@ 레 _ 밴@@ 드 &apos; S@@ T@@ D &apos; , &apos; U@@ p@@ er _ B@@ an@@ d &apos; &apos; 하@@ 부 밴@@ 드 &apos; .
+Translated: D@@ 형
+Output: ‘ 오펜싱 _ 프리 ’, ‘ 히그 _ 프리 ’, ‘ 로우 _ 프리 ’, ‘ 상거래 _ 프리 ’, ‘ 상거래 _ 프리 ’ 등이 있다. ‘ 행크로 ’ ‘ 행크로 ’ ‘ 시그니스 _ 프리치 ’ ‘ 초크 ’ ‘ 코크 ’ ‘ 사이그니스 _ ’ ‘ 트레이드 업 ’ ‘ 액세스 _ 트래드다운 ’ ‘ 아크로 _ 풀이 ’ ‘ 액트라드 _ _ 풀이 ’ ‘ 액트라드 _ 보루드 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 페르크 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 트래드 _ _ _ _ _ ’ ‘ 24 ) ’ ‘ ’ ‘ ’ ‘ ’ ‘ ’ ‘ ’ ‘ ’ ‘ 24 ) ’ ‘ ’ ‘ ’ ‘ 커치 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ ’ ‘ 24 ) ’ ‘ 24 ) 악크 _ ask _ bid _ basscend, is _ trading _ ssschend ), Ack _ ASK, AD BID ( ASK ) 의 &apos; Susck _ ascend &apos;, ‘ Chang _ BID BID ’, ‘ Chane _ Binnivine ’, ‘ Marit _ Stent _ Ste _ Stente _ bary ’, ‘ Binary ’ 등이 있다. 시장으로는 ‘ 바네닝 ’, ‘ 토트 ’, ‘ 토ale _ 사이드 ’, ‘ 토털 _ _ _ 사이드 ’, ‘ 토털 _ _ _ _ 사이드 ’, ‘ 레터틀즈 ’, ‘ 리턴즈 ’ 등이 있다. 10 min _ towatty, ‘ average _ ask _ price ’, ‘ price _ range _ ask _ ask ’, ‘ price _ bid _ ask _ size ’, ‘ min _ _ _ _ asize ’, ‘ min _ _ _ _ _ _ man _ cize ’, ‘ man _ cize _ size ’ 등이 있다. 밋밋하크 _ ask _ size, stad _ size, skew _ ask _ scize, curt _ _ _ _ size, cize, curt _ _ size, ‘ kurt _ _ _ size ’. ‘ max by _ size ’, ‘ man _ _ size ’, ‘ man _ man _ size ’, ‘ st _ _ _ _ _ side ’, ‘ st _ _ _ _ side ’, ‘ st _ _ _ _ _ sizee ’ 등이 그것이다. 스, 시즈, 옴발란체, 이완성 ask _ size _ 5, ‘ 콤피스스 _ 시저 _ 5 ’, ‘ 프리쉬 _ 디프 _ askw _ 1 ’, ‘ 노크 _ 1 ’ 이 그것이다. ‘ 물건 ’, ‘ 도운 ’, ‘ 잘됐다 _ _ ‘ _ 브로잉 _ _ _ _ _ ’, ‘ _ _ _ _ _ _ _ _ _ _ _ _ _ ’, 5 _ ask _ aze ’, ‘ _ _ _ _ ask _ _ cize ’, ‘ _ _ _ _ _ _ ced _ ced _ ced _ _ cet _ ceced _ cechet _ ced _ ced _ cted _ ced _ ched _ ced _ ched _ ced _ cecececet ), ,  , ,    ,  ,                      , , ,   ,  , ,          ,                                                                                                              , ‘ 라이어드 _ 레터링 ’ ‘ 레터링 _ 10min ’ ‘ 라이어드 ’ ‘ 레터링 _ 레터링 _ 30min ’ ‘ 키즈 _ 프롬 _ 히그 24 ’ 의 가격 디텐스 _ _ 로우 _ 24h RSI, 미들레 _ 밴드 &apos; STD &apos;, &apos; Uper _ Band &apos; &apos; 하부 밴드 &apos;. D형
+IP & Date: 172.18.129.159: 2023-09-05-14:08:12[k2e]
+Input: 자퇴
+Symbolized: 자퇴
+Translated: S@@ top dro@@ pping out
+Output: Stop dropping out
+IP & Date: 172.18.129.159: 2023-09-05-14:08:18[k2e]
+Input: 자퇴하다
+Symbolized: 자퇴하다
+Translated: drop out of school
+Output: drop out of school
+IP & Date: 172.18.129.159: 2023-09-05-14:07:34[e2k]
+Input: ['opening_price', 'high_price', 'low_price', 'trade_price',
+       'prev_closing_price', 'change_price', 'signed_change_price',
+       'change_rate', 'signed_change_rate', 'trade_volume', 'acc_trade_volume',
+       'acc_trade_volume_24h', 'acc_trade_price', 'acc_trade_price_24h',
+       'acc_ask_volume', 'acc_bid_volume', 'is_trading_suspended',
+       'ask_bid_ASK', 'ask_bid_BID', 'change_binary', 'market_state_binary',
+       'market_warning_binary', 'total_ask_size', 'total_bid_size', 'returns',
+       '10_min_volatility', 'average_ask_price', 'average_bid_price',
+       'price_range_ask', 'price_range_bid', 'max_ask_size', 'min_ask_size',
+       'mean_ask_size', 'std_ask_size', 'skew_ask_size', 'kurt_ask_size',
+       'max_bid_size', 'min_bid_size', 'mean_bid_size', 'std_bid_size',
+       'skew_bid_size', 'kurt_bid_size', 'imbalance', 'spread',
+       'cumulative_ask_size_5', 'cumulative_bid_size_5', 'price_diff_ask_1',
+       'price_diff_bid_1', 'depth_5_ask_price', 'depth_5_bid_price',
+       'depth_5_ask_size', 'depth_5_bid_size', 'wall_detected_ask',
+       'wall_detected_bid', 'mid_price', 'price_volatility_ask',
+       'price_volatility_bid', 'lagged_return_5min', 'lagged_return_10min',
+       'lagged_return_30min', 'distance_from_high_24h',
+       'distance_from_low_24h', 'RSI', 'Middle_Band', 'STD', 'Upper_Band',
+       'Lower_Band'],
+      dtype='object')
+Symbolized: &#91; &apos; opening _ price &apos; , &apos; high _ price &apos; , &apos; low _ price &apos; , &apos; trade _ price &apos; ,
+&apos;prev _ closing _ price &apos; , &apos; change _ price &apos; , &apos; signed _ change _ price &apos; ,
+&apos;change _ rate &apos; , &apos; signed _ change _ rate &apos; , &apos; trade _ volume &apos; , &apos; acc _ trade _ volume &apos; ,
+&apos;acc _ trade _ volume _ 24h &apos; , &apos; acc _ trade _ price &apos; , &apos; acc _ trade _ price _ 24h &apos; ,
+&apos;acc _ ask _ volume &apos; , &apos; acc _ bid _ volume &apos; , &apos; is _ trading _ suspended &apos; ,
+&apos;ask _ bid _ ASK &apos; , &apos; ask _ bid _ BID &apos; , &apos; change _ binary &apos; , &apos; market _ state _ binary &apos; ,
+&apos;market _ warning _ binary &apos; , &apos; total _ ask _ size &apos; , &apos; total _ bid _ size &apos; , &apos; returns &apos; ,
+&apos;10 _ min _ volatility &apos; , &apos; average _ ask _ price &apos; , &apos; average _ bid _ price &apos; ,
+&apos;price _ range _ ask &apos; , &apos; price _ range _ bid &apos; , &apos; max _ ask _ size &apos; , &apos; min _ ask _ size &apos; ,
+&apos;mean _ ask _ size &apos; , &apos; std _ ask _ size &apos; , &apos; skew _ ask _ size &apos; , &apos; kurt _ ask _ size &apos; ,
+&apos;max _ bid _ size &apos; , &apos; min _ bid _ size &apos; , &apos; mean _ bid _ size &apos; , &apos; std _ bid _ size &apos; ,
+&apos;skew _ bid _ size &apos; , &apos; kurt _ bid _ size &apos; , &apos; imbalance &apos; , &apos; spread &apos; ,
+&apos;cumulative _ ask _ size _ 5 &apos; , &apos; cumulative _ bid _ size _ 5 &apos; , &apos; price _ diff _ ask _ 1 &apos; ,
+&apos;price _ diff _ bid _ 1 &apos; , &apos; depth _ 5 _ ask _ price &apos; , &apos; depth _ 5 _ bid _ price &apos; ,
+&apos;depth _ 5 _ ask _ size &apos; , &apos; depth _ 5 _ bid _ size &apos; , &apos; wall _ detected _ ask &apos; ,
+&apos;wall _ detected _ bid &apos; , &apos; mid _ price &apos; , &apos; price _ volatility _ ask &apos; ,
+&apos;price _ volatility _ bid &apos; , &apos; lagged _ return _ 5min &apos; , &apos; lagged _ return _ 10min &apos; ,
+&apos;lagged _ return _ 30min &apos; , &apos; distance _ from _ high _ 24h &apos; ,
+&apos;distance _ from _ low _ 24h &apos; , &apos; RSI &apos; , &apos; Middle _ Band &apos; , &apos; STD &apos; , &apos; Upper _ Band &apos; ,
+&apos;Lower _ Band &apos; &#93; ,
+dtype = &apos; object &apos; )
+Translated: <unk> &apos; 오@@ 페@@ 닝 _ 프리@@ <unk> &apos; &apos; 히@@ 그 &apos; &apos; &apos; 로@@ 우 &apos; &apos; &apos; &apos; &apos; &apos; &apos; &apos; 까@@ 마@@ 귀 &apos; &apos; 프리@@ 쉬 &apos; &apos;
+Translated: ‘ 프@@ 레@@ 브 _ 클@@ 로@@ 싱 _ 프리@@ 치 ’ , ‘ 찬@@ 지 _ 프리@@ 치 ’ , ‘ 시@@ 그@@ 니@@ 드 _ 찬@@ 지 _ 프리@@ 치 ’ ,
+Translated: ‘ <unk> 지 _ <unk> <unk> ’ ‘ 시@@ 그@@ 니@@ 드 _ <unk> 지 _ <unk> 쥐 ’ ‘ 트@@ 라@@ 드 _ 보@@ 루@@ 미 ’ ‘ ac@@ c _ 트@@ 라@@ 드 _ 보@@ 루@@ 미 ’ ‘ ac@@ g _ t@@ ra@@ d@@ e _ v@@ ol@@ u@@ m@@ e ’ )
+Translated: &apos;@@ ac@@ c _ t@@ ra@@ d@@ e _ v@@ ol@@ u@@ m@@ e _ 24@@ h &apos; &apos; t@@ ra@@ d@@ e _ _ p@@ r@@ ic@@ e &apos; &apos; ac@@ c _ t@@ ra@@ d@@ e _ _ p@@ r@@ ic@@ e _ 24 &apos; &apos; &apos; ac@@ c _ t@@ ra@@ d@@ e _ f@@ r@@ ic@@ e _ 24 &apos;
+Translated: &apos;@@ ac@@ c _ a@@ s@@ k _ v@@ ol@@ u@@ m@@ e &apos; &apos; ac@@ c _ b@@ i@@ d _ v@@ ol@@ u@@ m@@ e &apos; &apos; i@@ s _ t@@ ra@@ d@@ ing _ s@@ u@@ s@@ p@@ en@@ d@@ e@@ d &apos; &apos;
+Translated: ‘ a@@ s@@ k _ 비@@ 드 _ AS@@ K ’ , ‘ a@@ s@@ k _ 비@@ 드 _ B@@ I@@ D ’ , ‘ <unk> 지 _ 비@@ 너@@ 리 ’ , ‘ 마@@ <unk> <unk> _ 스@@ 테이@@ 트 _ 바이@@ 너@@ 리 ’ , ‘
+Translated: &apos;@@ 마@@ <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+Translated: ‘ 10 _ 민 _ 보@@ 라@@ 테@@ 리 ’ , ‘ 아@@ 베@@ 라@@ 지 _ a@@ s@@ k _ p@@ r@@ ic@@ e ’ , ‘ 아@@ 베@@ 라@@ 지 _ b@@ i@@ d _ p@@ r@@ ic@@ e ’
+Translated: ‘ 프@@ 리@@ 치 _ 랑@@ 지 _ a@@ s@@ k ’ , ‘ 프리@@ 쉬 _ 랑@@ 지 _ 비@@ 드 ’ , ‘ m@@ a@@ x _ a@@ s@@ k _ s@@ i@@ z@@ e ’ , ‘ 민@@ a@@ s@@ k _ s@@ i@@ z@@ e ’ , ‘ 시@@ 즈 ’ 등이 있다 .
+Translated: ‘ m@@ e@@ an _ a@@ s@@ k _ s@@ i@@ z@@ e ’ , ‘ st@@ d _ a@@ s@@ k _ s@@ i@@ z@@ e ’ , ‘ s@@ k@@ e@@ w _ a@@ s@@ k _ s@@ i@@ z@@ e ’ , ‘ k@@ u@@ r@@ t _ a@@ s@@ k _ s@@ k@@ e _ s@@ i@@ z@@ e ’ , ‘ c@@ i@@ z@@ e ’ .
+Translated: ‘ 맥@@ 스 _ 비@@ 드 _ 시@@ 즈 ’ , ‘ 민@@ 비@@ 드 _ 시@@ 즈 ’ , ‘ 메@@ 안 비@@ 드 _ 시@@ 즈 ’ , ‘ 스@@ <unk> 비@@ 드 _ 시@@ 즈 ’ , ‘ 시@@ 즈 ’ 등이 있다 .
+Translated: &apos;@@ s@@ k@@ e@@ w _ b@@ i@@ d _ s@@ i@@ z@@ e &apos; , &apos; k@@ u@@ r@@ t _ b@@ i@@ d _ s@@ i@@ z@@ e &apos; , &apos; i@@ m@@ b@@ al@@ an@@ c@@ e &apos; , &apos; s@@ p@@ re@@ a@@ d &apos; ,
+Translated: ‘ 큐@@ 뮤@@ 라@@ 티@@ 브 _ a@@ s@@ k _ s@@ i@@ z@@ e _ 5 ’ , ‘ 큐@@ 뮤@@ 라@@ 티@@ 브 _ 비@@ 드 _ 시@@ 즈 _ 5 ’ , ‘ 프리@@ 쉬 _ 디@@ 프 _ a@@ s@@ k 1 ’
+Translated: 「 작@@ 고 <unk> <unk> <unk> <unk> <unk> <unk> <unk> 」 「 <unk> <unk> 5 _ a@@ s@@ k _ _ p@@ r@@ ic@@ e 」 「 d@@ e@@ p@@ t@@ h _ 5 _ b@@ i@@ d _ p@@ r@@ ic@@ e 」 「 d@@ e@@ p@@ t@@ h _ 5 ) ) 「 <unk> 5 ) <unk> 비@@ 드 ( <unk> <unk> <unk> ) 」
+Translated: &apos;@@ 데@@ 프@@ 트 _ 5 a@@ s@@ k _ s@@ i@@ z@@ e &apos; , &apos; 데@@ 프@@ 트 _ 5 _ 비@@ 드 _ 시@@ 즈 &apos; , &apos; 월@@ 트 &apos; &apos; 데@@ 티@@ 드 &apos; , &apos; a@@ s@@ k
+Translated: &apos;@@ 월@@ <unk> 데@@ 티@@ 드 &apos; , &apos; 미@@ 드 _ 프리@@ 스 &apos; , &apos; 포@@ 도@@ 주 &apos; , &apos; <unk> <unk> &apos; <unk> <unk>
+Translated: ‘ 프리@@ 쉬 _ 보@@ 라@@ 틸@@ 리 _ 비@@ 드 ’ ‘ 라@@ 게@@ 드 _ 레@@ 터@@ 링 _ 5@@ m@@ in ’ ‘ 라@@ 게@@ 드 _ 레@@ 터@@ 링 _ 10@@ m@@ in ’ ‘
+Translated: &apos;@@ 라@@ 게@@ 드 _ 레@@ 터@@ 링 _ 30@@ m@@ in &apos; , &apos; d@@ i@@ st@@ an@@ c@@ e _ f@@ ro@@ m _ h@@ i@@ g@@ h _ 24 &apos;
+Translated: &apos;@@ 이상@@ 한 &apos; _ f@@ ro@@ m _ l@@ o@@ w _ 24@@ h &apos; , &apos; R@@ S@@ I &apos; , &apos; 미@@ 들@@ 레 _ 밴@@ 드 &apos; , &apos; S@@ T@@ D &apos; , &apos; 상@@ 대가 &apos; , &apos; 밴@@ 드 &apos; 등이 있다 .
+Translated: 로@@ 어 _ 반@@ 드 <unk>
+Translated: d@@ t@@ y@@ p@@ e <unk> o@@ b@@ j@@ e@@ c@@ t )
+Output: &apos; 오페닝 _ 프리 &apos; &apos; 히그 &apos; &apos; &apos; 로우 &apos; &apos; &apos; &apos; &apos; &apos; &apos; &apos; 까마귀 &apos; &apos; 프리쉬 &apos; &apos; ‘ 프레브 _ 클로싱 _ 프리치 ’, ‘ 찬지 _ 프리치 ’, ‘ 시그니드 _ 찬지 _ 프리치 ’, ‘ 지 _  ’ ‘ 시그니드 _ 지 _ 쥐 ’ ‘ 트라드 _ 보루미 ’ ‘ acc _ 트라드 _ 보루미 ’ ‘ acg _ trade _ volume ’ ) &apos;acc _ trade _ volume _ 24h &apos; &apos; trade _ _ price &apos; &apos; acc _ trade _ _ price _ 24 &apos; &apos; &apos; acc _ trade _ frice _ 24 &apos; &apos;acc _ ask _ volume &apos; &apos; acc _ bid _ volume &apos; &apos; is _ trading _ suspended &apos; &apos; ‘ ask _ 비드 _ ASK ’, ‘ ask _ 비드 _ BID ’, ‘ 지 _ 비너리 ’, ‘ 마 _ 스테이트 _ 바이너리 ’, ‘ &apos;마 ‘ 10 _ 민 _ 보라테리 ’, ‘ 아베라지 _ ask _ price ’, ‘ 아베라지 _ bid _ price ’ ‘ 프리치 _ 랑지 _ ask ’, ‘ 프리쉬 _ 랑지 _ 비드 ’, ‘ max _ ask _ size ’, ‘ 민ask _ size ’, ‘ 시즈 ’ 등이 있다. ‘ mean _ ask _ size ’, ‘ std _ ask _ size ’, ‘ skew _ ask _ size ’, ‘ kurt _ ask _ ske _ size ’, ‘ cize ’. ‘ 맥스 _ 비드 _ 시즈 ’, ‘ 민비드 _ 시즈 ’, ‘ 메안 비드 _ 시즈 ’, ‘ 스 비드 _ 시즈 ’, ‘ 시즈 ’ 등이 있다. &apos;skew _ bid _ size &apos;, &apos; kurt _ bid _ size &apos;, &apos; imbalance &apos;, &apos; spread &apos;, ‘ 큐뮤라티브 _ ask _ size _ 5 ’, ‘ 큐뮤라티브 _ 비드 _ 시즈 _ 5 ’, ‘ 프리쉬 _ 디프 _ ask 1 ’ 「 작고    」 「  5 _ ask _ _ price 」 「 depth _ 5 _ bid _ price 」 「 depth _ 5 ) ) 「 5 ) 비드 (  ) 」 &apos;데프트 _ 5 ask _ size &apos;, &apos; 데프트 _ 5 _ 비드 _ 시즈 &apos;, &apos; 월트 &apos; &apos; 데티드 &apos;, &apos; ask &apos;월 데티드 &apos;, &apos; 미드 _ 프리스 &apos;, &apos; 포도주 &apos;, &apos;  &apos; ‘ 프리쉬 _ 보라틸리 _ 비드 ’ ‘ 라게드 _ 레터링 _ 5min ’ ‘ 라게드 _ 레터링 _ 10min ’ ‘ &apos;라게드 _ 레터링 _ 30min &apos;, &apos; distance _ from _ high _ 24 &apos; &apos;이상한 &apos; _ from _ low _ 24h &apos;, &apos; RSI &apos;, &apos; 미들레 _ 밴드 &apos;, &apos; STD &apos;, &apos; 상대가 &apos;, &apos; 밴드 &apos; 등이 있다. 로어 _ 반드 dtype object )
+IP & Date: 203.252.107.159: 2023-09-12-00:19:22[k2e]
+Input: 그럼에도 일부 참가자들은 미지의 생물 존재를 확신한다는 반응을 보였다고 외신들은 전했다.
+Symbolized: 그럼에도 일부 참가자들은 미지의 생물 존재를 확신한다는 반응을 보였다고 외신들은 전했다 .
+Translated: S@@ till , some participants responded that they were confident of the unknown cre@@ ature , according to foreign media .
+Output: Still, some participants responded that they were confident of the unknown creature, according to foreign media.
+IP & Date: 203.252.107.159: 2023-09-12-00:19:41[e2k]
+Input: Still, some participants responded that they were confident of the unknown creature, according to foreign media.
+Symbolized: Still , some participants responded that they were confident of the unknown creature , according to foreign media .
+Translated: 그@@ 럼@@ 에도 불구하고 일부 참가@@ 자들은 미@@ 지의 생명@@ 체를 자신@@ 한다고 답@@ 했다고 외@@ 신@@ 들이 전했다 .
+Output: 그럼에도 불구하고 일부 참가자들은 미지의 생명체를 자신한다고 답했다고 외신들이 전했다.
+IP & Date: 203.252.107.159: 2023-09-12-00:19:48[k2e]
+Input: 그럼에도 불구하고 일부 참가자들은 미지의 생명체를 자신한다고 답했다고 외신들이 전했다.
+Symbolized: 그럼에도 불구하고 일부 참가자들은 미지의 생명체를 자신한다고 답했다고 외신들이 전했다 .
+Translated: Ne@@ ver@@ th@@ eless , some participants said they were confident of unknown cre@@ atures , according to foreign media .
+Output: Nevertheless, some participants said they were confident of unknown creatures, according to foreign media.
+IP & Date: 203.252.107.159: 2023-09-12-00:21:00[k2e]
+Input: In past 15 years, hard drive cost per gigabyte has been continuously declined and today the cost is only 10% of that in 2009.
+Symbolized: In past 15 years , hard drive cost per gigabyte has been continuously declined and today the cost is only 10 % of that in 2009 .
+Translated: In P@@ ast 15 Y@@ ears , hard dri@@ ve , per gi@@ g@@ ab@@ y@@ te ha , be@@ ene con@@ ten@@ u@@ ous , and to@@ day@@ -@@ co@@ st@@ y is 10 % in 2009 .
+Output: In Past 15 Years, hard drive, per gigabyte ha, beene contenuous, and today-costy is 10% in 2009.
+IP & Date: 203.252.107.159: 2023-09-12-00:21:09[e2k]
+Input: In Past 15 Years, hard drive, per gigabyte ha, beene contenuous, and today-costy is 10% in 2009.
+Symbolized: In Past 15 Years , hard drive , per gigabyte ha , beene contenuous , and today-costy is 10 % in 2009 .
+Translated: I@@ n P@@ a@@ s@@ t 15@@ 년 , 하@@ 드 드@@ 라이@@ 브 , 페@@ 어 g@@ i@@ g@@ a@@ b@@ y@@ t@@ e , b@@ e@@ en@@ e c@@ it@@ u@@ t@@ h@@ ou@@ s , 오늘@@ 의 비용이 10 % 인 200@@ 9@@ 년@@ 입니다 .
+Output: In Past 15년, 하드 드라이브, 페어 gigabyte, beene cituthous, 오늘의 비용이 10 % 인 2009년입니다.
+IP & Date: 203.252.107.159: 2023-09-12-00:21:14[e2k]
+Input: In past 15 years, hard drive cost per gigabyte has been continuously declined and today the cost is only 10% of that in 2009.
+Symbolized: In past 15 years , hard drive cost per gigabyte has been continuously declined and today the cost is only 10 % of that in 2009 .
+Translated: 아@@ 인@@ 패@@ 스트 15 y@@ ar@@ s , 하@@ 드 드@@ 리@@ 브 <unk> 고 초@@ 보@@ 한 <unk> 은 200@@ 9@@ 년에 콘@@ 티@@ 누@@ 우@@ 스 <unk> 은 데@@ 클@@ 린@@ 드와 토@@ 다@@ 이 <unk> 은 그 중 10 % 를 차지@@ 합니다 .
+Output: 아인패스트 15 yars, 하드 드리브 고 초보한 은 2009년에 콘티누우스 은 데클린드와 토다이 은 그 중 10 % 를 차지합니다.
+IP & Date: 203.252.107.159: 2023-09-12-00:21:22[e2k]
+Input: In past 15 years, hard drive cost per gigabyte has been continuously declined and today the cost is only 10% of that in 2009.
+Symbolized: In past 15 years , hard drive cost per gigabyte has been continuously declined and today the cost is only 10 % of that in 2009 .
+Translated: 아@@ 인@@ 패@@ 스트 15 y@@ ar@@ s , 하@@ 드 드@@ 리@@ 브 <unk> 고 초@@ 보@@ 한 <unk> 은 200@@ 9@@ 년에 콘@@ 티@@ 누@@ 우@@ 스 <unk> 은 데@@ 클@@ 린@@ 드와 토@@ 다@@ 이 <unk> 은 그 중 10 % 를 차지@@ 합니다 .
+Output: 아인패스트 15 yars, 하드 드리브 고 초보한 은 2009년에 콘티누우스 은 데클린드와 토다이 은 그 중 10 % 를 차지합니다.
+IP & Date: 203.252.107.159: 2023-09-12-00:21:34[e2k]
+Input: Last 15 years, hard drive cost per gigabyte has been continuously declined and today the cost is only 10% of that in 2009.
+Symbolized: Last 15 years , hard drive cost per gigabyte has been continuously declined and today the cost is only 10 % of that in 2009 .
+Translated: 지난 15@@ 년 , H@@ ar@@ d d@@ r@@ i@@ v@@ e c@@ o@@ s@@ t p@@ er g@@ i@@ g@@ a@@ b@@ y@@ t@@ e@@ 는 200@@ 9@@ 년에 그 중 10 % 를 차지@@ 합니다 .
+Output: 지난 15년, Hard drive cost per gigabyte는 2009년에 그 중 10 % 를 차지합니다.
+IP & Date: 203.252.107.159: 2023-09-12-00:21:41[e2k]
+Input: In last 15 years, hard drive cost per gigabyte has been continuously declined and today the cost is only 10% of that in 2009.
+Symbolized: In last 15 years , hard drive cost per gigabyte has been continuously declined and today the cost is only 10 % of that in 2009 .
+Translated: 지난 15@@ 년 , 하@@ 드 드@@ 리@@ 브 , 초@@ 보@@ 자@@ 비@@ 테@@ 는 200@@ 9@@ 년에 그 중 10 % 를 차지@@ 합니다 .
+Output: 지난 15년, 하드 드리브, 초보자비테는 2009년에 그 중 10 % 를 차지합니다.
+IP & Date: 203.252.107.159: 2023-09-12-00:21:45[e2k]
+Input: In last 15 years, hard drive cost per gigabyte has been continuously declined and today the cost is only 10% of that in 2009.
+Symbolized: In last 15 years , hard drive cost per gigabyte has been continuously declined and today the cost is only 10 % of that in 2009 .
+Translated: 지난 15@@ 년 , 하@@ 드 드@@ 리@@ 브 , 초@@ 보@@ 자@@ 비@@ 테@@ 는 200@@ 9@@ 년에 그 중 10 % 를 차지@@ 합니다 .
+Output: 지난 15년, 하드 드리브, 초보자비테는 2009년에 그 중 10 % 를 차지합니다.
+IP & Date: 203.252.107.159: 2023-09-12-00:22:05[e2k]
+Input: In last 15 years, the storage device cost per gigabyte has been continuously declined and today the cost is only 10% of that in 2009.
+Symbolized: In last 15 years , the storage device cost per gigabyte has been continuously declined and today the cost is only 10 % of that in 2009 .
+Translated: 저@@ 장 장치 , 저@@ 장 장치 , g@@ i@@ g@@ a@@ b@@ y@@ t@@ e h@@ a@@ s c@@ on@@ t@@ in@@ u@@ ou@@ s@@ l@@ y d@@ e@@ c@@ l@@ in@@ e@@ d , t@@ o@@ d@@ a@@ y@@ 는 200@@ 9@@ 년에 10 % 나 사용@@ 되었습니다 .
+Output: 저장 장치, 저장 장치, gigabyte has continuously declined, today는 2009년에 10 % 나 사용되었습니다.
+IP & Date: 203.252.107.159: 2023-09-12-00:22:46[k2e]
+Input: 학생들이 건강한 몸과 마음, 생각과 영을 가지고 배우고 사는 한 학기 되도록, 한동이 가진 좋은 가치를 마음에 품도록, 이 곳이 한동 청년들의 꿈과 비전이 자라는 모판되도록 기도해 주십시오.
+Symbolized: 학생들이 건강한 몸과 마음 , 생각과 영을 가지고 배우고 사는 한 학기 되도록 , 한동이 가진 좋은 가치를 마음에 품도록 , 이 곳이 한동 청년들의 꿈과 비전이 자라는 모판되도록 기도해 주십시오 .
+Translated: Please pray that this place will grow the dreams and visions of H@@ and@@ ong youth so that students can appreciate the good values of H@@ and@@ ong for a semester in which they learn and live with healthy bodies , min@@ ds , thoughts and spir@@ its .
+Output: Please pray that this place will grow the dreams and visions of Handong youth so that students can appreciate the good values of Handong for a semester in which they learn and live with healthy bodies, minds, thoughts and spirits.
+IP & Date: 203.252.107.159: 2023-09-12-00:23:20[k2e]
+Input: 다름이 아니라, 이번주 화요일 첫 모임에 학회 외부 일정으로 참여가 어려울 것 같아 메일드립니다.
+Symbolized: 다름이 아니라 , 이번주 화요일 첫 모임에 학회 외부 일정으로 참여가 어려울 것 같아 메일드립니다 .
+Translated: It &apos;s no different , but I &apos;m sending this email because I think it will be difficult to participate in the first meeting this Tuesday on an outside schedule of the conference .
+Output: It's no different, but I'm sending this email because I think it will be difficult to participate in the first meeting this Tuesday on an outside schedule of the conference.
+IP & Date: 203.252.107.159: 2023-09-12-00:24:48[k2e]
+Input: 행사에 학생들과 함께 참여하며 도움 주시기 원하시는 교수님 계시다면 
+답신을 통해 알려주시면 좋겠습니다.
+Symbolized: 행사에 학생들과 함께 참여하며 도움 주시기 원하시는 교수님 계시다면
+답신을 통해 알려주시면 좋겠습니다 .
+Translated: If you have a professor who wants to help you participate in the event with your students
+Translated: I would like you to let me know through the reply .
+Output: If you have a professor who wants to help you participate in the event with your students I would like you to let me know through the reply.
+IP & Date: 203.252.107.159: 2023-09-12-00:25:25[e2k]
+Input: This shift in the underlying definition of computing presents a huge opportunity, and plenty of huge risks. Yet I think it is time to accept that this is a very likely future, and evolve our thinking accordingly, rather than just sit here waiting for the meteor to hit.
+Symbolized: This shift in the underlying definition of computing presents a huge opportunity , and plenty of huge risks . Yet I think it is time to accept that this is a very likely future , and evolve our thinking accordingly , rather than just sit here waiting for the meteor to hit .
+Translated: 컴퓨@@ 팅@@ 의 근본@@ 적인 정의@@ 의 이러한 변화@@ 는 엄청난 기회를 제공@@ 하며 , 엄청난 위험@@ 을 초래@@ 해요 .
+Translated: 다만 유@@ 성이 부딪@@ 히@@ 기를 기다@@ 리는 자리에 앉@@ 는 것@@ 보다는 , 이것이 매우 가능성이 높은 미래@@ 라는 것을 받아들@@ 이고 그에 따른 생각을 진화@@ 해야 할 시@@ 점@@ 이라고 생각한다 .
+Output: 컴퓨팅의 근본적인 정의의 이러한 변화는 엄청난 기회를 제공하며, 엄청난 위험을 초래해요. 다만 유성이 부딪히기를 기다리는 자리에 앉는 것보다는, 이것이 매우 가능성이 높은 미래라는 것을 받아들이고 그에 따른 생각을 진화해야 할 시점이라고 생각한다.
+IP & Date: 203.252.107.159: 2023-09-12-00:26:39[e2k]
+Input: So I am not just talking about things like Github's CoPilot replacing programmers.1 I am talking about replacing the entire concept of writing programs with training models. In the future, CS students are not going to need to learn such mundane skills as how to add a node to a binary tree or code in C++. That kind of education will be antiquated, like teaching engineering students how to use a slide rule.
+Symbolized: So I am not just talking about things like Github &apos;s CoPilot replacing programmers.1 I am talking about replacing the entire concept of writing programs with training models . In the future , CS students are not going to need to learn such mundane skills as how to add a node to a binary tree or code in C + + . That kind of education will be antiquated , like teaching engineering students how to use a slide rule .
+Translated: 그래서 저는 단순히 프로그램 쓰@@ 기 프로그램 전체 개념@@ 을 훈련 모델로 대체@@ 하는 길@@ <unk> 의 코@@ 파@@ 일@@ 럿 같은 것을 말하는 것이 아닙니다 .
+Translated: 미래@@ 에 C@@ S 학생들은 C@@ + 의 쌍@@ 둥@@ 이 나무@@ 나 코@@ 드에 노@@ 드를 추가@@ 하는 방법 등 이런 평범@@ 한 기술을 배울 필요가 없을 것이다 .
+Translated: 공@@ 과@@ 대@@ 생@@ 들에게 슬@@ 라이@@ 드 룰@@ 을 사용하는 방법을 가르@@ 치는 것과 같이 그런 교육은 시대에 뒤@@ 떨어@@ 질 것입니다 .
+Output: 그래서 저는 단순히 프로그램 쓰기 프로그램 전체 개념을 훈련 모델로 대체하는 길 의 코파일럿 같은 것을 말하는 것이 아닙니다. 미래에 CS 학생들은 C+ 의 쌍둥이 나무나 코드에 노드를 추가하는 방법 등 이런 평범한 기술을 배울 필요가 없을 것이다. 공과대생들에게 슬라이드 룰을 사용하는 방법을 가르치는 것과 같이 그런 교육은 시대에 뒤떨어질 것입니다.
+IP & Date: 121.159.126.17: 2023-09-15-01:17:08[k2e]
+Input: 안녕하세요
+Symbolized: 안녕하세요
+Translated: Good morning
+Output: Good morning
+IP & Date: 121.159.126.17: 2023-09-15-01:17:21[k2e]
+Input: 운영환경 호환성에 대한 요구사항이 있으며, 유사 하드웨어 및 소프트웨어 환경에서 운영되도록 설계된다.
+Symbolized: 운영환경 호환성에 대한 요구사항이 있으며 , 유사 하드웨어 및 소프트웨어 환경에서 운영되도록 설계된다 .
+Translated: There are requirements for comp@@ ati@@ bility of the operating environment , and it is designed to operate in similar hard@@ ware and software environ@@ ments .
+Output: There are requirements for compatibility of the operating environment, and it is designed to operate in similar hardware and software environments.
+IP & Date: 121.159.126.17: 2023-09-15-01:17:52[e2k]
+Input: Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.
+Symbolized: Comprehensive up-to-date news coverage , aggregated from sources all over the world by __P0 News .
+Translated: 종합@@ 적으로 최@@ 신@@ 뉴스 취재@@ 와 __P0 뉴@@ 스가 전 세계 프로@@ 럼 소식@@ 통을 종합@@ 했다 .
+Output: 종합적으로 최신뉴스 취재와 구글 뉴스가 전 세계 프로럼 소식통을 종합했다.
+IP & Date: 121.159.126.17: 2023-09-15-01:18:12[e2k]
+Input: Your trusted source for breaking news, analysis, exclusive interviews, headlines, and videos at ABCNews.com.
+Symbolized: Your trusted source for breaking news , analysis , exclusive interviews , headlines , and videos at ABCNews.com .
+Translated: 당신의 신뢰@@ 받는 소식@@ 통@@ 은 A@@ BC@@ N@@ e@@ w@@ s@@ .@@ c@@ o@@ m@@ 에서 뉴스 , 분석 , 독@@ 점 인터뷰 , 헤@@ 드라@@ 인 , 영상 등을 제공@@ 했습니다 .
+Output: 당신의 신뢰받는 소식통은 ABCNews.com에서 뉴스, 분석, 독점 인터뷰, 헤드라인, 영상 등을 제공했습니다.
+IP & Date: 203.252.121.214: 2023-10-09-13:11:47[k2e]
+Input: 세종대왕이 한글을 창제했다
+Symbolized: __P0대왕이 한글을 창제했다
+Translated: King __P0 inv@@ ented H@@ angu@@ l
+Output: King Sejong invented Hangul
+IP & Date: 172.18.154.151: 2023-10-30-19:22:36[k2e]
+Input: 사랑합니다
+Symbolized: 사랑합니다
+Translated: I love you
+Output: I love you
+IP & Date: 143.248.47.72: 2023-11-06-15:02:12[k2e]
+Input: 하하하 안녕 나는 대학원생이야.
+하하하 하하하 하하하하하ㅠㅠㅠ
+Symbolized: 하하하 안녕 나는 대학원생이야 .
+하하하 하하하 하하하하하ㅠㅠㅠ
+Translated: H@@ ae@@ ha , H@@ i , I am a graduate student .
+Translated: Ha@@ ha Ha@@ ha Ha@@ ha
+Output: Haeha, Hi, I am a graduate student. Haha Haha Haha
+IP & Date: 172.18.159.225: 2023-11-17-15:25:13[e2k]
+Input: hello
+Symbolized: hello
+Translated: 안녕하세요
+Output: 안녕하세요
+IP & Date: 203.252.105.121: 2023-11-24-11:22:09[k2e]
+Input: 2024-1 캡스톤디자인1 학생-교수 1차 매칭 신청 공지
+Symbolized: 2024-1 __P0디자인1 학생-교수 1차 매칭 신청 공지
+Translated: Stu@@ dent - Prof@@ . 20@@ 2@@ 4-@@ 1 __P0 Design 1 No@@ 1 No@@ 1
+Output: Student - Prof. 2024-1 Capstone Design 1 No1 No1
+IP & Date: 172.18.148.53: 2023-11-24-11:44:54[k2e]
+Input: 나는 지금 너무 피곤해서 자고 싶지만 수업이 너무 많아
+Symbolized: 나는 지금 너무 피곤해서 자고 싶지만 수업이 너무 많아
+Translated: I &apos;m so tired now that I want to sleep but I have so many classes
+Output: I'm so tired now that I want to sleep but I have so many classes
+IP & Date: 172.18.148.53: 2023-11-24-11:57:59[e2k]
+Input: hi
+Symbolized: hi
+Translated: 안녕@@ 하@@ 십니까
+Output: 안녕하십니까
+IP & Date: 172.18.148.53: 2023-11-24-11:57:59[e2k]
+Input: hi
+Symbolized: hi
+Translated: 안녕@@ 하@@ 십니까
+Output: 안녕하십니까
+IP & Date: 172.18.148.53: 2023-11-24-11:58:18[k2e]
+Input: 안녕하십니까..
+Symbolized: 안녕하십니까 ..
+Translated: Hello , si@@ r .
+Output: Hello, sir.
+IP & Date: 172.18.148.53: 2023-11-24-11:58:23[k2e]
+Input: 안녕하십니까..?
+Symbolized: 안녕하십니까 .. ?
+Translated: Hello , please .@@ ..
+Output: Hello, please...
+IP & Date: 172.18.148.53: 2023-11-24-11:58:29[k2e]
+Input: 안녕하십니까..?..
+Symbolized: 안녕하십니까 .. ? ..
+Translated: Hello , please .@@ ..
+Translated: .@@ ..
+Output: Hello, please... ...
+IP & Date: 172.18.148.53: 2023-11-24-11:58:34[k2e]
+Input: 안녕하십니까..?..???
+Symbolized: 안녕하십니까 .. ? .. ? ? ?
+Translated: Hello , please .@@ ..
+Translated: .@@ ..
+Translated: Do you ?
+Output: Hello, please... ... Do you?
+IP & Date: 172.21.138.83: 2023-11-24-12:17:07[e2k]
+Input: HELLO
+Symbolized: HELLO
+Translated: 헤@@ 일로
+Output: 헤일로
+IP & Date: 172.21.138.83: 2023-11-24-12:17:16[e2k]
+Input: HELO
+Symbolized: HELO
+Translated: 헤@@ 일로
+Output: 헤일로
+IP & Date: 223.39.253.50: 2023-11-24-15:05:07[e2k]
+Input: Expected Value
+Symbolized: Expected Value
+Translated: 기대@@ 가치
+Output: 기대가치
+IP & Date: 223.39.253.50: 2023-11-24-15:12:14[e2k]
+Input: The expected number of successes is 𝒏𝒑.
+when 𝑛 mutually independent Bernoulli trials are performed, where 𝑝 the probability of success on each trial.
+Symbolized: The expected number of successes is 𝒏𝒑 .
+when 𝑛 mutually independent Bernoulli trials are performed , where 𝑝 the probability of success on each trial .
+Translated: 기대@@ 되는 성공 인@@ 원은 <unk> <unk> 입니다 .
+Translated: 독립@@ 적으로 독립@@ 된 베르@@ 누@@ 이 재판@@ 이 진행@@ 되면 , 각 재판@@ 에서 성공@@ 할 확@@ 률을 좌우@@ 한다 .
+Output: 기대되는 성공 인원은  입니다. 독립적으로 독립된 베르누이 재판이 진행되면, 각 재판에서 성공할 확률을 좌우한다.
+IP & Date: 172.18.153.137: 2023-11-24-16:21:44[k2e]
+Input: 안녕하세요
+Symbolized: 안녕하세요
+Translated: Good morning
+Output: Good morning
+IP & Date: 221.157.72.73: 2023-11-27-17:39:21[k2e]
+Input: 안녕하세요~~~!!!
+Symbolized: 안녕하세요 ~ ~ ~ ! ! !
+Translated: Hello ~ ~ ~ !
+Translated: !
+Output: Hello ~ ~ ~! !
+IP & Date: 221.157.72.73: 2023-11-27-17:39:23[k2e]
+Input: 안녕하세요~~~!!!
+Symbolized: 안녕하세요 ~ ~ ~ ! ! !
+Translated: Hello ~ ~ ~ !
+Translated: !
+Output: Hello ~ ~ ~! !
+IP & Date: 172.18.140.44: 2023-11-29-19:50:58[k2e]
+Input: 하이
+Symbolized: 하이
+Translated: High
+Output: High
+IP & Date: 172.18.140.44: 2023-11-29-19:51:03[k2e]
+Input: 안녕하세요
+Symbolized: 안녕하세요
+Translated: Good morning
+Output: Good morning
+IP & Date: 125.177.0.38: 2023-11-29-23:04:48[k2e]
+Input: 안녕하세요
+Symbolized: 안녕하세요
+Translated: Good morning
+Output: Good morning
+IP & Date: 172.18.153.226: 2023-12-06-20:30:32[k2e]
+Input: 안녕하세요 저는 한동대 학생입니다
+Symbolized: 안녕하세요 저는 한동대 학생입니다
+Translated: Hello I am a student at H@@ and@@ ong University
+Output: Hello I am a student at Handong University
+IP & Date: 172.18.153.226: 2023-12-06-20:30:45[k2e]
+Input: 문법, 띄어쓰기, 어휘에 대한 남북한 언어적 차이에 대한 기준을 세워 번역 결과를 정성평가할 수 있었다.
+Symbolized: 문법 , 띄어쓰기 , 어휘에 대한 남북한 언어적 차이에 대한 기준을 세워 번역 결과를 정성평가할 수 있었다 .
+Translated: The results of translation were qual@@ it@@ atively ass@@ essed by setting standards on the ver@@ bal differences between the two Koreas on gr@@ amm@@ ar , sp@@ ac@@ ing and voc@@ ab@@ ul@@ ary .
+Output: The results of translation were qualitatively assessed by setting standards on the verbal differences between the two Koreas on grammar, spacing and vocabulary.
+IP & Date: 172.18.153.226: 2023-12-06-20:31:10[k2e]
+Input: 특수 문자 및 숫자 제거와 문장 단위로 분절 이후, 엑셀 파일에 남북한 문장을 일대일 매칭 시키는 작업은 9월 셋째주에서 넷째주까지 진행하였다.
+Symbolized: 특수 문자 및 숫자 제거와 문장 단위로 분절 이후 , 엑셀 파일에 남북한 문장을 일대일 매칭 시키는 작업은 9월 셋째주에서 넷째주까지 진행하였다 .
+Translated: After the removal of special letters and numbers and division of sent@@ ences , the work of one-@@ on-@@ one mat@@ ching the two Koreas in the Exc@@ el file was conducted from the third week of September to the fourth week .
+Output: After the removal of special letters and numbers and division of sentences, the work of one-on-one matching the two Koreas in the Excel file was conducted from the third week of September to the fourth week.
+IP & Date: 172.18.147.102: 2023-12-06-21:37:35[k2e]
+Input: 컴퓨터 구조 및 설계
+Symbolized: 컴퓨터 구조 및 설계
+Translated: Com@@ pu@@ ter Str@@ uc@@ ture and Design
+Output: Computer Structure and Design
+IP & Date: 172.18.147.102: 2023-12-06-21:38:12[k2e]
+Input: 지금까지 이런 맛은 없었다.
+Symbolized: 지금까지 이런 맛은 없었다 .
+Translated: It hasn &apos;t been this good so far .
+Output: It hasn't been this good so far.
+IP & Date: 172.18.157.138: 2023-12-08-19:10:55[k2e]
+Input: 안녕
+Symbolized: 안녕
+Translated: Hello
+Output: Hello
+IP & Date: 172.18.157.138: 2023-12-08-19:11:52[k2e]
+Input: 일상어의 경우를 보면 동서 축이 더 일반적이다
+Symbolized: 일상어의 경우를 보면 동서 축이 더 일반적이다
+Translated: In the case of everyday language the E@@ ast@@ -@@ West ax@@ is is more common
+Output: In the case of everyday language the East-West axis is more common
+IP & Date: 172.18.157.138: 2023-12-08-19:13:23[k2e]
+Input: 안녕하세요
+Symbolized: 안녕하세요
+Translated: Good morning
+Output: Good morning
+IP & Date: 172.18.157.138: 2023-12-08-19:13:32[k2e]
+Input: 안녕
+Symbolized: 안녕
+Translated: Hello
+Output: Hello
+IP & Date: 172.18.157.138: 2023-12-08-19:13:40[k2e]
+Input: 댕댕이
+Symbolized: 댕댕이
+Translated: a d@@ ung do@@ t
+Output: a dung dot
+IP & Date: 172.18.157.138: 2023-12-08-19:14:44[k2e]
+Input: 인풋
+Symbolized: 인풋
+Translated: in@@ ner@@ -@@ ear
+Output: inner-ear
+IP & Date: 172.18.157.138: 2023-12-08-19:17:08[k2e]
+Input: Input
+Symbolized: Input
+Translated: In@@ pu@@ t
+Output: Input
+IP & Date: 172.18.157.138: 2023-12-08-19:17:21[k2e]
+Input: 인풋
+Symbolized: 인풋
+Translated: in@@ ner@@ -@@ ear
+Output: inner-ear
+IP & Date: 172.18.151.208: 2023-12-11-17:30:53[k2e]
+Input: 표준오차
+Symbolized: 표준오차
+Translated: a standard error
+Output: a standard error
+IP & Date: 172.18.151.208: 2023-12-11-17:46:28[k2e]
+Input: 층화무작위추출
+Symbolized: 층화무작위추출
+Translated: a ran@@ dom extr@@ action of l@@ ayers
+Output: a random extraction of layers
+IP & Date: 172.18.151.208: 2023-12-11-20:35:10[e2k]
+Input: tentative
+Symbolized: tentative
+Translated: 잠@@ 정@@ 적인
+Output: 잠정적인
+IP & Date: 172.18.151.208: 2023-12-11-20:35:31[e2k]
+Input: tentative assumption about a population parameter
+Symbolized: tentative assumption about a population parameter
+Translated: 인@@ 구의 매@@ 개@@ 변@@ 수에 대한 잠@@ 정@@ 적 추@@ 정
+Output: 인구의 매개변수에 대한 잠정적 추정
+IP & Date: 203.252.99.249: 2023-12-17-19:01:02[k2e]
+Input: 오늘 집에가려고 하는데 추웠다. 그런데 더군다나 기차 유리창이 깨졌다.
+Symbolized: 오늘 집에가려고 하는데 추웠다 . 그런데 더군다나 기차 유리창이 깨졌다 .
+Translated: I was going to go home today but it was cold .
+Translated: Furthermore , the train window was broken .
+Output: I was going to go home today but it was cold. Furthermore, the train window was broken.
+IP & Date: 124.197.189.53: 2023-12-24-00:04:25[k2e]
+Input: 안녕
+Symbolized: 안녕
+Translated: Hello
+Output: Hello
+IP & Date: 203.252.107.248: 2024-01-04-16:19:09[k2e]
+Input: 안녕하세요
+Symbolized: 안녕하세요
+Translated: Good morning
+Output: Good morning
+IP & Date: 203.252.107.248: 2024-01-04-16:19:14[k2e]
+Input: 안녕하세요.
+Symbolized: 안녕하세요 .
+Translated: Hello .
+Output: Hello.
+IP & Date: 203.252.112.19: 2024-01-06-01:37:03[e2k]
+Input: i love you
+Symbolized: i love you
+Translated: 사랑@@ 해
+Output: 사랑해
+IP & Date: 221.142.100.114: 2024-01-06-01:38:02[e2k]
+Input: you love me
+Symbolized: you love me
+Translated: 넌 날 사랑@@ 해
+Output: 넌 날 사랑해
+IP & Date: 203.252.107.248: 2024-01-08-13:45:45[e2k]
+Input: i love you
+Symbolized: i love you
+Translated: 사랑@@ 해
+Output: 사랑해
+IP & Date: 203.252.107.248: 2024-01-08-13:46:16[e2k]
+Input: i love you
+Symbolized: i love you
+Translated: 사랑@@ 해
+Output: 사랑해
+IP & Date: 203.252.112.19: 2024-01-08-13:48:50[e2k]
+Input: i love you
+Symbolized: i love you
+Translated: 사랑@@ 해
+Output: 사랑해
+IP & Date: 203.252.112.19: 2024-01-08-13:51:55[e2k]
+Input: i love you
+Symbolized: i love you
+Translated: 사랑@@ 해
+Output: 사랑해
+IP & Date: 172.18.154.151: 2024-01-16-13:39:48[k2e]
+Input: 사랑합니다.
+Symbolized: 사랑합니다 .
+Translated: I love you .
+Output: I love you.
+IP & Date: 172.18.154.151: 2024-01-16-13:39:51[k2e]
+Input: 사랑합니다.
+Symbolized: 사랑합니다 .
+Translated: I love you .
+Output: I love you.
+IP & Date: 172.18.154.151: 2024-01-16-13:40:07[k2e]
+Input: i love you
+Symbolized: i love you
+Translated: i = = = i = = = = = i = = = = = = = = i = = = = = =
+Output: i = = = i = = = = = i = = = = = = = = i = = = = = =

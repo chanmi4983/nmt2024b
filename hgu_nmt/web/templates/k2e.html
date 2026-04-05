@@ -1,0 +1,22 @@
+<!--참고 : https://opentutorials.org/module/3669/22003 -->
+{% extends 'layout.html' %}
+
+{% block src_name %}
+<font id="src_name" style="color:rgb(100,100,100); font-size: 2rem; margin-left: 25rem;">
+    한국어<br>
+</font>
+{% endblock %}
+
+{% block form_switch %}
+<form action="/lang_switch" method="POST">
+{% endblock %}
+
+{% block trg_name %}
+<font id="trg_name" style="color: rgb(100,100,100); font-size: 2rem">
+  English<br>
+</font>
+{% endblock %}
+
+{% block form_trans %}
+<form action="/k2e_trans" method="POST">
+{% endblock %}

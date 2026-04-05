@@ -1,0 +1,156 @@
+# -*- coding: utf-8 -*-
+
+# H. Choi, hchoi@handong.edu
+from __future__ import unicode_literals, print_function, division
+from io import open
+import os
+import time
+import numpy as np
+
+import torch 
+import torch.nn as nn
+from torch import optim
+import torch.nn.functional as F
+
+from text_data import TextPairIterator, read_dict
+from libs.utils import timeSince 
+from libs.layers import CudaVariable
+from libs.opts import ScheduledOptim
+
+import nmt_const as Const
+from nmt_model_tm import Transformer, myEmbedding
+from nmt_trans_main import translate_file
+import neptune.new as neptune
+
+import pickle as pkl
+from collections import OrderedDict
+
+import pdb
+
+use_cuda = torch.cuda.is_available()
+device=torch.device("cuda" if use_cuda else "cpu")
+
+def train(model, optimizer, x_data, x_mask, y_data, y_mask, grad_clip):
+    model.train()
+    loss = model(x_data, x_mask, y_data, y_mask)
+    optimizer.zero_grad()
+    loss.backward()
+    if grad_clip > 0.0:
+        nn.utils.clip_grad_value_(model.parameters(), grad_clip)
+    optimizer.step()
+
+    return loss.item() #, y_hat
+
+def train_main(args):
+
+    src_dict = read_dict(args.src_dict)
+    trg_dict = read_dict(args.trg_dict)
+    src_words_n = len(src_dict) 
+    trg_words_n = len(trg_dict) 
+
+    # model 
+    xy_emb1 = myEmbedding(src_words_n, args.dim_wemb)#, padding_idx=Const.PAD)
+    xy_emb2 = myEmbedding(trg_words_n, args.dim_wemb)#, padding_idx=Const.PAD)
+    if args.param_shared == 1:
+        yx_emb1 = xy_emb2
+        yx_emb2 = xy_emb1
+    else:
+        yx_emb1 = myEmbedding(trg_words_n, args.dim_wemb)#, padding_idx=Const.PAD)
+        yx_emb2 = myEmbedding(src_words_n, args.dim_wemb)#, padding_idx=Const.PAD)
+
+    m_xy = Transformer(src_words_n, xy_emb1, trg_words_n, xy_emb2, args=args).to(device) 
+    m_yx = Transformer(trg_words_n, yx_emb1, src_words_n, yx_emb2, args=args).to(device)
+        
+    param_xy = filter(lambda p: p.requires_grad, m_xy.parameters())
+    opt_xy = optim.Adam(param_xy, lr=args.lr) 
+    param_yx = filter(lambda p: p.requires_grad, m_yx.parameters())
+    opt_yx = optim.Adam(param_yx, lr=args.lr) 
+
+    xy_iter = TextPairIterator(args.train_src_file, args.train_trg_file, 
+                         args.src_dict, args.trg_dict,
+                         batch_size=args.batch_size, maxlen=args.max_length,
+                         ahead=1000, resume_num=args.resume_line, const_id=Const)
+    yx_iter = TextPairIterator(args.train_trg_file, args.train_src_file, 
+                         args.trg_dict, args.src_dict,
+                         batch_size=args.batch_size, maxlen=args.max_length,
+                         ahead=1000, resume_num=args.resume_line, const_id=Const)
+
+    if args.neptune == 1:
+        run = neptune.init(
+            project="heeyoulchoi/nmt2022", api_token="eyJhcGlfYWRkcmVzcyI6Imh0dHBzOi8vYXBwLm5lcHR1bmUuYWkiLCJhcGlfdXJsIjoiaHR0cHM6Ly9hcHAubmVwdHVuZS5haSIsImFwaV9rZXkiOiIzMDUxMjIyMy1hYjIzLTRkNmUtOTJlOC05YzUwNzlhMWM4MTcifQ==",
+            tags=args.model_file)
+
+    print('training iteration starts...')
+    file_pre = args.save_dir + '/' + args.model_file 
+    start = time.time()
+    loss_xy_total, loss_yx_total = 0, 0  # Reset every args.print_every
+    #for x_d, x_mask, y_data, y_mask, iline, il in zip(xy_iter, yx_iter)
+    for (xd1, xm1, yd1, ym1, iline, idx), (xd2, xm2, yd2, ym2, _, _) in zip(xy_iter, yx_iter):
+        loss_xy = train(m_xy, opt_xy, xd1, xm1, yd1, ym1, args.grad_clip)
+        loss_yx = train(m_yx, opt_yx, xd2, xm2, yd2, ym2, args.grad_clip)
+        loss_xy_total += loss_xy
+        loss_yx_total += loss_yx
+
+        if idx % args.print_every == 0:
+            loss_xy_avg = loss_xy_total/args.print_every
+            loss_yx_avg = loss_yx_total/args.print_every
+            loss_xy_total, loss_yx_total = 0, 0
+            print('%s: %d iters - %.4f %.4f %s' % (args.model_file, idx, loss_xy_avg, loss_yx_avg, timeSince(start)))
+            if args.neptune == 1: 
+                run["train_loss_xy"].log(loss_xy_avg)
+                run["train_loss_yx"].log(loss_yx_avg)
+    
+        if idx % args.valid_every == 0:
+            save_list = {'idx':idx, 'm_xy':m_xy, 'm_yx':m_yx, 
+                    'state_dict_xy':m_xy.state_dict(), 'state_dict_yx':m_yx.state_dict(), 
+                    'opt_xy':opt_xy.state_dict(), 'opt_yx':opt_yx.state_dict()} 
+            torch.save(save_list, file_pre+'.pth')
+            with open(file_pre+'.line', 'w') as lfp:
+                lfp.write('iline: ' + str(iline)+'\n')
+
+            if idx >= args.valid_start:
+                bleu_xy = translate_file(m_xy, args.valid_src_file+args.valid_post, args.src_dict, args.valid_trg_file, args.trg_dict, '', args, valid=True)
+                bleu_yx = translate_file(m_yx, args.valid_trg_file+args.valid_post, args.trg_dict, args.valid_src_file, args.src_dict, '', args, valid=True)
+
+                if args.neptune == 1: 
+                    run["bleu_xy"].log(bleu_xy)
+                    run["bleu_yx"].log(bleu_yx)
+
+                save_best(m_xy, opt_xy, m_yx, opt_yx, bleu_xy, bleu_yx, file_pre, idx, iline, args)
+
+    run.stop()
+
+def save_best(m_xy, opt_xy, m_yx, opt_yx, bleu_xy, bleu_yx, file_pre, idx, iline, args):
+    if os.path.exists(file_pre+'.xy.bleu'):
+        with open(file_pre+'.xy.bleu', 'r') as bfp:
+            lines = bfp.readlines()
+            prev_xy_bleus = [float(bs.split()[1]) for bs in lines]
+    else:
+        prev_xy_bleus = [0] 
+    if os.path.exists(file_pre+'.yx.bleu'):
+        with open(file_pre+'.yx.bleu', 'r') as bfp:
+            lines = bfp.readlines()
+            prev_yx_bleus = [float(bs.split()[1]) for bs in lines]
+    else:
+        prev_yx_bleus = [0] 
+   
+    if bleu_xy >= np.max(prev_xy_bleus):
+        save_list = {'idx':idx, 'model':m_xy, 
+                    'state_dict':m_xy.state_dict(), 'opt':opt_xy.state_dict()}
+        torch.save(save_list, file_pre+'.xy.best.pth')
+        with open(file_pre+'.xy.line', 'w') as lfp:
+            lfp.write('iline: ' + str(iline)+'\n')
+    if bleu_yx >= np.max(prev_yx_bleus):
+        save_list = {'idx':idx, 'model':m_yx, 
+                    'state_dict':m_yx.state_dict(), 'opt':opt_yx.state_dict()}
+        torch.save(save_list, file_pre+'.yx.best.pth')
+        with open(file_pre+'.yx.line', 'w') as lfp:
+            lfp.write('iline: ' + str(iline)+'\n')
+
+    mode = 'w' if idx == args.valid_start else 'a'
+    with open(file_pre+'.xy.bleu', mode) as bfp:
+        bfp.write(str(idx) + '\t' + str(bleu_xy) + '\n') 
+    with open(file_pre+'.yx.bleu', mode) as bfp:
+        bfp.write(str(idx) + '\t' + str(bleu_yx) + '\n') 
+
+    return

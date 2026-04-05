@@ -1,0 +1,2 @@
+ Good morning
+ There are requirements for compatibility of the operating environment , and it is designed to operate in similar hardware and software environments .

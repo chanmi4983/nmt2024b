@@ -1,0 +1,121 @@
+# -*- coding: utf-8 -*-
+
+# H. Choi, hchoi@handong.edu
+from __future__ import unicode_literals, print_function, division
+from io import open
+import os
+import time
+import math
+import numpy as np
+import re
+from subprocess import Popen, PIPE
+
+import torch 
+import torch.nn as nn
+from torch import optim
+import torch.nn.functional as F
+
+from text_data import TextPairIterator
+from libs.utils import timeSince, ids2words, unbpe
+from libs.layers import CudaVariable
+from libs.opts import ScheduledOptim
+
+import nmt_const as Const
+from nmt_model_tm import Transformer
+from nmt_trans import translate_file
+import neptune.new as neptune
+
+use_cuda = torch.cuda.is_available()
+device=torch.device("cuda" if use_cuda else "cpu")
+
+def train(model, optimizer, x_data, x_mask, y_data, y_mask, y_lens, args):
+    model.train()
+    loss = model(x_data, x_mask, y_data, y_mask)
+    optimizer.zero_grad()
+    loss.backward()
+    if args.grad_clip > 0.0:
+        nn.utils.clip_grad_value_(model.parameters(), args.grad_clip)
+    optimizer.step()
+
+    return loss.item()#, y_hat
+
+def train_main(args):
+    if args.neptune == 1:
+        run = neptune.init(
+            project="heeyoulchoi/nmt2022", api_token="eyJhcGlfYWRkcmVzcyI6Imh0dHBzOi8vYXBwLm5lcHR1bmUuYWkiLCJhcGlfdXJsIjoiaHR0cHM6Ly9hcHAubmVwdHVuZS5haSIsImFwaV9rZXkiOiIzMDUxMjIyMy1hYjIzLTRkNmUtOTJlOC05YzUwNzlhMWM4MTcifQ==",
+            tags=args.model_file)
+    start = time.time()
+    loss_total = 0  # Reset every args.print_every
+
+    # model 
+    model = Transformer(args=args).to(device) # Transformer
+    
+    params = filter(lambda p: p.requires_grad, model.parameters())
+    if args.opt_scheduled:
+        optim_adam = optim.Adam(params, betas=(0.9, 0.98), eps=1e-9)
+        optimizer = ScheduledOptim(optim_adam, 2.0, args.dim_wemb, args.opt_start)
+    else:
+        optimizer = optim.Adam(params, lr=args.lr) 
+
+    if args.resume:  # resume training
+        file_name = args.save_dir + '/' + args.resume_file
+        if os.path.exists(file_name):
+            print('resume training from', file_name)
+            chk_point = torch.load(file_name)
+            model.load_state_dict(chk_point['state_dict'], strict=False)
+            if args.opt_scheduled:
+                optimizer.load_state_dict(chk_point['scheduler'])
+                optim_adam.load_state_dict(chk_point['optimizer'])
+
+    train_iter = TextPairIterator(args.train_src_file, args.train_trg_file, 
+                         args.src_dict, args.trg_dict,
+                         batch_size=args.batch_size, maxlen=args.max_length,
+                         ahead=1000, resume_num=args.resume_line, const_id=Const)
+
+    print('training iteration starts...')
+    loss_avg = 0
+    for x_data, x_mask, y_data, y_mask, y_lens, cur_line, iloop in train_iter:
+
+        loss = train(model, optimizer, x_data, x_mask, y_data, y_mask, y_lens, args)
+        loss_total += loss
+        file_pre = args.save_dir + '/' + args.model_file 
+
+        if iloop % args.print_every == 0:
+            loss_avg = loss_total/args.print_every
+            loss_total = 0
+            print('%s: %d iters - %.4f %s' % (args.model_file, iloop, loss_avg, timeSince(start)))
+            if args.neptune == 1: run["train_loss"].log(loss_avg)
+    
+        if iloop % args.valid_every == 0:
+            if args.opt_scheduled:
+                save_list = {'iloop':iloop, 'model':model, 'state_dict':model.state_dict(),
+                        'scheduler':optimizer.state_dict(), 'optimizer':optim_adam.state_dict()} 
+            else:
+                save_list = {'iloop':iloop, 'model':model, 'state_dict':model.state_dict(),
+                        'optimizer':optimizer.state_dict()} 
+            torch.save(save_list, file_pre+'.pth')
+            with open(file_pre+'.line', 'w') as lfp:
+                lfp.write('cur_line: ' + str(cur_line)+'\n')
+
+            if iloop >= args.valid_start:
+                bleu_score = translate_file(model, args, valid=True)
+
+                if os.path.exists(file_pre+'.bleu'):
+                    with open(file_pre+'.bleu', 'r') as bfp:
+                        lines = bfp.readlines()
+                        prev_bleus = [float(bs.split()[1]) for bs in lines]
+                else:
+                    prev_bleus = [0] 
+               
+                if args.neptune == 1: run["bleu"].log(bleu_score)
+
+                if bleu_score >= np.max(prev_bleus):
+                    torch.save(save_list, file_pre+'.best.pth')
+                    with open(file_pre+'.line', 'w') as lfp:
+                        lfp.write('cur_line: ' + str(cur_line)+'\n')
+
+                mode = 'w' if iloop == args.valid_start else 'a'
+                with open(file_pre+'.bleu', mode) as bfp:
+                    bfp.write(str(iloop) + '\t' + str(bleu_score) + '\n') 
+
+    run.stop()

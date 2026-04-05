@@ -1,0 +1,39 @@
+save_dir: ./results
+model: tm
+model_file: en2deENDE1029_MidDkXParaO.gpu0.demo
+train_src_file: /mnt/sdc/nmt2024b/wmt18_en_de//bpe.train.en
+train_trg_file: /mnt/sdc/nmt2024b/wmt18_en_de//bpe.train.de
+valid_src_file: /mnt/sdc/nmt2024b/wmt18_en_de//bpe.test.2016.en
+valid_trg_file: /mnt/sdc/nmt2024b/wmt18_en_de//bpe.test.2016.de
+valid_post: 
+src_dict: /mnt/sdc/nmt2024b/wmt18_en_de/vocab.32000.joined.pkl
+trg_dict: /mnt/sdc/nmt2024b/wmt18_en_de/vocab.32000.joined.pkl
+xy: 
+param_shared: 0
+max_length: 125
+bleu_script: ./tools/multi-bleu.perl
+resume: 0
+resume_line: 0
+resume_file: 
+optimizer: adam
+grad_clip: 10.0
+lr: 0.0005
+opt_start: 4000
+opt_scheduled: 0
+drop_p: 0.1
+label_smooth: 0.1
+emb_noise: 0.0
+reload: 0
+batch_size: 32
+log_interval: 5000
+valid_start: 500000
+valid_interval: 50000
+update_step: 2
+dim_wemb: 512
+dim_model: 512
+n_layers: 6
+dim_ff: 2048
+n_head: 8
+dk: 64
+dv: 64
+logging: 1

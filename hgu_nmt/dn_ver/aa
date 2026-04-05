@@ -1,0 +1,621 @@
+4,5d3
+< import random
+< import time
+11,12d8
+< import torch.linalg as LA
+< import torch.distributed as dist
+14d9
+< import copy
+22,46c17,22
+< class LabelSmoothingCrossEntropy(nn.Module):
+<     # Referenced from 
+<     # https://github.com/seominseok0429/label-smoothing-visualization-pytorch
+< 
+<     def __init__(self, epsilon):
+<         super(LabelSmoothingCrossEntropy, self).__init__()
+<         self.epsilon = epsilon
+< 
+<     def forward(self, x, target):
+<         smoothing = self.epsilon
+<         confidence = 1. - smoothing
+<         logprobs = F.log_softmax(x, dim=-1)
+<         nll_loss = -logprobs.gather(dim=-1, index=target.unsqueeze(1))
+<         nll_loss = nll_loss.squeeze(1)
+<         smooth_loss = -logprobs.mean(dim=-1)
+<         loss = confidence * nll_loss + smoothing * smooth_loss
+<         return loss
+< 
+< def get_scale(nin, nout):
+<     return math.sqrt(6)/math.sqrt(nin+nout) # Xavier
+< 
+< def one_hot(input, class_tensor, num_classes):
+<     Bn, Tx = input.size()
+<     input = input.reshape(-1).unsqueeze(1)
+<     return (input == class_tensor.reshape(1, num_classes)).float().view(Bn, Tx, -1)
+---
+> def get_scale(n1, n2=None): # for Xavier uniform initialization
+>     if n2 == None: # with only one side.
+>         scale = math.sqrt(3)/math.sqrt(n1) 
+>     else:
+>         scale = math.sqrt(6)/math.sqrt(n1+n2) 
+>     return scale # * 0.7 # for layer_norm(out + x)
+48d23
+< '''
+53,55d27
+<     def forward(self, input):
+<         
+< 
+57,78c29
+<         scale = get_scale(1, self.embedding_dim)
+<         self.weight.data.uniform_(-scale, scale)
+< '''
+< 
+< class myEmbedding(nn.Embedding):
+<     def __init__(self, num_embeddings, embedding_dim, padding_idx=None):
+<         super(myEmbedding, self).__init__(num_embeddings, embedding_dim, padding_idx=padding_idx)
+<         self.class_tensor = torch.arange(num_embeddings).cuda()
+< 
+<     def forward(self, input):
+<         # input : Bn, Tx
+<         if len(input.size()) == 2:
+<             Bn, Tx = input.size()
+<             input = one_hot(input, self.class_tensor, self.num_embeddings) # Bn*Tx, C
+<         else:
+<             Bn, Tx, _ = input.size()
+<         input = input.reshape(Bn*Tx, -1)
+<         out = torch.mm(input, self.weight) # Bn*Tx, Emb
+<         return out.view(Bn, Tx, -1)
+< 
+<     def reset_parameters(self):
+<         scale = get_scale(1, self.embedding_dim)
+---
+>         scale = get_scale(self.embedding_dim)
+98c49,50
+<         self.temper = float(dk)# ** 0.5 # this is better without 0.5
+---
+>         self.temp_const = float(dk) # ** 0.5 # TEST it was better without 0.5 (layer_norm, init)
+>         #self.temper = nn.Parameter(torch.ones(1)) 
+102c54,55
+<         attn = torch.matmul(q, k.transpose(-2, -1)) / self.temper # B H Tq Tk
+---
+>         #attn = torch.matmul(q, k.transpose(-2, -1)) / (self.temper*self.temp_const) # B H Tq Tk
+>         attn = torch.matmul(q, k.transpose(-2, -1)) / (self.temp_const) # B H Tq Tk
+108a62
+> 
+141c95,204
+<         output = self.dropout(self.out_proj(output))
+---
+>         output = self.out_proj(output)
+>         output = self.dropout(output)
+> 
+>         return self.layer_norm(output) + q # Different from Transformer 2017
+> 
+> class MultiHeadAttentionNew(nn.Module):
+>     def __init__(self, n_head, dim_model, dk, dv, drop_p=0.):
+>         super(MultiHeadAttentionNew, self).__init__()
+> 
+>         self.n_head, self.dk, self.dv = n_head, dk, dv
+> 
+>         self.mat_ks = myLinear(dim_model, dim_model, bias=False)
+>         self.mat_vs = myLinear(dim_model, n_head*dv, bias=False)
+> 
+>         self.sdp_attn = ScaledDotProductAttention(dk, drop_p=drop_p)
+> 
+>         self.out_proj = myLinear(n_head*dv, dim_model)
+>         self.dropout = nn.Dropout(p=drop_p)
+>         self.layer_norm = nn.LayerNorm(dim_model)
+> 
+>     def forward(self, q, k, v, attn_mask=None): # (QK')V # q = B T E
+>         n_head, dk, dv = self.n_head, self.dk, self.dv
+>         Bn, Tq, Tk, Tv = q.size(0), q.size(1), k.size(1), v.size(1)
+> 
+>         # TODO: merge the matrices and project q,k,v at the same time and split
+>         qnew = q.view(Bn, Tq, n_head, -1).transpose(1,2)
+>         k = self.mat_ks(k).view(Bn, Tk, n_head, -1).transpose(1,2)
+>         #k = k.view(Bn, Tk, n_head, -1).transpose(1,2)
+>         v = self.mat_vs(v).view(Bn, Tv, n_head, dv).transpose(1,2)
+> 
+>         if attn_mask is not None: #  B ? T -> B ? ? T 
+>             attn_mask = attn_mask.unsqueeze(1)
+>         
+>         output = self.sdp_attn(qnew, k, v, mask=attn_mask) # Bn H Ty E
+>         output = output.transpose(1, 2).contiguous().view(Bn, Tq, -1) # Bn Ty H*E
+>         output = self.out_proj(output)
+>         output = self.dropout(output)
+> 
+>         return self.layer_norm(output) + q # Different from Transformer 2017
+> 
+> 
+> class MultiHeadAttentionCross(nn.Module):
+>     def __init__(self, n_head, dim_model, dk, dv, drop_p=0.):
+>         super(MultiHeadAttentionCross, self).__init__()
+> 
+>         self.n_head, self.dk, self.dv = n_head, dk, dv
+> 
+>         self.mat_qs = nn.Linear(dim_model, n_head*dk, bias=False) 
+>         self.mat_ks = nn.Linear(dim_model, n_head*dk, bias=False)
+> 
+>         self.sdp_attn = ScaledDotProductAttention(dk, drop_p=drop_p)
+> 
+>         self.out_proj = nn.Linear(n_head*dv, dim_model)
+>         self.dropout = nn.Dropout(p=drop_p)
+>         self.layer_norm = nn.LayerNorm(dim_model)
+> 
+>     def forward(self, q, k, v, attn_mask=None): # (QK')V # q = B T E, (q=Dec, k=Enc, v=Enc)
+>         n_head, dk, dv = self.n_head, self.dk, self.dv
+>         Bn, Tq, Tk, Tv = q.size(0), q.size(1), k.size(1), v.size(1)
+> 
+>         # TODO: merge the matrices and project q,k,v at the same time and split
+>         qnew = self.mat_qs(q).view(Bn, Tq, n_head, dk).transpose(1,2)
+>         k = self.mat_ks(k)
+>         #v = self.mat_vs(k).view(Bn, Tv, n_head, dv).transpose(1,2)
+>         k = k.view(Bn, Tk, n_head, dk).transpose(1,2)
+>         v = k
+> 
+>         if attn_mask is not None: #  B ? T -> B ? ? T 
+>             attn_mask = attn_mask.unsqueeze(1)
+>         
+>         output = self.sdp_attn(qnew, k, v, mask=attn_mask) # Bn H Ty E
+>         output = output.transpose(1, 2).contiguous().view(Bn, Tq, -1) # Bn Ty H*E
+>         output = self.out_proj(output)
+>         output = self.dropout(output)
+> 
+>         return self.layer_norm(output) + q # Different from Transformer 2017
+> 
+> class MultiHeadAttentionSelf(nn.Module):
+>     def __init__(self, n_head, dim_model, dk, dv, drop_p=0.):
+>         super(MultiHeadAttentionSelf, self).__init__()
+> 
+>         self.n_head, self.dk, self.dv = n_head, dk, dv
+> 
+>         self.mat_qs = nn.Linear(n_head*dv, n_head*dk, bias=False) 
+>         self.mat_vs = nn.Linear(dim_model, n_head*dv, bias=False)
+> 
+>         self.sdp_attn = ScaledDotProductAttention(dk, drop_p=drop_p)
+> 
+>         self.out_proj = nn.Linear(n_head*dv, dim_model)
+>         self.dropout = nn.Dropout(p=drop_p)
+>         self.layer_norm = nn.LayerNorm(dim_model)
+> 
+>     def forward(self, q, k, v, attn_mask=None): # (QK')V # q = B T E
+>         n_head, dk, dv = self.n_head, self.dk, self.dv
+>         Bn, Tq, Tk, Tv = q.size(0), q.size(1), k.size(1), v.size(1)
+> 
+>         # TODO: merge the matrices and project q,k,v at the same time and split
+>         vnew = self.mat_vs(v)
+>         qnew = self.mat_qs(vnew).view(Bn, Tq, n_head, dk).transpose(1,2)
+>         #k = self.mat_ks(vnew).view(Bn, Tk, n_head, dk).transpose(1,2)
+>         vnew = vnew.view(Bn, Tv, n_head, dv).transpose(1,2)
+>         k = vnew
+> 
+>         if attn_mask is not None: #  B ? T -> B ? ? T 
+>             attn_mask = attn_mask.unsqueeze(1)
+>         
+>         output = self.sdp_attn(qnew, k, vnew, mask=attn_mask) # Bn H Ty E
+>         output = output.transpose(1, 2).contiguous().view(Bn, Tq, -1) # Bn Ty H*E
+>         output = self.out_proj(output)
+>         output = self.dropout(output)
+143c206
+<         return self.layer_norm(output) + q
+---
+>         return self.layer_norm(output) + q # Different from Transformer 2017
+156c219
+<         return self.layer_norm(output) + x
+---
+>         return self.layer_norm(output) + x # Different from Transformer 2017
+159c222
+<     def __init__(self, d_model, max_len, dropout=0.1):
+---
+>     def __init__(self, d_model):
+161d223
+<         self.dropout = nn.Dropout(p=dropout)
+163,164d224
+<         self.max_len = max_len + 2 #BOS, EOS tokens
+<         self.get_pe(self.max_len)
+166,179c226,232
+<     def forward(self, x, coeff=1.0):
+<         #self.max_len = 200 # don't need! but necessary for compatability with the previous model. 
+<         if self.training or x.size(1) <= self.max_len:
+<             pass
+<         else:
+<             #self.d_model = 512 # don't need! but 
+<             self.get_pe(x.size(1))
+<         x = x + coeff*self.pe[:, :x.size(1)]
+<         return self.dropout(x)
+< 
+<     def get_pe(self, max_len):
+<         scale = get_scale(1, self.d_model)
+<         pe = torch.zeros(max_len, self.d_model).to(device)
+<         position = torch.arange(0, max_len, dtype=torch.float).unsqueeze(1)
+---
+>     def forward(self, x):
+>         return x + self.get_pe(x.size(1))
+> 
+>     def get_pe(self, x_len):
+>         scale = get_scale(self.d_model)
+>         pe = torch.zeros(x_len, self.d_model).to(device)
+>         position = torch.arange(0, x_len, dtype=torch.float).unsqueeze(1)
+183,184c236
+<         pe = pe.unsqueeze(0)#.transpose(0, 1)
+<         self.register_buffer('pe', pe)
+---
+>         return pe.unsqueeze(0)
+199c251
+<                     dim_wemb=512, dim_model=512, dim_ff=1024, drop_p=0., emb_noise=0., max_len=250):
+---
+>             dim_wemb=512, dim_model=512, dim_ff=1024, drop_p=0., emb_noise=0.):
+204c256,257
+<         self.pos_enc = PositionalEncoding(dim_wemb, max_len, drop_p)
+---
+>         self.pos_enc = PositionalEncoding(dim_wemb)
+>         self.emb_dropout = nn.Dropout(p=drop_p)
+205a259
+> 
+212,219d265
+<         src_mask = src_mask.unsqueeze(1) # B 1 T
+<         enc_out = self.src_emb(src_seq) # Word embedding look up # Bn Tx Emb
+<         enc_out = self.pos_enc(enc_out) # Position Encoding
+<         enc_out = self.layer_norm(enc_out) 
+< 
+<         for enc_layer in self.layer_stack:
+<             enc_out = enc_layer(enc_out, x_mask=src_mask)
+<         return enc_out
+221d266
+<     def forward2(self, src_seq, src_mask, emb_scale):
+224,231d268
+<         Bn, Tx, E = enc_out.size()        
+< 
+<         emb_scale = emb_scale.repeat(Bn,1).reshape(-1)
+<         emb_scale = emb_scale.unsqueeze(1).repeat(1,E)
+<         enc_out = enc_out.reshape(Bn*Tx, -1)
+<         enc_out = emb_scale * enc_out
+<         enc_out = enc_out.reshape(Bn, Tx, -1)
+< 
+232a270
+>         enc_out = self.emb_dropout(enc_out)
+255c293
+<             dim_wemb=512, dim_model=512, dim_ff=1024, drop_p=0., emb_noise=0., max_len=250):
+---
+>             dim_wemb=512, dim_model=512, dim_ff=1024, drop_p=0., emb_noise=0.):
+258,260c296,299
+<         # first in
+<         self.dec_emb = myEmbedding(trg_words_n, dim_wemb)#, padding_idx=Const.PAD)
+<         self.pos_enc = PositionalEncoding(dim_wemb, max_len, drop_p)
+---
+>         # first in 
+>         self.trg_emb = myEmbedding(trg_words_n, dim_wemb)#, padding_idx=Const.PAD)
+>         self.pos_enc = PositionalEncoding(dim_wemb)
+>         self.emb_dropout = nn.Dropout(p=drop_p)
+261a301
+> 
+266c306,309
+<         #self.trg_word_proj.weight = self.dec_emb.weight # Share the weight 
+---
+>         # readout 
+>         self.add_noise = GaussianNoise(mean=0.0, sigma=emb_noise)
+>         self.trg_word_proj = myLinear(dim_model, trg_words_n)
+>         #self.trg_word_proj.weight = self.trg_emb.weight # Share the weight 
+269,272c312
+<         if len(seq.size()) == 2: # seq is scalar values
+<             s0, s1 = seq.size()
+<         else:
+<             s0, s1, _ = seq.size() # seq is one-hot processed values
+---
+>         s0, s1 = seq.size()
+279c319
+<         dec_out = self.dec_emb(trg_seq) # Word embedding look up
+---
+>         dec_out = self.trg_emb(trg_seq) # Word embedding look up
+280a321
+>         dec_out = self.emb_dropout(dec_out)
+283d323
+< 
+288a329,331
+>         
+>         dec_out = self.add_noise(dec_out)
+>         dec_out = self.trg_word_proj(dec_out)   
+292d334
+< 
+294c336
+<     def __init__(self, args=None):
+---
+>     def __init__(self, src_words_n, trg_words_n, args=None):
+296,316c338,339
+<         self.class_tensor = torch.arange(args.trg_words_n).cuda()
+<         self.trg_words_n = args.trg_words_n
+<         self.max_len = 150 # 121 is fairseq's maximum sentence length considers during test in IWSLT2014 (there are longer sentence but filtered out)
+< 
+<         src_words_n, trg_words_n = args.src_words_n, args.trg_words_n
+<         dim_wemb, dim_model = args.dim_wemb, args.dim_model
+<         drop_p = args.dropout_p
+<         dim_ff, n_layers = args.tm_dim_ff, args.tm_n_layers
+<         n_head, dk, dv = args.tm_n_head, args.tm_dk, args.tm_dv
+<         assert dim_model == dim_wemb, 'dim_model == dim_wemb for residual connections'
+< 
+<         self.encoder=TM_Encoder(src_words_n, n_layers=n_layers, n_head=n_head,
+<                 dim_wemb=dim_wemb, dim_model=dim_model, dim_ff=dim_ff, drop_p=drop_p, 
+<                 emb_noise=args.emb_noise, max_len=self.max_len)
+<         self.decoder=TM_Decoder(trg_words_n, n_layers=n_layers, n_head=n_head,
+<                 dim_wemb=dim_wemb, dim_model=dim_model, dim_ff=dim_ff, drop_p=drop_p, 
+<                 emb_noise=args.emb_noise, max_len=self.max_len)
+<         self.logit_layer = nn.Linear(dim_model, trg_words_n)
+< 
+<         # Logit layer can share weight with encoder's embedding : It is better not to share
+<         #self.encoder.src_emb.weight = self.logit_layer.weight
+---
+>       
+>         assert args.dim_model == args.dim_wemb, 'dim_model == dim_wemb for residual connections'
+318,319c341,346
+<         if args.joined_dictionary == 1:
+<             self.decoder.dec_emb.weight = self.encoder.src_emb.weight
+---
+>         self.encoder=TM_Encoder(src_words_n, n_layers=args.n_layers, n_head=args.n_head,
+>                 dim_wemb=args.dim_wemb, dim_model=args.dim_model, dim_ff=args.dim_ff, 
+>                 drop_p=args.drop_p, emb_noise=args.emb_noise, dk=args.dk, dv=args.dv)
+>         self.decoder=TM_Decoder(trg_words_n, n_layers=args.n_layers, n_head=args.n_head,
+>                 dim_wemb=args.dim_wemb, dim_model=args.dim_model, dim_ff=args.dim_ff, 
+>                 drop_p=args.drop_p, emb_noise=args.emb_noise, dk=args.dk, dv=args.dv)
+321,326c348
+<         if args.label_smoothing > 0.0:
+<             self.criterion = LabelSmoothingCrossEntropy(args.label_smoothing)
+<         else:
+<             self.criterion = nn.CrossEntropyLoss(reduction='none')
+< 
+<         self.nll = nn.NLLLoss(reduction='none')
+---
+>         self.criterion = nn.CrossEntropyLoss(reduction='none', label_smoothing=args.label_smooth)
+329,339c351,354
+<         if torch.is_tensor(x_data) == False:
+<             x_data = CudaVariable(torch.LongTensor(x_data)) # B T
+<             x_mask = CudaVariable(torch.FloatTensor(x_mask)) # B T
+<         if torch.is_tensor(y_data) == False:
+<             y_data = CudaVariable(torch.LongTensor(y_data)) # B T
+<             y_mask = CudaVariable(torch.FloatTensor(y_mask)) # B T
+< 
+<         y_target = y_data[:,1:] # label
+<         y_mask = y_mask[:,1:]
+<         y_in = y_data[:,:-1] # input as teacher forcing
+<         Bn, Ty = y_in.size()
+---
+>         x_data = CudaVariable(torch.LongTensor(x_data)).transpose(0,1) # B T
+>         x_mask = CudaVariable(torch.FloatTensor(x_mask)).transpose(0,1) # B T
+>         y_data = CudaVariable(torch.LongTensor(y_data)).transpose(0,1) # B T
+>         y_mask = CudaVariable(torch.FloatTensor(y_mask)).transpose(0,1) # B T
+341,348c356,357
+<         # encode and decode
+<         enc_out = self.encoder(x_data, x_mask) # B Tx E
+<         dec_out = self.decoder(y_in, y_mask, enc_out, x_mask) # B Ty E(num of words)
+<         out = self.logit_layer(dec_out)
+< 
+<         # loss
+<         loss = self.criterion(out.view(-1, out.size(2)), y_target.contiguous().view(-1)) 
+<         loss = loss * y_mask.contiguous().view(-1)
+---
+>         #x_data = x_data[:,1:] # remove BOS
+>         #x_mask = x_mask[:,1:] # remove BOS
+350,359c359,360
+<         return loss
+< 
+<     def decode_forward(self, enc_out, x_mask, y_data, y_mask):
+<         # Instead of x_data, it receives processed enc_out
+<         if torch.is_tensor(y_data) == False:
+<             y_data = CudaVariable(torch.LongTensor(y_data)) # B T
+<             y_mask = CudaVariable(torch.FloatTensor(y_mask)) # B T
+< 
+<         y_target = y_data[:,1:] # label
+<         y_mask = y_mask[:,1:]
+---
+>         y_target = y_data[:,1:] # label # remove BOS
+>         y_mask = y_mask[:,1:] # remove BOS
+364,365c365,366
+<         dec_out = self.decoder(y_in, y_mask, enc_out, x_mask) # B Ty E(num of words)
+<         out = self.logit_layer(dec_out)
+---
+>         enc_out = self.encoder(x_data, x_mask) # B Tx E
+>         out = self.decoder(y_in, y_mask, enc_out, x_mask) # B Ty E(num of words)
+369c370
+<         loss = loss * y_mask.contiguous().view(-1)
+---
+>         loss = torch.sum(loss * y_mask.contiguous().view(-1))/Bn 
+372,572d372
+< 
+<     def sample_idx(self, probs, train):
+<         gen_method = 'greedy'
+< 
+<         BnT, _ = probs.size()
+<         if gen_method == 'greedy':
+<             _, index = probs.topk(1, dim=1) # Bn, 1
+<         elif gen_method == 'sampling':
+<             m = torch.distributions.categorical.Categorical(probs)
+<             index = m.sample()
+<         elif gen_method == 'topk_sampling':
+<             topk_probs, topk_ids = probs.topk(self.k, dim=1) # best_probs : Bn, k
+<             topk_probs = topk_probs / torch.sum(topk_probs, dim=1).unsqueeze(1).repeat(1,self.k)
+<             m = torch.distributions.categorical.Categorical(topk_probs)
+<             tmp_index = m.sample()
+<             index = topk_ids[torch.arange(BnT), tmp_index.squeeze()].unsqueeze(1)
+<         return index
+< 
+<     def translate(self, enc_out, x_mask, CRT_coeff, train=True,\
+<                                  start_time=time.time()):
+<         Bn, Tx = x_mask.size()
+< 
+<         pad = (torch.ones((Bn,1))*Const.PAD).type(torch.long).cuda()
+<         pad_onehot = one_hot(pad, self.class_tensor, self.trg_words_n).squeeze() # Bn, C
+< 
+<         EOSs = torch.zeros((Bn, 1)).cuda()
+< 
+<         y_hat0 = (torch.ones((Bn,1))*Const.BOS).type(torch.long).cuda()
+<         dec_seq = copy.deepcopy(y_hat0)
+<         y_hat = one_hot(y_hat0, self.class_tensor, self.trg_words_n)
+<         dec_mask = CudaVariable(torch.ones((Bn,1))).type(torch.cuda.LongTensor)
+< 
+<         tmp_max_len = self.max_len
+< 
+<         times = torch.ones(Bn)*(time.time() - start_time)
+<         for yi in range(tmp_max_len):
+< 
+<             dec_out = self.decoder(dec_seq, dec_mask, enc_out, x_mask) # Bn, Tx, C
+<             dec_out = self.logit_layer(dec_out)
+<             Bn, T, C = dec_out.size()
+<             tmp_dec_out = dec_out.reshape(Bn*T, C)
+<             probs = F.softmax(tmp_dec_out, dim=1) # Bn*T, C
+<             index = self.sample_idx(probs, train=train) # Bn*T, 1
+< 
+<             last_index = index.reshape(Bn, T, 1)[:,-1,:]
+<             tmp_EOSs = torch.gt(EOSs,0).type(torch.long)
+<             tmp_dec_seq = (1-tmp_EOSs)*last_index + (tmp_EOSs)*pad
+<             #dec_seq = torch.cat((dec_seq, last_index), dim=1)
+<             dec_seq = torch.cat((dec_seq, tmp_dec_seq), dim=1) # Bn, T+1
+<             dec_mask = torch.cat((dec_mask, (1-tmp_EOSs)), dim=1) # Bn, T+1
+< 
+<             #EOS1 = torch.eq(last_index, Const.EOS).view(Bn, 1)
+<             EOS1 = torch.eq(tmp_dec_seq, Const.EOS).view(Bn, 1)
+<             for b in range(Bn):
+<                 if EOSs[b] > 0:
+<                     continue
+<                 elif EOS1[b] > 0:
+<                     times[b] = time.time() - start_time
+<             EOSs = EOSs + EOS1
+<             if yi > 0 and torch.sum(torch.gt(EOSs,0)) >= Bn:
+<                 break
+< 
+<         for b in range(Bn):
+<             if EOSs[b] > 0:
+<                 continue
+<             times[b] = time.time() - start_time
+< 
+<         return dec_seq, dec_mask, enc_out, times
+< 
+< 
+< class NormalNMT(nn.Module):
+<     def __init__(self, args=None, mean_batch=1):
+<         super(NormalNMT, self).__init__()
+<     
+<         self.src_lang = args.src_lang
+<         self.trg_lang = args.trg_lang
+< 
+<         self.model = Transformer(args=args)
+< 
+<         self.batch_sizes = []
+<         self.mean_batch = mean_batch
+< 
+<         self.test_max_len = 250
+< 
+<     def compute_norm(self, variable, mask):
+<         B, T, E = variable.size()
+<         norm = LA.norm(variable, dim=2)
+<         norm = (mask*norm).sum() / (mask.sum())
+<         return norm
+< 
+<     def compute_std(self, variable, mask):
+<         B, T, E = variable.size()
+<         mask = mask.unsqueeze(-1).repeat(1,1,E)
+< 
+<         variable = (mask*variable).sum(dim=1) / (mask.sum(dim=1))
+< 
+<         std = torch.std(variable, dim=0)
+<         std = std.mean()
+<         return std
+< 
+<     def compute_mean_batch_sizes(self, new_B):
+<         self.batch_sizes.append(new_B)
+< 
+<         if len(self.batch_sizes) > 1000: # 100 is arbitrarily selected number
+<             self.batch_sizes = self.batch_sizes[-1000:]
+< 
+<         self.mean_batch = np.mean(np.array(self.batch_sizes))
+< 
+<     def translation(self, x_data, x_mask, y_data, y_mask):
+<         enc_out = self.model.encoder(x_data, x_mask)
+< 
+<         trans_loss = self.model.decode_forward(enc_out, x_mask, y_data, y_mask)
+<         trans_loss = torch.sum(trans_loss)/self.mean_batch
+<         return trans_loss, enc_out
+< 
+<     def add_eos_padding(self, sample, B_max, max_len):
+<         B, T = sample.size()
+< 
+<         if B < B_max:
+<             add_batch_eos = torch.ones((B_max-B, T), dtype=torch.long).cuda() * Const.EOS
+<             sample = torch.cat((sample, add_batch_eos), dim=0) # B_max, T
+<         if T < max_len:
+<             add_time_eos = torch.ones((B_max, max_len-T), dtype=torch.long).cuda() * Const.EOS
+<             sample = torch.cat((sample, add_time_eos), dim=1) # B_max, max_len
+<         return sample
+< 
+<     def generation(self, x_data, x_mask, multi_gpu=False, B_max=0, max_len=0):
+<         start_time = time.time()
+<         enc_out = self.model.encoder(x_data, x_mask)
+< 
+<         gen_y_data, gen_y_mask, _, times =\
+<                          self.model.translate(enc_out, x_mask, 1.0,\
+<                                                              train=False, start_time=start_time)
+<         if multi_gpu == False:
+<             return gen_y_data.detach().cpu().numpy()[:,1:],\
+<                     enc_out, times
+<         else:
+<             gen_y_data = gen_y_data.detach()[:,1:]
+<             gen_y_data = self.add_eos_padding(gen_y_data, B_max, max_len)
+<             return gen_y_data, enc_out, times
+< 
+<     def forward(self, *inputs, **kwargs):
+<         mode = inputs[-1]
+<         if mode == 'training':
+<             self.model.train()
+< 
+<             x_data, x_mask, y_data, y_mask = inputs[0],inputs[1],inputs[2],inputs[3]
+< 
+<             x_data = CudaVariable(torch.LongTensor(x_data))
+<             x_mask = CudaVariable(torch.LongTensor(x_mask))
+<             y_data = CudaVariable(torch.LongTensor(y_data))
+<             y_mask = CudaVariable(torch.LongTensor(y_mask))
+< 
+<             B, _ = x_data.size()
+<             self.compute_mean_batch_sizes(B)
+< 
+<             trans_loss, enc_out = self.translation(x_data, x_mask, y_data, y_mask)
+< 
+<             latent_norms = self.compute_norm(enc_out, x_mask)
+<             latent_stds = self.compute_std(enc_out, x_mask)
+<             return (trans_loss) 
+<         elif mode == 'validation':
+<             self.model.eval()
+< 
+<             x_data, x_mask, y_data, y_mask = inputs[0],inputs[1],inputs[2],inputs[3]
+< 
+<             x_data = CudaVariable(torch.LongTensor(x_data))
+<             x_mask = CudaVariable(torch.LongTensor(x_mask))
+<             y_data = CudaVariable(torch.LongTensor(y_data))
+<             y_mask = CudaVariable(torch.LongTensor(y_mask))
+< 
+<             gen_y_data, enc_out, times = self.generation(x_data, x_mask)
+< 
+<             avg_time = times.mean()
+< 
+<             trans_loss = self.model.decode_forward(enc_out, x_mask, y_data, y_mask)
+<             trans_loss = torch.sum(trans_loss)/self.mean_batch
+<             return (gen_y_data, trans_loss, avg_time)
+<         elif mode == 'multi_validation':
+<             self.model.eval()
+< 
+<             x_data, x_mask, y_data, y_mask, B_max = inputs[0],inputs[1],inputs[2],inputs[3],inputs[4]
+< 
+<             x_data = CudaVariable(torch.LongTensor(x_data))
+<             x_mask = CudaVariable(torch.LongTensor(x_mask))
+<             y_data = CudaVariable(torch.LongTensor(y_data))
+<             y_mask = CudaVariable(torch.LongTensor(y_mask))
+< 
+<             gen_y_data, enc_out, times = self.generation(x_data, x_mask, multi_gpu=True,\
+<                                                          B_max=B_max, max_len=self.test_max_len)
+< 
+<             avg_time = times.mean()
+< 
+<             trans_loss = self.model.decode_forward(enc_out, x_mask, y_data, y_mask)
+<             trans_loss = torch.sum(trans_loss)/self.mean_batch
+< 
+<             y_data = self.add_eos_padding(y_data, B_max, self.test_max_len)
+< 
+<             return (gen_y_data, trans_loss, avg_time, y_data)
+< 
+< 

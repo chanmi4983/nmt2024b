@@ -1,0 +1,17 @@
+<s>	15.593957
+St⋄	0.023345
+art	0.082826
+data	0.091584
+restoration	0.290714
+through	0.068990
+the	0.100362
+restoration	0.071872
+solution	0.099794
+on	0.066534
+the	0.129618
+bottom	0.152976
+left	0.107688
+of	0.034422
+the	0.018932
+computer	0.028792
+.	0.037596

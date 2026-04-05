@@ -1,0 +1,2 @@
+The expected number of successes is 𝒏𝒑.
+when 𝑛 mutually independent Bernoulli trials are performed, where 𝑝 the probability of success on each trial.

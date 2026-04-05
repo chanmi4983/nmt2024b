@@ -1,0 +1,86 @@
+This code provides trainings & testings of IWSLT14 English-German, WMT14 English-German translation tasks
+
+===============================
+# Data format ./data/
+- bpe.train.* bpe.valid.*, bpe.test.* is tokenized, BPE applied datasets given to model as inputs
+- test.* is tokenized (not BPE applied) test references for tokenBLEU measurement
+- ref.* is untokenized raw references for SacreBLEU measurement
+
+===============================
+# Required Python Packages
+- torch
+- numpy
+- sacrebleu
+- sacremoses
+- neptune >= 1.2.0
+
+
+==============================
+# Process to run training
+- Set training configurations in train_iwslt14_ende.sh (or train_wmt14_ende.sh)
+--- Small Transformer for iwslt14_ende, Base Transformer for wmt14_ende as defaults
+
+- bash train_iwslt14_ende.sh (GPU_IDs) (#_of_GPUs)
+- bash train_wmt14_ende.sh (GPU_IDs) (#_of_GPUs)
+
+e.g. single GPU training : bash train_iwslt14_ende.sh 0 1
+     multi GPU training  : bash train_iwslt14_ende.sh 0,1,2 3
+
+
+==============================
+# Process to run testing
+- Set testing configurations(e.g. beam_width, test_subdir name, sacrebleu_tokenizer, 
+  lowercase sensitivity) in test_iwslt14_ende.sh (or test_wmt14_ende.sh)
+
+- bash run_experiments.sh (GPU_ID) (TASK_NAME)
+* GPU_ID : should be single GPU for testing
+* TASK_NAME : 'iwslt14_ende' or 'wmt14_ende'
+
+e.g. bash run_experiments.sh 0 iwslt14_ende
+
+
+==============================
+# descriptions of .py files
+- Beam.py : source for beam search
+- dataset.py : source for dataloadeer
+                - dataloader is token-level (not batch-level) data iterator
+                * It is implemented originally for various types of dataset (bilingual, monolingual)
+- nmt_const.py : it contains special tokens' information
+- nmt_ensemble.py : source for checkpoint_ensemble method. (nmt_main.py runs this ensemble code at
+                    every validations)
+- nmt_main.py : this is main code for training
+                - (optional) Initialize Neptune project
+                - Call model & optimizer
+                - Run training iterations (forward model, backprop, update)
+		--- update_step means the unit for regular update (for larger tokensize with small 
+								   GPU)
+		    e.g. update_step=1 means it updates at every iterations
+			 update_step=2 means it updates at every second iterations
+                - Run validations at every valid_iter
+		* validation makes latest ensemble model everytime and save it if it shows the best 
+		  performance
+		WARNING: Note that the BLEU score of 'multi_validation' is not 100% correct.
+- nmt_model_tm.py : source for Transformer model		
+		- final loss is normalized by moving_averaged batchsize (model collects and computes
+		  average batchsize at every iterations)
+		- 'multi_validation' means the validation code for 'multi_validation' in 
+		  nmt_trans.py . It adds paddings horizontally/vertically to make fixed-size outputs.
+- nmt_run.py : this is main code for whole pipeline
+		- when 'train' mode, 
+		--- it makes new sub directory in /results which is a unique 
+		    directory name (determined by configurations) for the new training. 
+		    WARNING : if you run a new training with the same configuration, it will delete 
+				the existing sub directory after 5 seconds.
+		--- Load dataloaders from dataset.py
+		--- run training main code of nmt_main.py
+		- when 'test' mode
+		--- Load configuration & model used for the training
+		--- run 'Test_SacreBLEU' to get the valid SacreBLEU scores with true references 
+			(and tokenized_references for tokenBLEU)
+- nmt_trans.py : source codes for main of validation, testing
+		- 'multi_validation' is used for validation during training, this is faster when use 
+		  multi-GPU. 
+		 WARNING: Its BLEU score is not 100% correct. It computes BLEU with target data 
+			loaded from dataloader, not true reference)
+		- 'Test_SacreBLEU' is used for testing. 
+		

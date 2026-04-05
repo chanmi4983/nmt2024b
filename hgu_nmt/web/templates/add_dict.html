@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>HGU Translator</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link rel=”stylesheet” href=”http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css“>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <!-- <link href="resources/vendor/fontawesome-free/css/all.min.css" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800|Nanum+Myeongjo:400,700,800&display=swap&subset=korean" rel="stylesheet">
+
+  <style>
+  .dict_area {
+    font-size:2rem;
+    /* position: relative; */
+    width: 80%;
+    height: 5rem;
+  }
+  font {
+    font-family: "Nanum Gothic";
+  }
+  textarea::placeholder {
+    color: rgb(170,170,170);
+  }
+  textarea {
+    padding:1rem;
+  }
+  </style>
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar" data-offset="50">
+  <!-- <nav class="navbar navbar-default navbar-fixed-top" style="background-color: rgb(20, 92, 204); height: 8rem"> -->
+  <nav class="navbar navbar-default navbar-fixed-top" style="height: 8rem; border:solid 0.5px rgb(DDDDDD);">
+    <div class="container-fluid text-center">
+      <h1 class="text-center" style="color:rgb(20, 92, 204)">HGU Kor-Eng NMT: Word Registration</h1>
+    </div>
+  </nav>
+  <br>
+    <div class="row text-center" style="margin-top: 19rem">
+      <!-- <font style="color:rgb(100,100,100); font-size: 2rem; ">
+          단어 추가<br>
+      </font> -->
+      <br>
+      <form action="/add_dict" method="POST">
+      <div class="col-md-6">
+        <font style="color:rgb(100,100,100); font-size: 2rem; ">
+            Korean<br>
+        </font>
+        <p><textarea class="dict_area" name="kr_word" id="kr_word" cols="25" rows="5" style="margin-top:1rem" placeholder="한국어 단어">{{src_contents}}</textarea></p>
+      </div>
+      <div class="col-md-6">
+        <font style="color:rgb(100,100,100); font-size: 2rem; ">
+            English<br>
+        </font>
+        <p><textarea class="dict_area" name="en_word" id="en_word" cols="25" rows="5" style="margin-top:1rem" placeholder="English Word">{{src_contents}}</textarea><p>
+      </div>
+
+  </div>
+  <div class="row text-center">
+
+      <button style="margin-top: 9rem; background:rgb(20,92,204); color:rgb(255,255,255); width:10%; height:4rem; font-size: 1.7rem" type="submit" value="Registration">Registration</button>
+      <!-- <p><button onclick="addDict()" style="margin-top: 3rem; background:rgb(DDDDDD); color:rgb(20,92,204); width:15%; height:5rem; font-size: 1.7rem" type="submit" value="사전등록">사전등록</button></p> -->
+
+  </div>
+  </form>
+
+  <div class="row text-center">
+    <form action="/k2e_trans" method="GET">
+      <p><button style="margin-top: 20rem; background:rgb(DDDDDD); color:rgb(20,92,204); width:15%; height:4rem; font-size: 1.7rem" type="submit" value="Translation Page">Back to Translation Page</button></p>
+    </form>
+  </div>
+
+  <text id="mode" display:None style="font-size:0">0</text>
+
+
+  <script src="//code.jquery.com/jquery.min.js"></script>
+  <script>
+    // function addDict() {
+    //   var str = prompt('추가할 단어를 입력하세요.');
+    //
+    //   while(1) {
+    //     if(str == null) alert("문자를 다시 입력해주세요.")
+    //     else {
+    //       alert("추가되었습니다.")
+    //       break;
+    //     }
+    //   }
+    //
+    //
+    //
+    //
+    // }
+
+    // alert(inputString);
+
+    // $('#switch').click(function() {
+    //       if($('#mode').text() == 0) {
+    //         alert("k2e");
+    //
+    //       }
+    //       else {
+    //         $('#trg_name').text('영 어');
+    //         $('#src_name').text('한국어');
+    //         $('#mode').text(1);
+    //       }
+    //   });
+  </script>
+
+</body>
+</html>

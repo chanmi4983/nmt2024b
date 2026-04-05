@@ -1,0 +1,267 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BOS	nmt_const.py	/^BOS = 1$/;"	v
+BOS_WORD	nmt_const.py	/^BOS_WORD = '<s>'$/;"	v
+B_bi	dataset.py	/^        B_bi = len(bi_x_data)$/;"	v
+B_x_mono	dataset.py	/^        B_x_mono = len(mono_x_data)$/;"	v
+B_y_mono	dataset.py	/^        B_y_mono = len(mono_y_data)$/;"	v
+Beam	Beam.py	/^class Beam():$/;"	c
+Beam_Sampling	Beam.py	/^class Beam_Sampling():$/;"	c
+CTC	nmt_const.py	/^CTC = 4$/;"	v
+CTC_WORD	nmt_const.py	/^CTC_WORD = '<ctcblank>'$/;"	v
+CallNormalIterator	dataset.py	/^                     batch_size, maxlen, ahead, seed=0, rank=0, world_size=1, ctc_dict=False):$/;"	f
+CallNormalIterator_TokenBased	dataset.py	/^                     token_size, ahead, seed=0, rank=0, world_size=1, sorting=False, ctc_dict=False):$/;"	f
+CallTestIterator_SacreBLEU	dataset.py	/^                     lang1_dict_addr, lang2_dict_addr, batch_size, ctc_dict=False):$/;"	f
+CallTestIterator_TokenBased	dataset.py	/^                    ctc_dict=False):$/;"	f
+EOS	nmt_const.py	/^EOS = 2$/;"	v
+EOS_WORD	nmt_const.py	/^EOS_WORD = '<\/s>'$/;"	v
+Ensemble	nmt_ensemble.py	/^def Ensemble(args):$/;"	f
+FeedForward	nmt_model_tm.py	/^class FeedForward(nn.Module):$/;"	c
+LabelSmoothingCrossEntropy	nmt_model_tm.py	/^class LabelSmoothingCrossEntropy(nn.Module):$/;"	c
+LengthPenaltyBeam	Beam.py	/^class LengthPenaltyBeam():$/;"	c
+MultiHeadAttention	nmt_model_tm.py	/^class MultiHeadAttention(nn.Module):$/;"	c
+MultiTextPairIterator	dataset.py	/^class MultiTextPairIterator():$/;"	c
+MultiTextPairIterator_TokenBased	dataset.py	/^class MultiTextPairIterator_TokenBased():$/;"	c
+MyTestDataset	dataset.py	/^class MyTestDataset(Dataset):$/;"	c
+N_bi	dataset.py	/^        N_bi = B_bi * len(bi_x_data[0])$/;"	v
+N_bi_pad	dataset.py	/^        N_bi_pad = N_bi - sum([sum(tmp) for tmp in bi_x_mask])$/;"	v
+N_data	dataset.py	/^              len(test_iter.cursor_idxes[2])]$/;"	v
+N_x_mono	dataset.py	/^        N_x_mono = B_x_mono * len(mono_x_data[0])$/;"	v
+N_x_mono_pad	dataset.py	/^        N_x_mono_pad = N_x_mono - sum([sum(tmp) for tmp in mono_x_mask])$/;"	v
+N_y_mono	dataset.py	/^        N_y_mono = B_y_mono * len(mono_y_data[0])$/;"	v
+N_y_mono_pad	dataset.py	/^        N_y_mono_pad = N_y_mono - sum([sum(tmp) for tmp in mono_y_mask])$/;"	v
+NormalNMT	nmt_model_tm.py	/^class NormalNMT(nn.Module):$/;"	c
+PAD	nmt_const.py	/^PAD = 0 $/;"	v
+PAD_WORD	nmt_const.py	/^PAD_WORD = '<pad>'$/;"	v
+PositionalEncoding	nmt_model_tm.py	/^class PositionalEncoding(nn.Module):$/;"	c
+ScaledDotProductAttention	nmt_model_tm.py	/^class ScaledDotProductAttention(nn.Module): $/;"	c
+TM_Decoder	nmt_model_tm.py	/^class TM_Decoder(nn.Module):$/;"	c
+TM_DecoderLayer	nmt_model_tm.py	/^class TM_DecoderLayer(nn.Module):$/;"	c
+TM_Encoder	nmt_model_tm.py	/^class TM_Encoder(nn.Module):$/;"	c
+TM_EncoderLayer	nmt_model_tm.py	/^class TM_EncoderLayer(nn.Module):$/;"	c
+TestPairIterator_TokenBased	dataset.py	/^class TestPairIterator_TokenBased():$/;"	c
+Test_SacreBLEU	nmt_trans.py	/^def Test_SacreBLEU(model, test_iter, args):$/;"	f
+Transformer	nmt_model_tm.py	/^class Transformer(nn.Module):$/;"	c
+UNK	nmt_const.py	/^UNK = 3$/;"	v
+UNK_WORD	nmt_const.py	/^UNK_WORD = '<unk>'$/;"	v
+__getitem__	dataset.py	/^    def __getitem__(self, idx):$/;"	m	class:MyTestDataset	file:
+__init__	Beam.py	/^    def __init__(self, size, beam_len_alpha=0.6, minimum_length=5, device=False):$/;"	m	class:LengthPenaltyBeam
+__init__	Beam.py	/^    def __init__(self, size, device=False):$/;"	m	class:Beam
+__init__	Beam.py	/^    def __init__(self, size, topk, device=False):$/;"	m	class:Beam_Sampling
+__init__	dataset.py	/^                     src_dict, trg_dict, ahead, ctc_dict=False):$/;"	m	class:MyTestDataset
+__init__	dataset.py	/^                 rank=0, world_size=1, sorting=True, ctc_dict=False):$/;"	m	class:TestPairIterator_TokenBased
+__init__	dataset.py	/^                 seed=0, rank=0, world_size=1, ctc_dict=False):$/;"	m	class:MultiTextPairIterator
+__init__	dataset.py	/^                 seed=0, rank=0, world_size=1, sorting=False, ctc_dict=False):$/;"	m	class:MultiTextPairIterator_TokenBased
+__init__	nmt_model_tm.py	/^    def __init__(self, args=None):$/;"	m	class:Transformer
+__init__	nmt_model_tm.py	/^    def __init__(self, args=None, mean_batch=1):$/;"	m	class:NormalNMT
+__init__	nmt_model_tm.py	/^    def __init__(self, d_model, max_len, dropout=0.1):$/;"	m	class:PositionalEncoding
+__init__	nmt_model_tm.py	/^    def __init__(self, dim_model, dim_ff, drop_p=0.):$/;"	m	class:FeedForward
+__init__	nmt_model_tm.py	/^    def __init__(self, dim_model, dim_ff, n_head, dk, dv, drop_p=0.):$/;"	m	class:TM_DecoderLayer
+__init__	nmt_model_tm.py	/^    def __init__(self, dim_model, dim_ff, n_head, dk, dv, drop_p=0.):$/;"	m	class:TM_EncoderLayer
+__init__	nmt_model_tm.py	/^    def __init__(self, dk, drop_p=0.):$/;"	m	class:ScaledDotProductAttention
+__init__	nmt_model_tm.py	/^    def __init__(self, epsilon):$/;"	m	class:LabelSmoothingCrossEntropy
+__init__	nmt_model_tm.py	/^    def __init__(self, in_features, out_features, bias=True):$/;"	m	class:myLinear
+__init__	nmt_model_tm.py	/^    def __init__(self, n_head, dim_model, dk, dv, drop_p=0.):$/;"	m	class:MultiHeadAttention
+__init__	nmt_model_tm.py	/^    def __init__(self, num_embeddings, embedding_dim, padding_idx=None):$/;"	m	class:myEmbedding
+__init__	nmt_model_tm.py	/^    def __init__(self, src_words_n, n_layers=6, n_head=8, dk=64, dv=64,$/;"	m	class:TM_Encoder
+__init__	nmt_model_tm.py	/^    def __init__(self, trg_words_n, n_layers=6, n_head=8, dk=64, dv=64,$/;"	m	class:TM_Decoder
+__iter__	dataset.py	/^    def __iter__(self):$/;"	m	class:MultiTextPairIterator	file:
+__iter__	dataset.py	/^    def __iter__(self):$/;"	m	class:MultiTextPairIterator_TokenBased	file:
+__iter__	dataset.py	/^    def __iter__(self):$/;"	m	class:TestPairIterator_TokenBased	file:
+__len__	dataset.py	/^    def __len__(self):$/;"	m	class:MyTestDataset	file:
+__next__	dataset.py	/^    def __next__(self):$/;"	m	class:MultiTextPairIterator	file:
+__next__	dataset.py	/^    def __next__(self):$/;"	m	class:MultiTextPairIterator_TokenBased	file:
+__next__	dataset.py	/^    def __next__(self):$/;"	m	class:TestPairIterator_TokenBased	file:
+_get_length_penalty	Beam.py	/^    def _get_length_penalty(self, length, alpha=0.6, min_length=5):$/;"	m	class:LengthPenaltyBeam
+add_eos_padding	nmt_model_tm.py	/^    def add_eos_padding(self, sample, B_max, max_len):$/;"	m	class:NormalNMT
+advance	Beam.py	/^    def advance(self, word_prob):$/;"	m	class:Beam
+advance	Beam.py	/^    def advance(self, word_prob):$/;"	m	class:Beam_Sampling
+advance	Beam.py	/^    def advance(self, word_prob, length):$/;"	m	class:LengthPenaltyBeam
+ahead	dataset.py	/^    ahead=1000$/;"	v
+args	dataset.py	/^    args = parser.parse_args()$/;"	v
+args	nmt_ensemble.py	/^    args = parser.parse_args()$/;"	v
+args	nmt_run.py	/^    args = parser.parse_args()$/;"	v
+auto_tune_and_inspect	dataset.py	/^    def auto_tune_and_inspect(self):$/;"	m	class:TestPairIterator_TokenBased
+batch_histories	dataset.py	/^    batch_histories = [[], [], []]$/;"	v
+batch_size	dataset.py	/^    batch_size=64$/;"	v
+beam_decode_step	nmt_trans.py	/^def beam_decode_step(model, inst_dec_beams, len_dec_seq, src_seq, enc_output, inst_idx_to_position_map, Bs, sampling):$/;"	f
+beam_decode_step_lenpen	nmt_trans.py	/^                             inst_idx_to_position_map, Bs, sampling):$/;"	f
+bi_idxes	dataset.py	/^        bi_idxes = torch.cat((bi_idxes, torch.tensor([0]*(max_samples-len(bi_idxes))).cuda()))$/;"	v
+bi_idxes	dataset.py	/^        bi_idxes = torch.tensor(bi_idxes, dtype=torch.long).cuda()$/;"	v
+bimono_ratio	dataset.py	/^    bimono_ratio=1$/;"	v
+bleu_score	nmt_trans.py	/^def bleu_score(ref_file, trans_file):$/;"	f
+buffer	dataset.py	/^    def buffer(self, const_id):$/;"	m	class:MyTestDataset
+collate_active_info	nmt_trans.py	/^def collate_active_info(src_seq, src_enc, inst_idx_to_position_map, active_inst_idx_list, Bs):$/;"	f
+collect_active_inst_idx_list	nmt_trans.py	/^    def collect_active_inst_idx_list(inst_beams, word_prob, inst_idx_to_position_map):$/;"	f	function:beam_decode_step
+collect_active_inst_idx_list	nmt_trans.py	/^    def collect_active_inst_idx_list(inst_beams, word_prob, inst_idx_to_position_map, len_dec_seq):$/;"	f	function:beam_decode_step_lenpen
+collect_active_part	nmt_trans.py	/^def collect_active_part(beamed_tensor, curr_active_inst_idx, n_prev_active_inst, Bs):$/;"	f
+collect_hypothesis_and_scores	nmt_trans.py	/^def collect_hypothesis_and_scores(inst_dec_beams, n_best):$/;"	f
+compute_lens	dataset.py	/^        def compute_lens(data_buffer):$/;"	f	function:MultiTextPairIterator_TokenBased.fill_buffer
+compute_lens	dataset.py	/^        def compute_lens(data_buffer):$/;"	f	function:TestPairIterator_TokenBased.fill_buffer
+compute_mean_batch_sizes	nmt_model_tm.py	/^    def compute_mean_batch_sizes(self, new_B):$/;"	m	class:NormalNMT
+compute_norm	nmt_model_tm.py	/^    def compute_norm(self, variable, mask):$/;"	m	class:NormalNMT
+compute_std	nmt_model_tm.py	/^    def compute_std(self, variable, mask):$/;"	m	class:NormalNMT
+data_dir	dataset.py	/^    data_dir='\/home\/milab_data\/data\/wmt14_en_de\/'$/;"	v
+dataset_seed	dataset.py	/^    dataset_seed=0$/;"	v
+decide_batch_sizes	dataset.py	/^    def decide_batch_sizes(self):$/;"	m	class:MultiTextPairIterator
+decide_batch_sizes	dataset.py	/^    def decide_batch_sizes(self, dataset_idx, dataset_type, sample_idx, max_rank_tokens):$/;"	m	class:MultiTextPairIterator_TokenBased
+decide_batch_sizes	dataset.py	/^    def decide_batch_sizes(self, sample_idx, max_rank_tokens):$/;"	m	class:TestPairIterator_TokenBased
+decide_bi_batch_sizes	dataset.py	/^                                 world_size):$/;"	f	function:MultiTextPairIterator_TokenBased.decide_batch_sizes
+decide_bi_batch_sizes	dataset.py	/^                                 world_size):$/;"	f	function:TestPairIterator_TokenBased.decide_batch_sizes
+decide_mono_batch_sizes	dataset.py	/^        def decide_mono_batch_sizes(buffer_lens, sample_idx, max_rank_tokens, world_size):$/;"	f	function:MultiTextPairIterator_TokenBased.decide_batch_sizes
+decode_forward	nmt_model_tm.py	/^    def decode_forward(self, enc_out, x_mask, y_data, y_mask):$/;"	m	class:Transformer
+delete_eos_sentences	nmt_trans.py	/^    def delete_eos_sentences(sample):$/;"	f	function:multi_validation
+device	nmt_model_tm.py	/^device=torch.device("cuda" if use_cuda else "cpu")$/;"	v
+device	nmt_trans.py	/^device=torch.device("cuda" if use_cuda else "cpu")$/;"	v
+done	Beam.py	/^    def done(self):$/;"	m	class:Beam
+done	Beam.py	/^    def done(self):$/;"	m	class:Beam_Sampling
+done	Beam.py	/^    def done(self):$/;"	m	class:LengthPenaltyBeam
+fill_buffer	dataset.py	/^    def fill_buffer(self):$/;"	m	class:TestPairIterator_TokenBased
+fill_buffer	dataset.py	/^    def fill_buffer(self, dataset_idx):$/;"	m	class:MultiTextPairIterator
+fill_buffer	dataset.py	/^    def fill_buffer(self, dataset_idx):$/;"	m	class:MultiTextPairIterator_TokenBased
+find_seeks	dataset.py	/^    def find_seeks(self, source, target):$/;"	m	class:MyTestDataset
+fopen	dataset.py	/^    def fopen(self, filename, mode='r'):$/;"	m	class:MultiTextPairIterator
+fopen	dataset.py	/^    def fopen(self, filename, mode='r'):$/;"	m	class:MultiTextPairIterator_TokenBased
+fopen	dataset.py	/^    def fopen(self, filename, mode='r'):$/;"	m	class:MyTestDataset
+fopen	dataset.py	/^    def fopen(self, filename, mode='r'):$/;"	m	class:TestPairIterator_TokenBased
+forward	nmt_model_tm.py	/^    def forward(self, *inputs, **kwargs):$/;"	m	class:NormalNMT
+forward	nmt_model_tm.py	/^    def forward(self, dec_in, enc_out, y_mask=None, enc_mask=None):$/;"	m	class:TM_DecoderLayer
+forward	nmt_model_tm.py	/^    def forward(self, enc_in, x_mask=None):$/;"	m	class:TM_EncoderLayer
+forward	nmt_model_tm.py	/^    def forward(self, input):$/;"	m	class:myEmbedding
+forward	nmt_model_tm.py	/^    def forward(self, q, k, v, attn_mask=None): # (QK')V # q = B T E$/;"	m	class:MultiHeadAttention
+forward	nmt_model_tm.py	/^    def forward(self, q, k, v, mask=None): # B H T E$/;"	m	class:ScaledDotProductAttention
+forward	nmt_model_tm.py	/^    def forward(self, src_seq, src_mask):$/;"	m	class:TM_Encoder
+forward	nmt_model_tm.py	/^    def forward(self, trg_seq, trg_mask, enc_out, src_mask):$/;"	m	class:TM_Decoder
+forward	nmt_model_tm.py	/^    def forward(self, x):$/;"	m	class:FeedForward
+forward	nmt_model_tm.py	/^    def forward(self, x, coeff=1.0):$/;"	m	class:PositionalEncoding
+forward	nmt_model_tm.py	/^    def forward(self, x, target):$/;"	m	class:LabelSmoothingCrossEntropy
+forward	nmt_model_tm.py	/^    def forward(self, x_data, x_mask, y_data, y_mask):$/;"	m	class:Transformer
+forward2	nmt_model_tm.py	/^    def forward2(self, src_seq, src_mask, emb_scale):$/;"	m	class:TM_Encoder
+gathered_bi_idxes	dataset.py	/^        gathered_bi_idxes = [torch.zeros_like(bi_idxes, dtype=torch.long, device=bi_idxes.device) for _ in range(args.world_size)]$/;"	v
+gathered_mono_x_idxes	dataset.py	/^        gathered_mono_x_idxes = [torch.zeros_like(mono_x_idxes, dtype=torch.long, device=mono_x_idxes.device) for _ in range(args.world_size)]$/;"	v
+gathered_mono_y_idxes	dataset.py	/^        gathered_mono_y_idxes = [torch.zeros_like(mono_y_idxes, dtype=torch.long, device=mono_y_idxes.device) for _ in range(args.world_size)]$/;"	v
+generation	nmt_model_tm.py	/^    def generation(self, x_data, x_mask, multi_gpu=False, B_max=0, max_len=0):$/;"	m	class:NormalNMT
+get_current_origin	Beam.py	/^    def get_current_origin(self):$/;"	m	class:Beam
+get_current_origin	Beam.py	/^    def get_current_origin(self):$/;"	m	class:Beam_Sampling
+get_current_origin	Beam.py	/^    def get_current_origin(self):$/;"	m	class:LengthPenaltyBeam
+get_current_state	Beam.py	/^    def get_current_state(self):$/;"	m	class:Beam
+get_current_state	Beam.py	/^    def get_current_state(self):$/;"	m	class:Beam_Sampling
+get_current_state	Beam.py	/^    def get_current_state(self):$/;"	m	class:LengthPenaltyBeam
+get_grad	nmt_main.py	/^    def get_grad(model):$/;"	f	function:train
+get_hypothesis	Beam.py	/^    def get_hypothesis(self, k):$/;"	m	class:Beam
+get_hypothesis	Beam.py	/^    def get_hypothesis(self, k):$/;"	m	class:Beam_Sampling
+get_hypothesis	Beam.py	/^    def get_hypothesis(self, k):$/;"	m	class:LengthPenaltyBeam
+get_inst_idx_to_tensor_position_map	nmt_trans.py	/^def get_inst_idx_to_tensor_position_map(inst_idx_list):$/;"	f
+get_pe	nmt_model_tm.py	/^    def get_pe(self, max_len):$/;"	m	class:PositionalEncoding
+get_scale	nmt_model_tm.py	/^def get_scale(nin, nout):$/;"	f
+get_subsequent_mask	nmt_model_tm.py	/^    def get_subsequent_mask(self, seq):$/;"	m	class:TM_Decoder
+get_tentative_hypothesis	Beam.py	/^    def get_tentative_hypothesis(self):$/;"	m	class:Beam
+get_tentative_hypothesis	Beam.py	/^    def get_tentative_hypothesis(self):$/;"	m	class:Beam_Sampling
+get_tentative_hypothesis	Beam.py	/^    def get_tentative_hypothesis(self):$/;"	m	class:LengthPenaltyBeam
+get_the_best_score_and_idx	Beam.py	/^    def get_the_best_score_and_idx(self):$/;"	m	class:Beam
+get_the_best_score_and_idx	Beam.py	/^    def get_the_best_score_and_idx(self):$/;"	m	class:Beam_Sampling
+get_the_best_score_and_idx	Beam.py	/^    def get_the_best_score_and_idx(self):$/;"	m	class:LengthPenaltyBeam
+index_counts	dataset.py	/^    index_counts = [[0]*(N_data[0]+1), [0]*(N_data[1]+1), [0]*(N_data[2]+1)]$/;"	v
+init_bi_cursors	dataset.py	/^        def init_bi_cursors(source, target, max_length):$/;"	f	function:MultiTextPairIterator_TokenBased.init_cursors
+init_bi_cursors	dataset.py	/^        def init_bi_cursors(source, target, max_length):$/;"	f	function:TestPairIterator_TokenBased.init_cursors
+init_bi_cursors	dataset.py	/^        def init_bi_cursors(source, target, maxlen):$/;"	f	function:MultiTextPairIterator.init_cursors
+init_cursors	dataset.py	/^    def init_cursors(self, source_addr, target_addr, dataset_type):$/;"	m	class:MultiTextPairIterator
+init_cursors	dataset.py	/^    def init_cursors(self, source_addr, target_addr, dataset_type, max_length):$/;"	m	class:MultiTextPairIterator_TokenBased
+init_cursors	dataset.py	/^    def init_cursors(self, source_addr, target_addr, max_length):$/;"	m	class:TestPairIterator_TokenBased
+init_mono_cursors	dataset.py	/^        def init_mono_cursors(source, max_length):$/;"	f	function:MultiTextPairIterator_TokenBased.init_cursors
+init_mono_cursors	dataset.py	/^        def init_mono_cursors(source, maxlen):$/;"	f	function:MultiTextPairIterator.init_cursors
+init_process	dataset.py	/^    def init_process(self, epoch):$/;"	m	class:MyTestDataset
+initialize	dataset.py	/^    def initialize(self):$/;"	m	class:TestPairIterator_TokenBased
+load_batch_main	dataset.py	/^        def load_batch_main(src_buffer, trg_buffer, idx_buffer, begin_idx, end_idx, dataset_type):$/;"	f	function:MultiTextPairIterator.__next__
+load_batch_main	dataset.py	/^        def load_batch_main(src_buffer, trg_buffer, idx_buffer, begin_idx, end_idx, dataset_type):$/;"	f	function:MultiTextPairIterator_TokenBased.__next__
+load_batch_main	dataset.py	/^        def load_batch_main(src_buffer, trg_buffer, idx_buffer, begin_idx, end_idx, dataset_type):$/;"	f	function:TestPairIterator_TokenBased.__next__
+load_bi_batch	dataset.py	/^        def load_bi_batch(src_buffer, trg_buffer, idx_buffer, begin_idx, end_idx):$/;"	f	function:MultiTextPairIterator.__next__
+load_bi_batch	dataset.py	/^        def load_bi_batch(src_buffer, trg_buffer, idx_buffer, begin_idx, end_idx):$/;"	f	function:MultiTextPairIterator_TokenBased.__next__
+load_bi_batch	dataset.py	/^        def load_bi_batch(src_buffer, trg_buffer, idx_buffer, begin_idx, end_idx):$/;"	f	function:TestPairIterator_TokenBased.__next__
+load_bi_buffer	dataset.py	/^                     src_dict, trg_dict):$/;"	f	function:MultiTextPairIterator.fill_buffer
+load_bi_buffer	dataset.py	/^                     src_dict, trg_dict, sorting):$/;"	f	function:MultiTextPairIterator_TokenBased.fill_buffer
+load_bi_buffer	dataset.py	/^                     src_dict, trg_dict, sorting):$/;"	f	function:TestPairIterator_TokenBased.fill_buffer
+load_buffer_main	dataset.py	/^                            offset, ahead, src_dict, trg_dict, dataset_type):$/;"	f	function:MultiTextPairIterator.fill_buffer
+load_buffer_main	dataset.py	/^                            offset, ahead, src_dict, trg_dict, dataset_type, sorting):$/;"	f	function:MultiTextPairIterator_TokenBased.fill_buffer
+load_mono_batch	dataset.py	/^        def load_mono_batch(src_buffer, idx_buffer, data_idx, batch_size):$/;"	f	function:MultiTextPairIterator.__next__
+load_mono_batch	dataset.py	/^        def load_mono_batch(src_buffer, idx_buffer, data_idx, batch_size):$/;"	f	function:MultiTextPairIterator_TokenBased.__next__
+load_mono_buffer	dataset.py	/^        def load_mono_buffer(source, cursor_idxes, src_cursors, offset, ahead, src_dict):$/;"	f	function:MultiTextPairIterator.fill_buffer
+load_mono_buffer	dataset.py	/^        def load_mono_buffer(source, cursor_idxes, src_cursors, offset, ahead, src_dict, sorting):$/;"	f	function:MultiTextPairIterator_TokenBased.fill_buffer
+max_length	dataset.py	/^    max_length=250$/;"	v
+max_samples	dataset.py	/^    max_samples = token_size$/;"	v
+means	dataset.py	/^                     np.mean(batch_histories[2])]$/;"	v
+means	dataset.py	/^                     np.mean(padding_ratio_histories[2])]$/;"	v
+mono_train_src_file	dataset.py	/^    mono_train_src_file='bpe.monolingual.dedup.small.en'$/;"	v
+mono_train_trg_file	dataset.py	/^    mono_train_trg_file='bpe.monolingual.dedup.small.de'$/;"	v
+mono_x_idxes	dataset.py	/^        mono_x_idxes = torch.cat((mono_x_idxes, torch.tensor([0]*(max_samples-len(mono_x_idxes))).cuda()))$/;"	v
+mono_x_idxes	dataset.py	/^        mono_x_idxes = torch.tensor(mono_x_idxes, dtype=torch.long).cuda()$/;"	v
+mono_y_idxes	dataset.py	/^        mono_y_idxes = torch.cat((mono_y_idxes, torch.tensor([0]*(max_samples-len(mono_y_idxes))).cuda()))$/;"	v
+mono_y_idxes	dataset.py	/^        mono_y_idxes = torch.tensor(mono_y_idxes, dtype=torch.long).cuda()$/;"	v
+multi_validation	nmt_trans.py	/^def multi_validation(model_ddp, valid_iter, args, rank):$/;"	f
+myEmbedding	nmt_model_tm.py	/^class myEmbedding(nn.Embedding):$/;"	c
+myLinear	nmt_model_tm.py	/^class myLinear(nn.Linear):$/;"	c
+neptune_project	nmt_run.py	/^neptune_project='' # Neptune project name$/;"	v
+one_hot	nmt_model_tm.py	/^def one_hot(input, class_tensor, num_classes):$/;"	f
+padding_ratio_histories	dataset.py	/^    padding_ratio_histories = [[], [], []]$/;"	v
+parser	dataset.py	/^    parser = argparse.ArgumentParser(description="", formatter_class=argparse.RawTextHelpFormatter)$/;"	v
+parser	nmt_ensemble.py	/^    parser = argparse.ArgumentParser(description="", formatter_class=argparse.RawTextHelpFormatter)$/;"	v
+parser	nmt_run.py	/^    parser = argparse.ArgumentParser(description="", formatter_class=argparse.RawTextHelpFormatter)$/;"	v
+predict_word	nmt_trans.py	/^    def predict_word(dec_seq, dec_pos, src_seq, enc_output, n_active_inst, Bs, sampling):$/;"	f	function:beam_decode_step
+predict_word	nmt_trans.py	/^    def predict_word(dec_seq, dec_pos, src_seq, enc_output, n_active_inst, Bs, sampling):$/;"	f	function:beam_decode_step_lenpen
+prepare_beam_dec_pos	nmt_trans.py	/^    def prepare_beam_dec_pos(len_dec_seq, n_active_inst, Bs):$/;"	f	function:beam_decode_step
+prepare_beam_dec_pos	nmt_trans.py	/^    def prepare_beam_dec_pos(len_dec_seq, n_active_inst, Bs):$/;"	f	function:beam_decode_step_lenpen
+prepare_beam_dec_seq	nmt_trans.py	/^    def prepare_beam_dec_seq(inst_dec_beams, len_dec_seq):$/;"	f	function:beam_decode_step
+prepare_beam_dec_seq	nmt_trans.py	/^    def prepare_beam_dec_seq(inst_dec_beams, len_dec_seq):$/;"	f	function:beam_decode_step_lenpen
+prepare_text	dataset.py	/^    def prepare_text(self, seqs_x):$/;"	m	class:MultiTextPairIterator
+prepare_text	dataset.py	/^    def prepare_text(self, seqs_x):$/;"	m	class:MultiTextPairIterator_TokenBased
+prepare_text	dataset.py	/^    def prepare_text(self, seqs_x):$/;"	m	class:TestPairIterator_TokenBased
+prepare_text_pair	dataset.py	/^    def prepare_text_pair(self, seqs_x, seqs_y):$/;"	m	class:MultiTextPairIterator
+prepare_text_pair	dataset.py	/^    def prepare_text_pair(self, seqs_x, seqs_y):$/;"	m	class:MultiTextPairIterator_TokenBased
+prepare_text_pair	dataset.py	/^    def prepare_text_pair(self, seqs_x, seqs_y):$/;"	m	class:TestPairIterator_TokenBased
+prepare_text_pair	dataset.py	/^def prepare_text_pair(batch):$/;"	f
+prev_epochs	dataset.py	/^    prev_epochs = copy.deepcopy(test_iter.epochs)$/;"	v
+print_every	dataset.py	/^    print_every = 1000$/;"	v
+rank	dataset.py	/^    rank = args.local_rank$/;"	v
+read_dict	dataset.py	/^def read_dict(dic_file, const_id=None, ctc_dict=False):$/;"	f
+read_references	dataset.py	/^    def read_references(self, ref_source, ref_target):$/;"	m	class:MyTestDataset
+reset_parameters	nmt_model_tm.py	/^    def reset_parameters(self):$/;"	m	class:myEmbedding
+reset_parameters	nmt_model_tm.py	/^    def reset_parameters(self):$/;"	m	class:myLinear
+sample_idx	nmt_model_tm.py	/^    def sample_idx(self, probs, train):$/;"	m	class:Transformer
+shuffle_cursors	dataset.py	/^    def shuffle_cursors(self, dataset_idx, seed):$/;"	m	class:MultiTextPairIterator
+shuffle_cursors	dataset.py	/^    def shuffle_cursors(self, dataset_idx, seed):$/;"	m	class:MultiTextPairIterator_TokenBased
+sort_scores	Beam.py	/^    def sort_scores(self):$/;"	m	class:Beam
+sort_scores	Beam.py	/^    def sort_scores(self):$/;"	m	class:Beam_Sampling
+sort_scores	Beam.py	/^    def sort_scores(self):$/;"	m	class:LengthPenaltyBeam
+sorting	dataset.py	/^    sorting=True$/;"	v
+src_dict	dataset.py	/^    src_dict='vocab.32000.joined.pkl'$/;"	v
+start_time	dataset.py	/^    start_time = time.time()$/;"	v
+stds	dataset.py	/^                     np.std(batch_histories[2])]$/;"	v
+stds	dataset.py	/^                     np.std(padding_ratio_histories[2])]$/;"	v
+test_iter	dataset.py	/^                                        world_size=args.world_size, sorting=sorting)$/;"	v
+test_run	nmt_run.py	/^def test_run():$/;"	f
+times	dataset.py	/^    times = [0, 0, 0]$/;"	v
+times_per_epoch	dataset.py	/^    times_per_epoch = [0, 0, 0]$/;"	v
+token_size	dataset.py	/^    token_size=3600$/;"	v
+total_bi_idxes	dataset.py	/^            total_bi_idxes = []$/;"	v
+total_mono_x_idxes	dataset.py	/^            total_mono_x_idxes = []$/;"	v
+total_mono_y_idxes	dataset.py	/^            total_mono_y_idxes = []$/;"	v
+train	nmt_main.py	/^        update_flag, update_step):$/;"	f
+train_main	nmt_main.py	/^def train_main(args, train_iter, valid_iter, rank, neptune_project):$/;"	f
+train_run	nmt_run.py	/^def train_run():$/;"	f
+train_src_file	dataset.py	/^    train_src_file='bpe.test.2014.en'$/;"	v
+train_trg_file	dataset.py	/^    train_trg_file='bpe.test.2014.de'$/;"	v
+translate	nmt_model_tm.py	/^                                 start_time=time.time()):$/;"	m	class:Transformer
+translate_tm	nmt_trans.py	/^def translate_tm(model, x_data, x_mask, args):$/;"	f
+translate_tm_beam	nmt_trans.py	/^def translate_tm_beam(model, x_data, x_mask, args): # not working$/;"	f
+translate_tm_beam_lenpen	nmt_trans.py	/^def translate_tm_beam_lenpen(model, x_data, x_mask, args): # not working$/;"	f
+translation	nmt_model_tm.py	/^    def translation(self, x_data, x_mask, y_data, y_mask):$/;"	m	class:NormalNMT
+trg_dict	dataset.py	/^    trg_dict=src_dict$/;"	v
+type_of_dataset	dataset.py	/^    def type_of_dataset(self, source_addr, target_addr):$/;"	m	class:MultiTextPairIterator
+type_of_dataset	dataset.py	/^    def type_of_dataset(self, source_addr, target_addr):$/;"	m	class:MultiTextPairIterator_TokenBased
+use_cuda	nmt_model_tm.py	/^use_cuda = torch.cuda.is_available()$/;"	v
+use_cuda	nmt_trans.py	/^use_cuda = torch.cuda.is_available()$/;"	v
+verify_token_size	dataset.py	/^        def verify_token_size(test_token_size):$/;"	f	function:TestPairIterator_TokenBased.auto_tune_and_inspect

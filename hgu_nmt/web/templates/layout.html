@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>MILAB@HGU Translator</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link rel=”stylesheet” href=”http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css“>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <!-- <link href="resources/vendor/fontawesome-free/css/all.min.css" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800|Nanum+Myeongjo:400,700,800&display=swap&subset=korean" rel="stylesheet">
+
+  <style>
+  .trans_area {
+    font-size:2.0rem;
+    /* position: relative; */
+    width: 90%;
+    height: 20rem;
+    margin-top: 1.2rem;
+  }
+  .dict_area {
+    font-size:2rem;
+    /* position: relative; */
+    width: 80%;
+    height: 5rem;
+  }
+  font {
+    font-family: "Nanum Gothic";
+  }
+  textarea::placeholder {
+    color: rgb(170,170,170);
+  }
+  textarea {
+    padding:1rem;
+  }
+  </style>
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar" data-offset="50">
+  <!-- <nav class="navbar navbar-default navbar-fixed-top" style="background-color: rgb(20, 92, 204); height: 8rem"> -->
+  <nav class="navbar navbar-default navbar-fixed-top" style="height: 9rem; border:solid 0.5px rgb(DDDDDD);">
+    <div class="container-fluid text-center">
+      <h1 class="text-center" style="color:rgb(20, 92, 204)">Kr-En/En-Kr Translator</h1>
+      by MILAB @ HGU <a href=https://milab.handong.edu/>https://milab.handong.edu/</a>
+    </div>
+  </nav>
+  <div class="row text-center" style="margin-top: 15rem">
+    <div class="col-md-6">
+      <div class="row">
+          <div class="col-md-8" >
+            {% block src_name %}
+            {% endblock %}
+          </div>
+          <div class="col-md-4">
+            {% block form_switch %}
+            {% endblock %}
+              <button id="switch" style="background:rgb(20,92,204); color:rgb(255,255,255); font-size: 1.6rem" type="submit" value="switch"> <=> </button>
+            <textarea style="display:none;" name="lang" id="lang">{{lang}}</textarea>
+            <textarea style="display:none;" name="src" id="src">{{src_contents}}</textarea>
+            <textarea style="display:none;" name="trg" id="trg">{{trans_contents}}</textarea>
+            </form>
+          </div>
+      </div>
+      {% block form_trans %}
+      {% endblock %}
+      <textarea class="trans_area" name="src" id="src" cols="25" rows="5" placeholder="Input">{{src_contents}}</textarea>
+      <p><button style="margin-top: 3rem; background:rgb(20,92,204); color:rgb(255,255,255); width:20%; height:4rem; font-size: 1.7rem" type="submit" value="Translate">Translate</button></p>
+
+        <!-- <text id="mode">0</text> -->
+      </form>
+    </div>
+    <div class="col-md-6">
+      {% block trg_name %}
+      {% endblock %}
+      <textarea class="trans_area" name="trg" id="trg" cols="25" rows="5" disabled>{{trans_contents}}</textarea>
+    </div>
+
+    <!-- <input style="margin-top: 3rem; background:rgb(20,92,204); color: rgb(255,255,255); width:15%; height:5rem; font-size: 1.7rem" type="submit" value="Translate"> -->
+  </div>
+  <!-- <text id="mode">0</text> -->
+
+  <br>
+    <!-- <div class="row text-center" style="margin-top: 10rem">
+      <font style="color:rgb(100,100,100); font-size: 2rem; ">
+          Registration of Proper Noun<br>
+      </font>
+    </div> -->
+    <div class="row text-center">
+      <!--
+        <form action='/add_dict' method="GET">
+        <button style="margin-top: 3rem; background:rgb(DDDDDD); color:rgb(20,92,204); width:20%; height:4rem; font-size: 1.7rem" type="submit" value="Proper Noun">Registration of Proper Noun</button>
+      </form>
+      -->
+      <form action='/edit_dict' method="GET">
+        <button style="margin-top: 1rem; background:rgb(DDDDDD); color:rgb(20,92,204); width:30%; height:4rem; font-size: 1.7rem" type="submit" value="Proper Noun">Edit Your Proper Nouns</button>
+      </form>
+<!--
+      <form action='/check_stat' method="GET">
+        <button style="margin-top: 1rem; background:rgb(DDDDDD); color:rgb(20,92,204); width:30%; height:4rem; font-size: 1.7rem" type="submit" value="CheckStat">Statistics of Your Translation</button>
+      </form>
+-->
+    </div>
+
+
+  </div>
+
+  <text id="mode" display:None style="font-size:0">0</text>
+
+
+  <script src="//code.jquery.com/jquery.min.js"></script>
+  <script>
+    function addDict() {
+      var str = prompt('Add your proper noun.');
+
+      while(1) {
+        if(str == null) alert("Add your proper noun.")
+        else {
+          alert("Added!")
+          break;
+        }
+      }
+
+
+
+      }
+    }
+
+    alert(inputString);
+
+    // $('#switch').click(function() {
+    //       if($('#mode').text() == 0) {
+    //         alert("k2e");
+    //
+    //       }
+    //       else {
+    //         $('#trg_name').text('영 어');
+    //         $('#src_name').text('한국어');
+    //         $('#mode').text(1);
+    //       }
+    //   });
+  </script>
+
+</body>
+</html>

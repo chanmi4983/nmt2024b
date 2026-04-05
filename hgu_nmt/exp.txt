@@ -1,0 +1,5 @@
+screen7 NMT2022-9  'en2kr.l6.d256.ff1024.gpu7.nosort' 
+screen6 NMT2022-10 'kr2en.l6.d256.ff1024.gpu6.nosort'
+screen5 NMT2022-11 'kr2en.l6.d256.ff1024.gpu5' 
+screen4 NMT2022-12 'en2kr.l6.d256.ff1024.gpu4'
+

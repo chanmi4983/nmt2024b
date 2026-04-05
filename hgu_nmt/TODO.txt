@@ -1,0 +1,13 @@
+no sorting in data loader.  # sorting helps. 
+
+partitioned attention. (not working) 
+- inner product in a subpart of the dimension after projection # meaningless
+- inner product in the whole dimension after projection from a subpart of the dimension. # not working
+
+max pooled attention instead of concatenation. (not working)
+
+
+label_smoothing. (done)
+
+
+use v not q for skip-connection (not wokring)

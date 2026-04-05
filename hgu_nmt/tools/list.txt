@@ -1,0 +1,4 @@
+PREPROCESS_URL = 'https://raw.githubusercontent.com/lisa-groundhog/GroundHog/master/experiments/nmt/preprocess/preprocess.py' 
+TOKENIZER_URL = 'https://raw.githubusercontent.com/moses-smt/mosesdecoder/master/scripts/tokenizer/tokenizer.perl'
+BLEU_SCRIPT_URL = 'https://raw.githubusercontent.com/moses-smt/mosesdecoder/master/scripts/generic/multi-bleu.perl'
+TOKENIZER_PREFIXES = 'https://raw.githubusercontent.com/moses-smt/mosesdecoder/master/scripts/share/nonbreaking_prefixes/nonbreaking_prefix.'

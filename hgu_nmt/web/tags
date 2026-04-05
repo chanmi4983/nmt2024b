@@ -1,0 +1,261 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BOS	nmt_const.py	/^BOS = 1$/;"	v
+BOS_WORD	nmt_const.py	/^BOS_WORD = '<s>'$/;"	v
+Beam	Beam.py	/^class Beam():$/;"	c
+EOS	nmt_const.py	/^EOS = 2$/;"	v
+EOS_WORD	nmt_const.py	/^EOS_WORD = '<\/s>'$/;"	v
+FeedForward	nmt_model_tm.py	/^class FeedForward(nn.Module):$/;"	c
+LoginForm	web_test.py	/^class LoginForm(FlaskForm):$/;"	c
+MultiHeadAttention	nmt_model_tm.py	/^class MultiHeadAttention(nn.Module):$/;"	c
+MultiHeadAttentionCross	nmt_model_tm.py	/^class MultiHeadAttentionCross(nn.Module):$/;"	c
+MultiHeadAttentionNew	nmt_model_tm.py	/^class MultiHeadAttentionNew(nn.Module):$/;"	c
+MultiHeadAttentionSelf	nmt_model_tm.py	/^class MultiHeadAttentionSelf(nn.Module):$/;"	c
+PAD	nmt_const.py	/^PAD = 0 $/;"	v
+PAD_WORD	nmt_const.py	/^PAD_WORD = '<pad>'$/;"	v
+PositionalEncoding	nmt_model_tm.py	/^class PositionalEncoding(nn.Module):$/;"	c
+ScaledDotProductAttention	nmt_model_tm.py	/^class ScaledDotProductAttention(nn.Module): $/;"	c
+TM_Decoder	nmt_model_tm.py	/^class TM_Decoder(nn.Module):$/;"	c
+TM_DecoderLayer	nmt_model_tm.py	/^class TM_DecoderLayer(nn.Module):$/;"	c
+TM_Encoder	nmt_model_tm.py	/^class TM_Encoder(nn.Module):$/;"	c
+TM_EncoderLayer	nmt_model_tm.py	/^class TM_EncoderLayer(nn.Module):$/;"	c
+TextIterator	text_data.org.py	/^class TextIterator:$/;"	c
+TextIterator	text_data.py	/^class TextIterator:$/;"	c
+TextPairIterator	text_data.org.py	/^class TextPairIterator:$/;"	c
+TextPairIterator	text_data.py	/^class TextPairIterator:$/;"	c
+Transformer	nmt_model_tm.py	/^class Transformer(nn.Module):$/;"	c
+UNK	nmt_const.py	/^UNK = 3$/;"	v
+UNK_WORD	nmt_const.py	/^UNK_WORD = '<unk>'$/;"	v
+USERS	web_test.py	/^USERS = {$/;"	v
+User	web_test.py	/^class User:$/;"	c
+__init__	Beam.py	/^    def __init__(self, size, device=False):$/;"	m	class:Beam
+__init__	nmt_model_tm.py	/^    def __init__(self, d_model):$/;"	m	class:PositionalEncoding
+__init__	nmt_model_tm.py	/^    def __init__(self, dim_model, dim_ff, drop_p=0.):$/;"	m	class:FeedForward
+__init__	nmt_model_tm.py	/^    def __init__(self, dim_model, dim_ff, n_head, dk, dv, drop_p=0.):$/;"	m	class:TM_DecoderLayer
+__init__	nmt_model_tm.py	/^    def __init__(self, dim_model, dim_ff, n_head, dk, dv, drop_p=0.):$/;"	m	class:TM_EncoderLayer
+__init__	nmt_model_tm.py	/^    def __init__(self, dk, drop_p=0.):$/;"	m	class:ScaledDotProductAttention
+__init__	nmt_model_tm.py	/^    def __init__(self, in_features, out_features, bias=True):$/;"	m	class:myLinear
+__init__	nmt_model_tm.py	/^    def __init__(self, n_head, dim_model, dk, dv, drop_p=0.):$/;"	m	class:MultiHeadAttention
+__init__	nmt_model_tm.py	/^    def __init__(self, n_head, dim_model, dk, dv, drop_p=0.):$/;"	m	class:MultiHeadAttentionCross
+__init__	nmt_model_tm.py	/^    def __init__(self, n_head, dim_model, dk, dv, drop_p=0.):$/;"	m	class:MultiHeadAttentionNew
+__init__	nmt_model_tm.py	/^    def __init__(self, n_head, dim_model, dk, dv, drop_p=0.):$/;"	m	class:MultiHeadAttentionSelf
+__init__	nmt_model_tm.py	/^    def __init__(self, num_embeddings, embedding_dim, padding_idx=None):$/;"	m	class:myEmbedding
+__init__	nmt_model_tm.py	/^    def __init__(self, src_words_n, n_layers=6, n_head=8, dk=64, dv=64,$/;"	m	class:TM_Encoder
+__init__	nmt_model_tm.py	/^    def __init__(self, src_words_n, trg_words_n, args=None):$/;"	m	class:Transformer
+__init__	nmt_model_tm.py	/^    def __init__(self, trg_words_n, n_layers=6, n_head=8, dk=64, dv=64,$/;"	m	class:TM_Decoder
+__init__	text_data.org.py	/^    def __init__(self, source, data_dict, $/;"	m	class:TextIterator
+__init__	text_data.org.py	/^    def __init__(self, source, target, src_dict, trg_dict,$/;"	m	class:TextPairIterator
+__init__	text_data.py	/^    def __init__(self, source, data_dict, $/;"	m	class:TextIterator
+__init__	text_data.py	/^    def __init__(self, source, target, src_dict, trg_dict,$/;"	m	class:TextPairIterator
+__init__	web_test.py	/^    def __init__(self, user_id, email=None, passwd_hash=None,$/;"	m	class:User
+__iter__	text_data.org.py	/^    def __iter__(self):$/;"	m	class:TextIterator	file:
+__iter__	text_data.org.py	/^    def __iter__(self):$/;"	m	class:TextPairIterator	file:
+__iter__	text_data.py	/^    def __iter__(self):$/;"	m	class:TextIterator	file:
+__iter__	text_data.py	/^    def __iter__(self):$/;"	m	class:TextPairIterator	file:
+__next__	text_data.org.py	/^    def __next__(self):$/;"	m	class:TextIterator	file:
+__next__	text_data.org.py	/^    def __next__(self):$/;"	m	class:TextPairIterator	file:
+__next__	text_data.py	/^    def __next__(self):$/;"	m	class:TextIterator	file:
+__next__	text_data.py	/^    def __next__(self):$/;"	m	class:TextPairIterator	file:
+__repr__	web_test.py	/^    def __repr__(self):$/;"	m	class:User	file:
+add_dict	web_run.py	/^def add_dict(num=None):$/;"	f
+add_dict	web_test.py	/^def add_dict(num=None):$/;"	f
+add_newline_char	web_run.py	/^def add_newline_char(string, ch):$/;"	f
+add_newlines	web_run.py	/^def add_newlines(string):$/;"	f
+advance	Beam.py	/^    def advance(self, word_prob):$/;"	m	class:Beam
+app	web_run.py	/^app = Flask(__name__)$/;"	v
+app	web_test.py	/^app = Flask(__name__)$/;"	v
+args	check_bleu.py	/^args = parser.parse_args()$/;"	v
+args	check_dict.py	/^args = parser.parse_args()$/;"	v
+args	check_model.py	/^args = parser.parse_args()$/;"	v
+args	load_model.py	/^args = parser.parse_args()$/;"	v
+args	nmt_post.py	/^    args = parser.parse_args()$/;"	v
+args	nmt_train.py	/^args = parser.parse_args()$/;"	v
+args	nmt_trans.py	/^args = parser.parse_args()$/;"	v
+args	symb_test.py	/^    args = parser.parse_args()$/;"	v
+args	unbpe_symbols.py	/^    args = parser.parse_args()$/;"	v
+args	web_run.py	/^args = parser.parse_args()$/;"	v
+args	web_test.py	/^args = parser.parse_args()$/;"	v
+base_dir	text_data.org.py	/^    base_dir = '\/home\/torch\/data\/data_en_fi_org\/subword\/'$/;"	v	class:TextIterator
+base_dir	text_data.py	/^    base_dir = '\/home\/torch\/data\/data_en_fi_org\/subword\/'$/;"	v	class:TextIterator
+beam_decode_step	nmt_trans_main.py	/^def beam_decode_step(model, inst_dec_beams, len_dec_seq, src_seq, enc_output, inst_idx_to_position_map, Bs):$/;"	f
+bleus	check_bleu.py	/^bleus = [float(line.split('\\t')[1]) for line in idx_bleu]$/;"	v
+can_login	web_test.py	/^    def can_login(self, passwd_hash):$/;"	m	class:User
+check_stat	web_run.py	/^def check_stat(num=None):$/;"	f
+check_stat	web_test.py	/^def check_stat(num=None):$/;"	f
+chk_point	nmt_trans.py	/^chk_point = torch.load(args.trans_model_file)$/;"	v
+collate_active_info	nmt_trans_main.py	/^def collate_active_info(src_seq, src_enc, inst_idx_to_position_map, active_inst_idx_list, Bs):$/;"	f
+collect_active_inst_idx_list	nmt_trans_main.py	/^    def collect_active_inst_idx_list(inst_beams, word_prob, inst_idx_to_position_map):$/;"	f	function:beam_decode_step
+collect_active_part	nmt_trans_main.py	/^def collect_active_part(beamed_tensor, curr_active_inst_idx, n_prev_active_inst, Bs):$/;"	f
+collect_hypothesis_and_scores	nmt_trans_main.py	/^def collect_hypothesis_and_scores(inst_dec_beams, n_best):$/;"	f
+copyParams	web_run.py	/^def copyParams(module_src, module_dest):$/;"	f
+count_freq_words	web_run.py	/^def count_freq_words(my_file, max_w):$/;"	f
+count_freq_words	web_test.py	/^def count_freq_words(my_file, max_w):$/;"	f
+count_words	web_run.py	/^def count_words(lines):$/;"	f
+count_words	web_test.py	/^def count_words(lines):$/;"	f
+d_	check_model.py	/^    d_ = [t.item() for t in decoder_ln]$/;"	v
+d_temp	check_model.py	/^    d_temp = [t.item() for t in decoder_temp]$/;"	v
+decoder_ln	check_model.py	/^    decoder_ln = [torch.mean(param['decoder.layer_stack.0.self_attn.layer_norm.weight']), $/;"	v
+decoder_temp	check_model.py	/^    decoder_temp = [param['decoder.layer_stack.0.self_attn.sdp_attn.temper'],$/;"	v
+device	nmt_main_both.py	/^device=torch.device("cuda" if use_cuda else "cpu")$/;"	v
+device	nmt_model_tm.py	/^device=torch.device("cuda" if use_cuda else "cpu")$/;"	v
+device	nmt_post.py	/^device=torch.device("cuda" if use_cuda else "cpu")$/;"	v
+device	nmt_train_main.py	/^device=torch.device("cuda" if use_cuda else "cpu")$/;"	v
+device	nmt_trans.py	/^device=torch.device("cuda" if use_cuda else "cpu")$/;"	v
+device	nmt_trans_main.py	/^device=torch.device("cuda" if use_cuda else "cpu")$/;"	v
+device	web_run.py	/^device=torch.device("cuda" if use_cuda else "cpu")$/;"	v
+dict_list	nmt_post.py	/^    dict_list = pkl.load(open(args.temp_dir+'\/test_temp_dicts.pkl', 'rb'))$/;"	v
+dict_list	symb_test.py	/^    dict_list = []$/;"	v
+done	Beam.py	/^    def done(self):$/;"	m	class:Beam
+e2k_trans	web_run.py	/^def e2k_trans(num=None):$/;"	f
+e2k_trans	web_test.py	/^def e2k_trans(num=None):$/;"	f
+e_	check_model.py	/^    e_ = [t.item() for t in encoder_ln]$/;"	v
+e_temp	check_model.py	/^    e_temp = [t.item() for t in encoder_temp]$/;"	v
+ed_temp	check_model.py	/^    ed_temp = [t.item() for t in enc_dec_temp]$/;"	v
+edit_dict	web_run.py	/^def edit_dict(num=None):$/;"	f
+edit_dict	web_test.py	/^def edit_dict(num=None):$/;"	f
+enc_dec_temp	check_model.py	/^    enc_dec_temp = [param['decoder.layer_stack.0.enc_attn.sdp_attn.temper'],$/;"	v
+encoder_ln	check_model.py	/^    encoder_ln = [torch.mean(param['encoder.layer_stack.0.self_attn.layer_norm.weight']), $/;"	v
+encoder_temp	check_model.py	/^    encoder_temp = [param['encoder.layer_stack.0.self_attn.sdp_attn.temper'],$/;"	v
+file_name	load_model.py	/^file_name = args.save_dir + '\/' + args.model_file + '.best.pth'$/;"	v
+fopen	text_data.org.py	/^def fopen(filename, mode='r'):$/;"	f
+fopen	text_data.py	/^def fopen(filename, mode='r'):$/;"	f
+forward	nmt_model_tm.py	/^    def forward(self, dec_in, enc_out, y_mask=None, enc_mask=None):$/;"	m	class:TM_DecoderLayer
+forward	nmt_model_tm.py	/^    def forward(self, enc_in, x_mask=None):$/;"	m	class:TM_EncoderLayer
+forward	nmt_model_tm.py	/^    def forward(self, q, k, v, attn_mask=None): # (QK')V # q = B T E$/;"	m	class:MultiHeadAttention
+forward	nmt_model_tm.py	/^    def forward(self, q, k, v, attn_mask=None): # (QK')V # q = B T E$/;"	m	class:MultiHeadAttentionNew
+forward	nmt_model_tm.py	/^    def forward(self, q, k, v, attn_mask=None): # (QK')V # q = B T E$/;"	m	class:MultiHeadAttentionSelf
+forward	nmt_model_tm.py	/^    def forward(self, q, k, v, attn_mask=None): # (QK')V # q = B T E, (q=Dec, k=Enc, v=Enc)$/;"	m	class:MultiHeadAttentionCross
+forward	nmt_model_tm.py	/^    def forward(self, q, k, v, mask=None): # B H T E$/;"	m	class:ScaledDotProductAttention
+forward	nmt_model_tm.py	/^    def forward(self, src_seq, src_mask):$/;"	m	class:TM_Encoder
+forward	nmt_model_tm.py	/^    def forward(self, trg_seq, trg_mask, enc_out, src_mask):$/;"	m	class:TM_Decoder
+forward	nmt_model_tm.py	/^    def forward(self, x):$/;"	m	class:FeedForward
+forward	nmt_model_tm.py	/^    def forward(self, x):$/;"	m	class:PositionalEncoding
+forward	nmt_model_tm.py	/^    def forward(self, x_data, x_mask, y_data, y_mask):$/;"	m	class:Transformer
+fout	nmt_post.py	/^    fout = open(args.output, "w")$/;"	v
+fout	symb_test.py	/^    fout = open(args.output, "w")$/;"	v
+get_current_origin	Beam.py	/^    def get_current_origin(self):$/;"	m	class:Beam
+get_current_state	Beam.py	/^    def get_current_state(self):$/;"	m	class:Beam
+get_hypothesis	Beam.py	/^    def get_hypothesis(self, k):$/;"	m	class:Beam
+get_id	web_test.py	/^    def get_id(self):$/;"	m	class:User
+get_inst_idx_to_tensor_position_map	nmt_trans_main.py	/^def get_inst_idx_to_tensor_position_map(inst_idx_list):$/;"	f
+get_pe	nmt_model_tm.py	/^    def get_pe(self, x_len):$/;"	m	class:PositionalEncoding
+get_scale	nmt_model_tm.py	/^def get_scale(n1, n2=None): # for Xavier uniform initialization$/;"	f
+get_subsequent_mask	nmt_model_tm.py	/^    def get_subsequent_mask(self, seq):$/;"	m	class:TM_Decoder
+get_tentative_hypothesis	Beam.py	/^    def get_tentative_hypothesis(self):$/;"	m	class:Beam
+get_the_best_score_and_idx	Beam.py	/^    def get_the_best_score_and_idx(self):$/;"	m	class:Beam
+hello	web_run.py	/^def hello():$/;"	f
+hello	web_test.py	/^def hello():$/;"	f
+i	nmt_post.py	/^            i = i + 1$/;"	v
+i	nmt_post.py	/^        i = 0$/;"	v
+idx	text_data.org.py	/^    idx = 0$/;"	v	class:TextIterator
+idx	text_data.py	/^    idx = 0$/;"	v	class:TextIterator
+idx_bleu	check_bleu.py	/^    idx_bleu = fp.readlines()$/;"	v
+in_file	unbpe_symbols.py	/^    in_file = open(args.input, "r", encoding="utf-8")$/;"	v
+is_active	web_test.py	/^    def is_active(self):$/;"	m	class:User
+is_anonymous	web_test.py	/^    def is_anonymous(self):$/;"	m	class:User
+is_authenticated	web_test.py	/^    def is_authenticated(self):$/;"	m	class:User
+k2e_trans	web_run.py	/^def k2e_trans(num=None):$/;"	f
+k2e_trans	web_test.py	/^def k2e_trans(num=None):$/;"	f
+lang	nmt_post.py	/^        lang = "e2k"$/;"	v
+lang	nmt_post.py	/^        lang = "k2e"$/;"	v
+lang	symb_test.py	/^        lang = "e2k"$/;"	v
+lang	symb_test.py	/^        lang = "k2e"$/;"	v
+lang_switch	web_run.py	/^def lang_switch(num=None):$/;"	f
+line	unbpe_symbols.py	/^        line = in_file.readline().strip() $/;"	v
+line	unbpe_symbols.py	/^        line = line.replace("__P@@ ", "__P")$/;"	v
+line_num	unbpe_symbols.py	/^    line_num = 0$/;"	v
+login	web_test.py	/^def login():$/;"	f
+login_manager	web_test.py	/^login_manager = LoginManager()$/;"	v
+logout	web_test.py	/^def logout():$/;"	f
+model	check_model.py	/^model = torch.load('results\/' +args.file)$/;"	v
+model	load_model.py	/^model = torch.load(file_name)$/;"	v
+model	nmt_trans.py	/^model = Transformer(len(src_dict), len(trg_dict), args=old_args).to(device)$/;"	v
+myEmbedding	nmt_model_tm.py	/^class myEmbedding(nn.Embedding):$/;"	c
+myLinear	nmt_model_tm.py	/^class myLinear(nn.Linear):$/;"	c
+old_args	load_model.py	/^old_args = pkl.load(open(args.save_dir+'\/'+args.model_file+'.args.pkl', 'rb'))$/;"	v
+old_args	nmt_trans.py	/^old_args = pkl.load(open(args.trans_args_file, 'rb'))$/;"	v
+out_file	unbpe_symbols.py	/^    out_file = open(args.output, "w")$/;"	v
+param	check_model.py	/^param = model['state_dict']$/;"	v
+parser	check_bleu.py	/^parser = argparse.ArgumentParser(description="", formatter_class=argparse.RawTextHelpFormatter)$/;"	v
+parser	check_dict.py	/^parser = argparse.ArgumentParser(description="", formatter_class=argparse.RawTextHelpFormatter)$/;"	v
+parser	check_model.py	/^parser = argparse.ArgumentParser(description="", formatter_class=argparse.RawTextHelpFormatter)$/;"	v
+parser	load_model.py	/^parser = argparse.ArgumentParser(description="", formatter_class=argparse.RawTextHelpFormatter)$/;"	v
+parser	nmt_post.py	/^    parser = argparse.ArgumentParser(description="", formatter_class=argparse.RawTextHelpFormatter)$/;"	v
+parser	nmt_train.py	/^parser = argparse.ArgumentParser(description="", formatter_class=argparse.RawTextHelpFormatter)$/;"	v
+parser	nmt_trans.py	/^parser = argparse.ArgumentParser(description="", formatter_class=argparse.RawTextHelpFormatter)$/;"	v
+parser	symb_test.py	/^    parser = argparse.ArgumentParser(description="", formatter_class=argparse.RawTextHelpFormatter)$/;"	v
+parser	unbpe_symbols.py	/^    parser = argparse.ArgumentParser(description="", formatter_class=argparse.RawTextHelpFormatter)$/;"	v
+parser	web_run.py	/^parser = argparse.ArgumentParser(description="", formatter_class=argparse.RawTextHelpFormatter)$/;"	v
+parser	web_test.py	/^parser = argparse.ArgumentParser(description="", formatter_class=argparse.RawTextHelpFormatter)$/;"	v
+password	web_test.py	/^    password = PasswordField('Password')$/;"	v	class:LoginForm
+pn_dict	symb_test.py	/^    pn_dict = read_pn_list(args.pn_dict)$/;"	v
+post_process	nmt_post.py	/^def post_process(output, lang, temp_dict, args):$/;"	f
+predict_word	nmt_trans_main.py	/^    def predict_word(dec_seq, dec_pos, src_seq, enc_output, n_active_inst, Bs):$/;"	f	function:beam_decode_step
+prepare_beam_dec_pos	nmt_trans_main.py	/^    def prepare_beam_dec_pos(len_dec_seq, n_active_inst, Bs):$/;"	f	function:beam_decode_step
+prepare_beam_dec_seq	nmt_trans_main.py	/^    def prepare_beam_dec_seq(inst_dec_beams, len_dec_seq):$/;"	f	function:beam_decode_step
+prepare_text	text_data.org.py	/^    def prepare_text(self, seqs_x):$/;"	m	class:TextIterator
+prepare_text	text_data.py	/^    def prepare_text(self, seqs_x):$/;"	m	class:TextIterator
+prepare_text	web_run.py	/^def prepare_text(seqs_x, Const_id):$/;"	f
+prepare_text_pair	text_data.org.py	/^    def prepare_text_pair(self, seqs_x, seqs_y):$/;"	m	class:TextPairIterator
+prepare_text_pair	text_data.py	/^    def prepare_text_pair(self, seqs_x, seqs_y):$/;"	m	class:TextPairIterator
+read_dict	text_data.org.py	/^def read_dict(dic_file, const_id=None):$/;"	f
+read_dict	text_data.py	/^def read_dict(dic_file, const_id=None):$/;"	f
+reset	text_data.org.py	/^    def reset(self):$/;"	m	class:TextIterator
+reset	text_data.org.py	/^    def reset(self):$/;"	m	class:TextPairIterator
+reset	text_data.py	/^    def reset(self):$/;"	m	class:TextIterator
+reset	text_data.py	/^    def reset(self):$/;"	m	class:TextPairIterator
+reset_parameters	nmt_model_tm.py	/^    def reset_parameters(self):$/;"	m	class:myEmbedding
+reset_parameters	nmt_model_tm.py	/^    def reset_parameters(self):$/;"	m	class:myLinear
+ret	nmt_trans.py	/^ret = translate_file(model, args.valid_src_file+args.valid_post, args.src_dict, args.valid_trg_file, args.trg_dict, args.trans_file, args, valid=False)$/;"	v
+save_best	nmt_main_both.py	/^def save_best(m_xy, opt_xy, m_yx, opt_yx, bleu_xy, bleu_yx, file_pre, idx, iline, args):$/;"	f
+setting	web_run.py	/^def setting(args):$/;"	f
+setting	web_test.py	/^def setting(args):$/;"	f
+sort_scores	Beam.py	/^    def sort_scores(self):$/;"	m	class:Beam
+src	load_model.py	/^src = model['state_dict']['encoder.src_emb.weight'])$/;"	v
+src_dict	check_dict.py	/^src_dict = read_dict(args.src_dict)$/;"	v
+src_dict	nmt_trans.py	/^src_dict = read_dict(args.src_dict)$/;"	v
+src_dict	text_data.org.py	/^    src_dict = base_dir + 'vocab.en.pkl'$/;"	v	class:TextIterator
+src_dict	text_data.py	/^    src_dict = base_dir + 'vocab.en.pkl'$/;"	v	class:TextIterator
+src_dict2	text_data.org.py	/^    src_dict2 = read_dict(src_dict, const_id=Const)$/;"	v	class:TextIterator
+src_dict2	text_data.py	/^    src_dict2 = read_dict(src_dict, const_id=Const)$/;"	v	class:TextIterator
+src_file	text_data.org.py	/^    src_file = base_dir + 'TR_data.en.tok.shuf.sub'$/;"	v	class:TextIterator
+src_file	text_data.py	/^    src_file = base_dir + 'TR_data.en.tok.shuf.sub'$/;"	v	class:TextIterator
+src_inv_dict	text_data.org.py	/^    src_inv_dict = dict()$/;"	v	class:TextIterator
+src_inv_dict	text_data.py	/^    src_inv_dict = dict()$/;"	v	class:TextIterator
+submit	web_test.py	/^    submit = SubmitField('Submit')$/;"	v	class:LoginForm
+train	nmt_main_both.py	/^def train(model, optimizer, x_data, x_mask, y_data, y_mask, grad_clip):$/;"	f
+train	nmt_train_main.py	/^def train(model, optimizer, x_data, x_mask, y_data, y_mask, grad_clip):$/;"	f
+train_iter	text_data.org.py	/^    train_iter = TextPairIterator(src_file, trg_file, src_dict, trg_dict,$/;"	v	class:TextIterator
+train_iter	text_data.py	/^    train_iter = TextPairIterator(src_file, trg_file, src_dict, trg_dict,$/;"	v	class:TextIterator
+train_main	nmt_main_both.py	/^def train_main(args):$/;"	f
+train_main	nmt_train_main.py	/^def train_main(args):$/;"	f
+translate_file	nmt_trans_main.py	/^def translate_file(model, src_file, s_dict_file, trg_file, t_dict_file, trans_file, args, valid=None):$/;"	f
+translate_one	web_run.py	/^def translate_one(lang):$/;"	f
+translate_one	web_test.py	/^def translate_one(lang):$/;"	f
+translate_rnnnmt	nmt_trans_main.py	/^def translate_rnnnmt(model, x_data, beam_width, max_length):$/;"	f
+translate_tm	nmt_trans_main.py	/^def translate_tm(model, x_data, x_mask, max_length):$/;"	f
+translate_tm2	nmt_trans_main.py	/^def translate_tm2(model, x_data, x_mask, max_length):$/;"	f
+translate_tm_beam	nmt_trans_main.py	/^def translate_tm_beam(model, x_data, x_mask, beam_width, max_length): # not working$/;"	f
+trg	load_model.py	/^trg = model['state_dict']['decoder.trg_emb.weight'])$/;"	v
+trg_dict	check_dict.py	/^trg_dict = read_dict(args.trg_dict)$/;"	v
+trg_dict	nmt_trans.py	/^trg_dict = read_dict(args.trg_dict)$/;"	v
+trg_dict	text_data.org.py	/^    trg_dict = base_dir + 'vocab.fi.pkl'$/;"	v	class:TextIterator
+trg_dict	text_data.py	/^    trg_dict = base_dir + 'vocab.fi.pkl'$/;"	v	class:TextIterator
+trg_file	text_data.org.py	/^    trg_file = base_dir + 'TR_data.fi.tok.shuf.sub'$/;"	v	class:TextIterator
+trg_file	text_data.py	/^    trg_file = base_dir + 'TR_data.fi.tok.shuf.sub'$/;"	v	class:TextIterator
+use_cuda	nmt_main_both.py	/^use_cuda = torch.cuda.is_available()$/;"	v
+use_cuda	nmt_model_tm.py	/^use_cuda = torch.cuda.is_available()$/;"	v
+use_cuda	nmt_post.py	/^use_cuda = torch.cuda.is_available()$/;"	v
+use_cuda	nmt_train_main.py	/^use_cuda = torch.cuda.is_available()$/;"	v
+use_cuda	nmt_trans.py	/^use_cuda = torch.cuda.is_available()$/;"	v
+use_cuda	nmt_trans_main.py	/^use_cuda = torch.cuda.is_available()$/;"	v
+use_cuda	web_run.py	/^use_cuda = torch.cuda.is_available()$/;"	v
+user_loader	web_test.py	/^def user_loader(user_id):$/;"	f
+username	web_test.py	/^    username = StringField('Username')$/;"	v	class:LoginForm
+valid_iter	text_data.org.py	/^    valid_iter = TextIterator(src_file, src_dict, $/;"	v	class:TextIterator
+valid_iter	text_data.py	/^    valid_iter = TextIterator(src_file, src_dict, $/;"	v	class:TextIterator
+write_for_stat	web_run.py	/^def write_for_stat(token_sen, out_before_detoken, lang, args, request):$/;"	f

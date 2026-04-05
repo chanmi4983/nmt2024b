@@ -1,0 +1,5 @@
+[default]
+entity = nmt2024b-orangesoda
+project = nmtcontext
+base_url = https://api.wandb.ai
+
