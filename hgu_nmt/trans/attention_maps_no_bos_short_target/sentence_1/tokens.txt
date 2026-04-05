@@ -1,3 +1,0 @@
-Source: <s> 난 아직 시험@@ 이 있어요 . </s>
-Target: <s> I &apos;m still having my exams .
-Using: Validation Target Data
